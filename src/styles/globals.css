@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 15px;
+  /* border-radius: 10px; */
+}
+::-webkit-scrollbar-track {
+  background: #1b1b1b;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #6c6c6c;
+  /* border-radius: 10px; */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #9befea 0%, #3d6ece 74.01%, rgba(53, 246, 234, 0.35) 100%);
+}
+
+/* gloabl,custom tailwind classes */
+
+.nav-padding {
+  @apply xl:px-[calc((100%-1360px)*0.5)];
+}
+
+.auto-padding {
+  @apply xl:px-[calc((100%-1280px)*0.5)] px-3;
+}
+
+.title-h1 {
+  @apply font-montserrat font-extrabold text-[64px] dark:text-primaryLight text-primaryDark leading-[79px];
+}
+
+.title-h2 {
+  @apply font-montserrat font-extrabold  text-[64px] dark:text-primaryLight text-primaryDark;
+}
+
+.title-h3 {
+  @apply font-kodchasan font-bold text-[48px] dark:text-primaryLight text-primaryDark;
+}
+
+.title-h4 {
+  @apply font-kodchasan font-bold  text-[36px] dark:text-primaryLight text-primaryDark;
+}
+
+.title-h5 {
+  @apply font-kodchasan font-bold text-[28px] dark:text-primaryLight text-primaryDark;
+}
+
+.text {
+  @apply font-kodchasan font-normal text-[20px] dark:text-primaryLight text-primaryDark;
+}
+
+.link {
+  @apply font-kodchasan text-[20px] dark:text-primaryLight text-primaryLight px-4 text font-medium text-nowrap;
+}
+
+.section_wrapper {
+  @apply flex flex-row;
+}
+
+.global_button {
+  border-radius: 100px;
+  font-family: var(--font-montserrat);
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.72px;
+  font-weight: 700;
+}
+
+.outline_button {
+  padding: 23px 100px 23px 26px;
+  position: relative;
+  @apply bg-transparent dark:bg-primaryDark border-2 border-primaryDark dark:border-primaryLight;
+}
+
+.btn_icon{
+  position: absolute;
+  content: "";
+  top: 11px;
+  right: 17px;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+
+.outline_button::after {
+  content: "";
+  position: absolute;
+  height: 72px;
+  width: 86px;
+  right: -1px;
+  top: 0;
+  border-radius: 100px;
+  @apply bg-primaryDark text-primaryDark dark:bg-primaryLight dark:text-primaryLight;
+}
+
+.fill_button {
+  padding: 24px 34px;
+}
+
+.btn_dark {
+  @apply bg-primaryLight text-primaryDark dark:text-primaryLight;
+}
+
+.btn_light {
+  @apply bg-primaryDark dark:bg-primaryLight text-primaryLight dark:text-primaryDark;
+}
+
+/* theme toggle button */
+#checkbox {
+  display: none;
+}
+
+.toggler {
+  display: flex;
+  align-items: center;
+  width: 77px;
+  height: 38px;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  padding: 2px 4px;
+}
+
+.ball {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 34px;
+  border-radius: 50%;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0%);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#checkbox:checked + .ball {
+  transform: translateX(100%);
+}
+
+
+/* home pahe */
+
+.home__hero--section{
+  background: url("../../public/bg_images/home_hero-bg-2.png") no-repeat left center;
+  width: auto;
+  height: 100%;
+  background-size: auto 100%;
+}
