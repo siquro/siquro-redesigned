@@ -1,3 +1,5 @@
+import Button from "../Button";
+
 const Reporting = () => {
     return (
         <section className="reporting--section bg-primaryLight dark:bg-primaryDark">
@@ -15,7 +17,7 @@ const Reporting = () => {
                         <h5 className="title-h5">Technical support 24/7</h5>
                     </div>
                 </div>
-
+                <Button title={"learn more"} color={"light"} />
             </div>
             <div></div>
 
