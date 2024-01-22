@@ -2,7 +2,7 @@ import { FC } from "react";
 
 type ButtonProps = {
     title: string;
-    color:string;
+    color: string;
     onClickHandler?: () => void;
 }
 const Button: FC<ButtonProps> = ({ title, onClickHandler, color }) => {

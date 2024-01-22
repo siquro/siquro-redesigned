@@ -2,6 +2,10 @@ import Image from "next/image"
 import Button from "../Button";
 import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
+import OutlineButton from "../OutlineButton";
+
+
+
 
 const HomeHero = () => {
     const router = useRouter();
@@ -16,12 +20,9 @@ const HomeHero = () => {
                         Accept payments with us and open up new <br /> markets and opportunities in the online payments <br />industry
                     </p>
                     <div className="gap-x-3.5 flex flex-row">
-                        <div><button className="global_button outline_button" onClick={() => router.push('/solution')}>start accepting payments
-                        {theme === "light" ? <Image className="btn_icon" src="/button_iconL.png" width={50} height={50} alt="btn_icon" /> : <Image className="btn_icon" src="/button_icon.svg" width={50} height={50} alt="btn_icon" /> }
-                            <Image className="btn_icon" src="/button_icon.svg" width={50} height={50} alt="btn_icon" />
-                        </button></div>
-                        <div><Button title={'contact us'} onClickHandler={() => { router.push('/contact'); }} color={"light"} /></div>
+                        <OutlineButton themeHandler={theme} title={"start accepting payments"} onClickHandler={() => { router.push('/solution') }} />
 
+                        <Button title={'contact us'} onClickHandler={() => { router.push('/contact'); }} color={"light"} />
                     </div>
                 </div>
                 <div className="">

@@ -23,8 +23,8 @@ const config: Config = {
         accent4: "#3D6ECE",
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "linear-gradient-hover": "linear-gradient(180deg, #0075FF 0%, #00A3FF 100%);",
+        "link-linear-gradient": "linear-gradient(180deg, #FF00D6 99.99%, #FF00D6 100%)",
       },
       animation: {
         "fade-in": "fade-in 0.5s cubic-bezier(0.4, 0, 0.2, 1) both",

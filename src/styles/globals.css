@@ -52,7 +52,38 @@
 }
 
 .link {
-  @apply font-kodchasan text-[20px] dark:text-primaryLight text-primaryLight px-4 text font-medium text-nowrap;
+  @apply relative px-4 text font-medium text-nowrap font-kodchasan text-[20px] text-primaryLight hover:text-[#00FFF0] dark:text-primaryLight dark:hover:text-[#00FFF0];
+}
+
+.active {
+  @apply text-[#00FFF0] dark:text-[#00FFF0];
+}
+
+.link::after,
+.active::after {
+  content: "";
+  position: absolute;
+  top: -45%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 80%;
+  height: 3px;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  @apply bg-link-linear-gradient;
+}
+
+.active::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+  opacity: 1;
 }
 
 .section_wrapper {
@@ -67,45 +98,89 @@
   text-transform: uppercase;
   letter-spacing: 0.72px;
   font-weight: 700;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.fill_button {
+  padding: 24px 34px;
+  position: relative;
+}
+
+.fill_button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(180deg, #03a4ff 22.51%, #009ee2 55.83%, #0085d0 100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.fill_button:hover::after {
+  width: 100%;
+}
+
+.btn_dark {
+  @apply bg-primaryLight dark:bg-primaryDark text-primaryDark dark:text-primaryLight;
+}
+
+.btn_light {
+  @apply bg-primaryDark dark:bg-primaryLight text-primaryLight dark:text-primaryDark;
 }
 
 .outline_button {
+  min-height: 75px;
+  width: max-content;
+  min-width: 440px;
   padding: 23px 100px 23px 26px;
   position: relative;
-  @apply bg-transparent dark:bg-primaryDark border-2 border-primaryDark dark:border-primaryLight;
+  @apply bg-transparent border-2 border-primaryDark hover:border-accent3 dark:bg-transparent  dark:border-primaryLight  dark:hover:border-accent3;
 }
 
-.btn_icon{
+.outline_button::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 86px;
+  right: 0px;
+  top: 0;
+  border-radius: 100px;
+  transition: all 0.5s ease-in-out;
+  @apply bg-primaryDark dark:bg-primaryLight hover:bg-linear-gradient-hover active:bg-linear-gradient-hover;
+}
+
+.outline_button:hover::after {
+  width: 100%;
+}
+
+.outline_button:hover .button_text {
+  color: white;
+}
+
+.outline_button .button_text {
+  position: absolute;
+  left: 30px;
+  top: 24px;
+  text-wrap: nowrap;
+  z-index: 10;
+  transition: all 0.3s ease-in;
+}
+
+.btn_icon {
   position: absolute;
   content: "";
-  top: 11px;
+  top: calc(50% - 25px);
   right: 17px;
   width: 50px;
   height: 50px;
   z-index: 1;
 }
 
-.outline_button::after {
-  content: "";
-  position: absolute;
-  height: 72px;
-  width: 86px;
-  right: -1px;
-  top: 0;
-  border-radius: 100px;
-  @apply bg-primaryDark text-primaryDark dark:bg-primaryLight dark:text-primaryLight;
-}
-
-.fill_button {
-  padding: 24px 34px;
-}
-
-.btn_dark {
-  @apply bg-primaryLight text-primaryDark dark:text-primaryLight;
-}
-
-.btn_light {
-  @apply bg-primaryDark dark:bg-primaryLight text-primaryLight dark:text-primaryDark;
+.outline_button:hover .dark_icon {
+  filter: invert(1);
 }
 
 /* theme toggle button */
@@ -132,18 +207,17 @@
   height: 34px;
   border-radius: 50%;
   transition: transform 0.5s ease-in-out;
-  transform: translateX(0%);
+  transform: translateX(100%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 #checkbox:checked + .ball {
-  transform: translateX(100%);
+  transform: translateX(0%);
 }
 
+/* home page */
 
-/* home pahe */
-
-.home__hero--section{
+.home__hero--section {
   background: url("../../public/bg_images/home_hero-bg-2.png") no-repeat left center;
   width: auto;
   height: 100%;
