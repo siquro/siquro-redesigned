@@ -2,7 +2,33 @@ import Button from "../Button";
 
 const Reporting = () => {
     return (
-        <section className="reporting--section bg-primaryLight dark:bg-primaryDark">
+        <section className="reporting__section--wrapper bg-primaryLight dark:bg-primaryDark">
+            <div className="line__wrapper">
+                <svg
+                    id="Metro_Map_Lines"
+                    className="map"
+                    data-name="Metro Map Lines"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 208.5 204.5"
+                >
+                    <defs>
+                        <style>
+                            {`.cls-2{fill: none;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 3px;}.cls-2 {stroke: #fff;}`}
+                        </style>
+                    </defs>
+                    <title>metro-map-svg</title>
+                    <path
+                        id="yellow-line"
+                        className="line cls-2"
+                        d="M10,100V30
+                        H160
+                        V750"
+                        transform="translate(-27 -21)"
+                    />
+                </svg>
+            </div>
+
+
             <div>
                 <h3 className="title-h3">REPORTING</h3>
                 <h2 className="title-h2">Advanced Analytics & Reporting</h2>
