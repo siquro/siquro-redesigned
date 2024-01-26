@@ -1,7 +1,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 import 'swiper/css';
 import Image from 'next/image';
 import { Autoplay, EffectCards, Mousewheel, Pagination, Scrollbar } from 'swiper/modules';
+
+import lotiIcon from "../../../public/lottie_icons/Line-2.json";
 
 import 'swiper/css/scrollbar';
 
@@ -47,8 +50,8 @@ const WhatWeDo = () => {
 
     return (
         <section className="we__do--section bg-primaryLight dark:bg-primaryDark">
-            <div className="auto-padding pt-[63px] pb-[90px] bg-[#d3d3d314] flex flex-row">
-                <div className="slider--wrapper">
+            <div className="auto-padding pt-[63px] pb-[90px] bg-[#d3d3d314] flex flex-col md:flex-row gap-14">
+                <div className="slider--wrapper md:w-3/5 flex items-center">
                     <Swiper
                         direction={'vertical'}
                         grabCursor={true}
@@ -58,7 +61,7 @@ const WhatWeDo = () => {
                         autoplay={{
                             delay: 2000,
                             disableOnInteraction: true,
-                          }}
+                        }}
                         modules={[EffectCards, Mousewheel, Autoplay, Pagination]}
                         className="custom__swiper h-[400px]"
                     >
@@ -115,18 +118,22 @@ const WhatWeDo = () => {
                     </Swiper>
                 </div>
 
-                <div className='grow'>
+                <div className='flex flex-col items-end'>
                     <h3 className="title-h3 text-end">what we do</h3>
-                    <h2 className="title-h2 text-end">Fraud monitoring</h2>
+                    <h2 className="title-h2 text-end md:text-nowrap">Fraud monitoring</h2>
 
-                    <div>
-                        <div>
-                            <div><h4>A software package that is unique</h4></div>
-                            <div><p>Monitoring transactions and preventing fraudulent payments.</p></div>
+                    <div className=' bg_element relative'>
+                        <div className='item rounded-[20px] mt-[50px] max-w-[640px] border-primaryDark dark:border-primaryLight border-2'>
+                            <h5 className='title-h5 bg-transparent px-[15px] py-[19px] md:text-nowrap text-center'>A software package that is unique</h5>
+                            <div className='bg-primaryDark dark:bg-primaryLight  px-[25px] pt-[38px] pb-[47px] rounded-t-[20px] rounded-b-[18px]'>
+                                <p className='leading-[30px] text-primaryLight dark:text-primaryDark text-center text-[28px] font-semibold'>Monitoring transactions and preventing fraudulent payments.</p>
+                            </div>
                         </div>
-                        <div>
-                            <div><h4>Processes for intelligent payments</h4></div>
-                            <div><p>Will ensure the maximum proportion of successful payments, without giving a chance for fraudster to pass!</p></div>
+                        <div className='item rounded-[20px] mt-[50px] max-w-[640px] border-primaryDark dark:border-primaryLight border-2'>
+                            <h5 className='title-h5 bg-transparent px-[15px] py-[19px] md:text-nowrap text-center'>Processes for intelligent payments</h5>
+                            <div className='bg-primaryDark dark:bg-primaryLight  px-[25px] pt-[38px] pb-[47px] rounded-t-[20px] rounded-b-[18px]'>
+                                <p className='leading-[30px] text-primaryLight dark:text-primaryDark text-center text-[28px] font-semibold'>Will ensure the maximum proportion of successful payments, without giving a chance for fraudster to pass!</p>
+                            </div>
                         </div>
                     </div>
                 </div>

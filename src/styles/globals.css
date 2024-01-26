@@ -87,7 +87,7 @@
 }
 
 .section_wrapper {
-  @apply flex flex-row;
+  @apply flex ;
 }
 
 .global_button {
@@ -302,6 +302,19 @@
   }
 }
 
+
+.we__do--section .bg_element::after{
+  position: absolute;
+  content: "";
+  background-color: red;
+  background: url("../../public/Fraud_monitoring2.png") no-repeat;
+  left: -92px;
+  top: calc(50% - 70px);
+  width: 92px;
+  height: 290px;
+  z-index: 1;
+}
+
 /* .wedo__section--wrapper .line__wrapper2 {
   position: absolute;
   top: 0;
@@ -329,3 +342,13 @@
     stroke-dashoffset: 800;
   }
 } */
+
+@media only screen and (max-width: 767px){
+.title-h1 {
+  @apply font-montserrat font-extrabold text-[34px] dark:text-primaryLight text-primaryDark leading-[79px] uppercase;
+}
+
+.title-h2 {
+  @apply font-montserrat font-extrabold  text-[34px] dark:text-primaryLight text-primaryDark uppercase leading-normal;
+}
+}
