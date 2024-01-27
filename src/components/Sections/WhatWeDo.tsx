@@ -4,10 +4,7 @@ import 'swiper/css';
 import Image from 'next/image';
 import { Autoplay, EffectCards, Mousewheel, Pagination, Scrollbar } from 'swiper/modules';
 
-import lotiIcon from "../../../public/lottie_icons/Line-2.json";
-
 import 'swiper/css/scrollbar';
-
 
 const content = [
     {
@@ -32,21 +29,22 @@ const content = [
     },
 ]
 
-
 const WhatWeDo = () => {
     const settings = {
 
     }
 
-    // const Card = ({ title, description, icon }: { title: string, description: string, icon: string }) => {
-    //     return <div className='card--wrapper bg-primaryLight rounded-[20px] px-8 pt-[45px] pb-[71px] shadow-3xl max-w-[480px]'>
-    //         <div className='mb-6'><Image className='my-0 mx-auto' src={`/what_we_do-icon/${icon}`} alt={icon} width={75} height={75} /></div>
-    //         <div>
-    //             <h4 className='title-h4 text-primaryLight dark:text-primaryDark mb-7 text-center'>{title}</h4>
-    //             <p className='text text-primaryLight dark:text-primaryDark text-center'>{description}</p>
-    //         </div>
-    //     </div>
-    // }
+    const Card = ({ title, description, icon }: { title: string, description: string, icon: string }) => {
+        return <div className='bg-primaryLight rounded-[20px] px-8 pt-[45px] pb-[71px] shadow-3xl max-w-[480px]'>
+            <div className='mb-6'>
+                <Image className='my-0 mx-auto' src="/what_we_do-icon/SSL.png" alt={""} width={75} height={75} />
+            </div>
+            <div>
+                <h4 className='title-h4 text-primaryLight dark:text-primaryDark mb-7 text-center'>{title}</h4>
+                <p className='text text-primaryLight dark:text-primaryDark text-center'>{description}</p>
+            </div>
+        </div>
+    }
 
     return (
         <section className="we__do--section bg-primaryLight dark:bg-primaryDark">
@@ -65,7 +63,7 @@ const WhatWeDo = () => {
                         modules={[EffectCards, Mousewheel, Autoplay, Pagination]}
                         className="custom__swiper h-[400px]"
                     >
-                        <SwiperSlide>
+                        {/* <SwiperSlide>
                             <div className='bg-primaryLight rounded-[20px] px-8 pt-[45px] pb-[71px] shadow-3xl max-w-[480px]'>
                                 <div className='mb-6'>
                                     <Image className='my-0 mx-auto' src="/what_we_do-icon/SSL.png" alt={""} width={75} height={75} />
@@ -108,13 +106,12 @@ const WhatWeDo = () => {
                                     <p className='text text-primaryLight dark:text-primaryDark text-center'>Conformity with PCI DSS level 1 security standards, using SSL encryption</p>
                                 </div>
                             </div>
-                        </SwiperSlide>
-
-                        {/* {content.map((item, index) =>
+                        </SwiperSlide> */}
+                        {content.map((item, index) =>
                             <SwiperSlide key={index}>
                                 <Card title={item.title} description={item.description} icon={item.icon} />
                             </SwiperSlide>
-                        )} */}
+                        )}
                     </Swiper>
                 </div>
 

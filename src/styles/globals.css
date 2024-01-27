@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 ::-webkit-scrollbar {
   width: 15px;
   /* border-radius: 10px; */
@@ -87,7 +94,7 @@
 }
 
 .section_wrapper {
-  @apply flex ;
+  @apply flex;
 }
 
 .global_button {
@@ -118,6 +125,18 @@
   background: linear-gradient(180deg, #03a4ff 22.51%, #009ee2 55.83%, #0085d0 100%);
   transition: all 0.5s ease-in-out;
 }
+
+/* .fill_button span {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  text-wrap: nowrap;
+} */
 
 .fill_button:hover::after {
   width: 100%;
@@ -225,11 +244,23 @@
 }
 
 .we__do--section {
-  background: lightgray url("../../public/bg_images/what_we_do-bg.png") 50% / cover;
+  background: lightgray url("../../public/bg_images/what_we_do-bg.png") no-repeat;
   /* background:url("../../public/bg_images/what_we_do-bg.png") ; */
   width: 100%;
-  height: auto;
-  background-size: 100% auto;
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+.we__do--section .bg_element::after {
+  position: absolute;
+  content: "";
+  background-color: red;
+  background: url("../../public/Fraud_monitoring2.png") no-repeat;
+  left: -92px;
+  top: calc(50% - 70px);
+  width: 92px;
+  height: 290px;
+  z-index: 1;
 }
 
 /* .custom__swiper .swiper-slide-prev{
@@ -243,29 +274,27 @@
   transform: translate3d(0px, 48px, -100px) scale(1) !important;
 } */
 
-
-.custom__swiper{
+.custom__swiper {
   padding-left: 55px !important;
 }
-.custom__swiper .swiper-pagination{
+.custom__swiper .swiper-pagination {
   position: absolute;
   top: calc(50% - 85px);
   left: 0;
   display: flex;
   flex-direction: column;
-  gap:10px;
-
+  gap: 10px;
 }
 
-.custom__swiper .swiper-pagination .swiper-pagination-bullet{
- background: white; 
- width: 24px;
- height: 24px;
- display: block;
- border-radius: 100px;
+.custom__swiper .swiper-pagination .swiper-pagination-bullet {
+  background: white;
+  width: 24px;
+  height: 24px;
+  display: block;
+  border-radius: 100px;
 }
 
-.custom__swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+.custom__swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   height: 70px;
 }
 
@@ -282,38 +311,171 @@
   height: 750px;
 }
 
-.reporting__section--wrapper .map {
+.reporting--section {
+  overflow: hidden;
+}
+
+.reporting--section .map {
   height: 100%;
   width: 100%;
 }
 
-.reporting__section--wrapper .line {
+.reporting--section .line {
   stroke-dasharray: 800;
   stroke-dashoffset: 800;
   animation: draw 5s infinite alternate;
 }
 
-@keyframes draw {
+.gear {
+  position: absolute;
+  top: -110px;
+  right: -185px;
+  overflow: hidden;
+  animation: spin 8s linear infinite;
+  z-index: 1;
+}
+
+.gear-2 {
+  position: absolute;
+  top: -60px;
+  right: 140px;
+  overflow: hidden;
+  animation: spin2 10s linear infinite;
+  z-index: 1;
+}
+
+.gear-3 {
+  position: absolute;
+  top: 240px;
+  right: -30px;
+  overflow: hidden;
+  animation: spin 8s linear infinite;
+  z-index: 1;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin2 {
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@-moz-keyframes spin2 {
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin2 {
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+.magnify {
+  position: absolute;
+  top: 150px;
+  right: 250px;
+  width: 462px;
+  height: 553px;
+  z-index: 1;
+  animation: zoomInOut 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+}
+
+@-moz-keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+}
+
+.phone {
+  position: absolute;
+  bottom: 0px;
+  right: 350px;
+  z-index: 1;
+  transform: rotate(3.859deg);
+  animation: moveRightLeft 5s linear infinite;
+}
+
+@-webkit-keyframes moveRightLeft {
+  0%,
+  100% {
+    right: 350;
+  }
+  50% {
+    right: 400px;
+  }
+}
+
+@-moz-keyframes moveRightLeft {
+  0%,
+  100% {
+    right: 350;
+  }
+  50% {
+    right: 400px;
+  }
+}
+
+@keyframes moveRightLeft {
+  0%,
+  100% {
+    right: 350;
+  }
+  50% {
+    right: 400px;
+  }
+}
+
+/* @keyframes draw {
   from {
     stroke-dashoffset: 0;
   }
   to {
     stroke-dashoffset: 800;
   }
-}
-
-
-.we__do--section .bg_element::after{
-  position: absolute;
-  content: "";
-  background-color: red;
-  background: url("../../public/Fraud_monitoring2.png") no-repeat;
-  left: -92px;
-  top: calc(50% - 70px);
-  width: 92px;
-  height: 290px;
-  z-index: 1;
-}
+} */
 
 /* .wedo__section--wrapper .line__wrapper2 {
   position: absolute;
@@ -343,12 +505,12 @@
   }
 } */
 
-@media only screen and (max-width: 767px){
-.title-h1 {
-  @apply font-montserrat font-extrabold text-[34px] dark:text-primaryLight text-primaryDark leading-[79px] uppercase;
-}
+@media only screen and (max-width: 767px) {
+  .title-h1 {
+    @apply font-montserrat font-extrabold text-[34px] dark:text-primaryLight text-primaryDark leading-[79px] uppercase;
+  }
 
-.title-h2 {
-  @apply font-montserrat font-extrabold  text-[34px] dark:text-primaryLight text-primaryDark uppercase leading-normal;
-}
+  .title-h2 {
+    @apply font-montserrat font-extrabold  text-[34px] dark:text-primaryLight text-primaryDark uppercase leading-normal;
+  }
 }

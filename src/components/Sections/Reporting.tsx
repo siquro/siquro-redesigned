@@ -1,9 +1,10 @@
 import Button from "../Button";
+import Image from 'next/image';
 
 const Reporting = () => {
     return (
-        <section className="reporting__section--wrapper bg-primaryLight dark:bg-primaryDark">
-            <div className="line__wrapper">
+        <section className="reporting--section bg-primaryLight dark:bg-primaryDark relative">
+            {/* <div className="line__wrapper">
                 <svg
                     id="Metro_Map_Lines"
                     className="map"
@@ -26,27 +27,35 @@ const Reporting = () => {
                         transform="translate(-27 -21)"
                     />
                 </svg>
-            </div>
+            </div> */}
 
-
-            <div>
-                <h3 className="title-h3">REPORTING</h3>
-                <h2 className="title-h2">Advanced Analytics & Reporting</h2>
-                <p className="text">Monitor your pay in/payout information in real time through a digital merchant portal without installation and gain a deeper understanding of your customers.</p>
-                <div>
-                    <div>
-                        <div><img src="" alt="" /></div>
-                        <h5 className="title-h5">A wide range of acquiring banks</h5>
+            <div className="auto-padding pt-[63px] pb-[90px] flex flex-col md:flex-row gap-14">
+                <div className=" md:w-3/5">
+                    <h3 className="title-h3">REPORTING</h3>
+                    <h2 className="title-h2 text-nowrap mb-[33px]">Advanced Analytics<br /> & Reporting</h2>
+                    <p className="text w-4/5 mb-[38px]">Monitor your pay in/payout information in real time through a digital merchant portal without installation and gain a deeper understanding of your customers.</p>
+                    <div className="mb-[40px] flex flex-col gap-7">
+                        <div className="flex flex-row gap-7">
+                            <Image src={"/ri-bank-fill.svg"} alt={"Bank"} width={51} height={50} />
+                            <h5 className="title-h5 !font-montserrat">A wide range of acquiring banks</h5>
+                        </div>
+                        <div className="flex flex-row gap-7">
+                            <Image src={"/ri-support.svg"} alt={"Bank"} width={51} height={47} />
+                            <h5 className="title-h5 !font-montserrat">Technical support 24/7</h5>
+                        </div>
                     </div>
-                    <div>
-                        <div><img src="" alt="" /></div>
-                        <h5 className="title-h5">Technical support 24/7</h5>
-                    </div>
+                    <Button title={"learn more"} color={"light"} />
                 </div>
-                <Button title={"learn more"} color={"light"} />
             </div>
-            <div></div>
+            <div className="animation--container relative">
 
+            </div>
+
+            <Image src="/reporting_animation/gear_1.png" alt="Gear" width={638} height={616} className="gear"></Image>
+            <Image src="/reporting_animation/gear_1.png" alt="Gear" width={516} height={542} className="gear-2"></Image>
+            <Image src="/reporting_animation/gear_1.png" alt="Gear" width={477} height={573} className="gear-3"></Image>
+            <Image src="/reporting_animation/magnify.png" alt="Magnify" width={462} height={553} className="magnify"></Image>
+            <Image src="/reporting_animation/phone.png" alt="Phone" width={315} height={344} className="phone"></Image>
         </section>
     );
 };
