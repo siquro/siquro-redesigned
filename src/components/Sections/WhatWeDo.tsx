@@ -6,33 +6,31 @@ import { Autoplay, EffectCards, Mousewheel, Pagination, Scrollbar } from 'swiper
 
 import 'swiper/css/scrollbar';
 
-const content = [
-    {
-        title: "ANTIFRAUD SYSTEM",
-        description: "Filters and settings are customized for your business type in our proprietary antifraud system",
-        icon: "SYSTEM.png",
-    },
-    {
-        title: "PCI DSS И SSL",
-        description: "Conformity with PCI DSS level 1 security standards, using SSL encryption",
-        icon: "SSL.png",
-    },
-    {
-        title: "CHARGEBACKS AND REFUNDS",
-        description: "Support for chargebacks and instant response to incidents",
-        icon: "REFUNDS.png",
-    },
-    {
-        title: "ONLINE FRAUD MONITORING",
-        description: "A fraud officer monitors real-time transactions and prevents fraud activity.",
-        icon: "MONITORING.png",
-    },
-]
+
 
 const WhatWeDo = () => {
-    const settings = {
-
-    }
+    const content = [
+        {
+            title: "ANTIFRAUD SYSTEM",
+            description: "Filters and settings are customized for your business type in our proprietary antifraud system",
+            icon: "SYSTEM.png",
+        },
+        {
+            title: "PCI DSS И SSL",
+            description: "Conformity with PCI DSS level 1 security standards, using SSL encryption",
+            icon: "SSL.png",
+        },
+        {
+            title: "CHARGEBACKS AND REFUNDS",
+            description: "Support for chargebacks and instant response to incidents",
+            icon: "REFUNDS.png",
+        },
+        {
+            title: "ONLINE FRAUD MONITORING",
+            description: "A fraud officer monitors real-time transactions and prevents fraud activity.",
+            icon: "MONITORING.png",
+        },
+    ]
 
     const Card = ({ title, description, icon }: { title: string, description: string, icon: string }) => {
         return <div className='bg-primaryLight rounded-[20px] px-8 pt-[45px] pb-[71px] shadow-3xl max-w-[480px]'>

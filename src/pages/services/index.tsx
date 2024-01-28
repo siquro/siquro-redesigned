@@ -1,7 +1,14 @@
+import Payment from "./sections/Payment";
+import ServicesHero from "./sections/ServicesHero";
+import ServicesReporting from "./sections/ServicesReporting";
+import ServicesIntegration from "./sections/ServicesIntegration";
+
 const Services = () => {
     return (<div>
-        <h3>Services</h3>
-        <h1>Business potential</h1>
+        <ServicesHero />
+        <Payment />
+        <ServicesReporting />
+        <ServicesIntegration />
     </div>);
 }
 

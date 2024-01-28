@@ -29,8 +29,8 @@ const Reporting = () => {
                 </svg>
             </div> */}
 
-            <div className="auto-padding pt-[63px] pb-[90px] flex flex-col md:flex-row gap-14">
-                <div className=" md:w-3/5">
+            <div className="auto-padding pt-[63px] pb-[90px] flex flex-col md:flex-row gap-14 z-10">
+                <div className="md:w-3/5">
                     <h3 className="title-h3">REPORTING</h3>
                     <h2 className="title-h2 text-nowrap mb-[33px]">Advanced Analytics<br /> & Reporting</h2>
                     <p className="text w-4/5 mb-[38px]">Monitor your pay in/payout information in real time through a digital merchant portal without installation and gain a deeper understanding of your customers.</p>
@@ -47,7 +47,9 @@ const Reporting = () => {
                     <Button title={"learn more"} color={"light"} />
                 </div>
             </div>
-            <div className="animation--container relative">
+
+            <div className="flex flex-col pe-44">
+
 
             </div>
 
