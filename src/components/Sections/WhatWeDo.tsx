@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import Image from 'next/image';
-import { Autoplay, EffectCards, Mousewheel, Pagination, Scrollbar } from 'swiper/modules';
+import { Autoplay, EffectCards, EffectCoverflow, Mousewheel, Pagination } from 'swiper/modules';
 
 import 'swiper/css/scrollbar';
 
@@ -53,13 +53,22 @@ const WhatWeDo = () => {
                         grabCursor={true}
                         pagination={true}
                         loop={true}
-                        effect={'cards'}
+                        slidesPerView={3}
+                        initialSlide={1}
+                        effect={'coverFlow'}
+                        coverflowEffect={{
+                            rotate: 0,
+                            stretch: -400,
+                            depth: -300,
+                            modifier: 4,
+                            slideShadows: true,
+                        }}
                         autoplay={{
                             delay: 2000,
                             disableOnInteraction: true,
                         }}
-                        modules={[EffectCards, Mousewheel, Autoplay, Pagination]}
-                        className="custom__swiper h-[400px]"
+                        modules={[EffectCoverflow, Mousewheel, Autoplay, Pagination]}
+                        className="custom__swiper h-[420px] w-[560px]"
                     >
                         {/* <SwiperSlide>
                             <div className='bg-primaryLight rounded-[20px] px-8 pt-[45px] pb-[71px] shadow-3xl max-w-[480px]'>

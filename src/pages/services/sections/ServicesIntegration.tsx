@@ -1,5 +1,8 @@
-import { EffectCards, Mousewheel, Autoplay, Pagination } from "swiper/modules";
+
 import { Swiper, SwiperSlide } from "swiper/react";
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 
 const PaymentIntegration = () => {
     const content = [
@@ -43,13 +46,48 @@ const PaymentIntegration = () => {
             <h2 className="title-h2  mb-8 text-center">Forget trouble<br />with integration</h2>
         </div>
 
-        <div className="payment__slider--container mt-36 mb-24">
+        <div className="payment__slider--container mt-[100px] mb-24">
             <Swiper
-                effect={'cards'}
-                grabCursor={true}
-                modules={[EffectCards]}
-                className="payment__custom--swiper"
+                loop={true}
+                autoplay={{
+                    delay: 4500,
+                    disableOnInteraction: false,
+                }}
+                navigation
+                pagination={{ clickable: true }}
+                effect="coverflow"
+                coverflowEffect={{
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 650,
+                    modifier: 4,
+                    slideShadows: false,
+                    scale: 1.5,
+                }}
+                slidesPerView={3}
+                centeredSlides
+                modules={[Autoplay, EffectCoverflow]}
             >
+                <SwiperSlide className="slider--content bg-primaryLight rounded-[20px] px-8 pt-[45px] pb-[71px] shadow-3xl w-4/5">
+                    <h4 className='title-h4 text-primaryLight dark:text-primaryDark mb-7 text-center'>11111PCI DSS И SSL</h4>
+                    <p className='text text-primaryLight dark:text-primaryDark text-center'>Conformity with PCI DSS level 1 security standards, using SSL encryption</p>
+                </SwiperSlide>
+                <SwiperSlide className="slider--content bg-primaryLight rounded-[20px] px-8 pt-[45px] pb-[71px] shadow-3xl w-4/5">
+                    <h4 className='title-h4 text-primaryLight dark:text-primaryDark mb-7 text-center'>22222PCI DSS И SSL</h4>
+                    <p className='text text-primaryLight dark:text-primaryDark text-center'>Conformity with PCI DSS level 1 security standards, using SSL encryption</p>
+                </SwiperSlide>
+                <SwiperSlide className="slider--content bg-primaryLight rounded-[20px] px-8 pt-[45px] pb-[71px] shadow-3xl w-4/5">
+                    <h4 className='title-h4 text-primaryLight dark:text-primaryDark mb-7 text-center'>33PCI DSS И SSL</h4>
+                    <p className='text text-primaryLight dark:text-primaryDark text-center'>Conformity with PCI DSS level 1 security standards, using SSL encryption</p>
+                </SwiperSlide>
+                <SwiperSlide className="slider--content bg-primaryLight rounded-[20px] px-8 pt-[45px] pb-[71px] shadow-3xl w-4/5">
+                    <h4 className='title-h4 text-primaryLight dark:text-primaryDark mb-7 text-center'>44PCI DSS И SSL</h4>
+                    <p className='text text-primaryLight dark:text-primaryDark text-center'>Conformity with PCI DSS level 1 security standards, using SSL encryption</p>
+                </SwiperSlide>
+                <SwiperSlide className="slider--content bg-primaryLight rounded-[20px] px-8 pt-[45px] pb-[71px] shadow-3xl w-4/5">
+                    <h4 className='title-h4 text-primaryLight dark:text-primaryDark mb-7 text-center'>5555PCI DSS И SSL</h4>
+                    <p className='text text-primaryLight dark:text-primaryDark text-center'>Conformity with PCI DSS level 1 security standards, using SSL encryption</p>
+                </SwiperSlide>
                 {/* {content.map((item, index) =>
                     <SwiperSlide key={index}>
                         <Card title={item.title} description={item.description} />
@@ -57,7 +95,9 @@ const PaymentIntegration = () => {
                 )} */}
             </Swiper>
         </div>
-    </section>);
+
+
+    </section >);
 }
 
 export default PaymentIntegration;
