@@ -7,7 +7,7 @@ type ButtonProps = {
 }
 const Button: FC<ButtonProps> = ({ title, onClickHandler, color }) => {
     return (
-        <button className={` ${color === "light" ? "btn_light" : "btn_dark"} global_button fill_button`} onClick={() => { }}>
+        <button className={` ${color === "light" ? "btn_light" : "btn_dark"} global_button`} onClick={() => { }}>
             {title}
         </button>
     );

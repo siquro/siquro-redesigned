@@ -1,8 +1,17 @@
+import CryptoSolutions from "./sections/CryptoSolutions";
+import SolutionsHero from "./sections/SolutionsHero";
+import SolutionsList from "./sections/SolutionsList";
+import SolutionsReporting from "./sections/SolutionsReporting";
+import SolutionsTwoBlocks from "./sections/SolutionsTwoBlocks";
+
 const Solutions = () => {
     return (
         <div>
-            <h3>Solutions</h3>
-            <h1>Designed for growth, a complete payments platform</h1>
+            <SolutionsHero />
+            <SolutionsList/>
+            <SolutionsTwoBlocks />
+            <SolutionsReporting />
+            <CryptoSolutions />
         </div>);
 }
 export default Solutions;

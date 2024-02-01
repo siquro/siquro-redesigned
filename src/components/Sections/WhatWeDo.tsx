@@ -53,20 +53,22 @@ const WhatWeDo = () => {
                         grabCursor={true}
                         pagination={true}
                         loop={true}
-                        slidesPerView={3}
-                        initialSlide={1}
-                        effect={'coverFlow'}
+                        autoplay={{
+                            delay: 4500,
+                            disableOnInteraction: false,
+                        }}
+                        navigation
+                        effect="coverflow"
                         coverflowEffect={{
                             rotate: 0,
-                            stretch: -400,
-                            depth: -300,
+                            stretch: 0,
+                            depth: 0,
                             modifier: 4,
-                            slideShadows: true,
+                            slideShadows: false,
+                            scale: 1,
                         }}
-                        autoplay={{
-                            delay: 2000,
-                            disableOnInteraction: true,
-                        }}
+                        slidesPerView={3}
+                        centeredSlides
                         modules={[EffectCoverflow, Mousewheel, Autoplay, Pagination]}
                         className="custom__swiper h-[420px] w-[560px]"
                     >

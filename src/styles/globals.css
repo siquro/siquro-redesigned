@@ -98,6 +98,12 @@ body {
 }
 
 .global_button {
+  display: inline;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+
   border-radius: 100px;
   font-family: var(--font-montserrat);
   font-size: 18px;
@@ -105,87 +111,69 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.72px;
   font-weight: 700;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.5s ease-in-out;
-}
-
-.fill_button {
   padding: 24px 34px;
-  position: relative;
 }
 
-.fill_button::after {
+.global_button::before {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 0%;
-  height: 100%;
   background: linear-gradient(180deg, #03a4ff 22.51%, #009ee2 55.83%, #0085d0 100%);
-  transition: all 0.5s ease-in-out;
-}
-
-/* .fill_button span {
-  position: absolute;
-  top: calc(50% - 12px);
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  z-index: 1;
-  width: 100%;
+  top: 0;
+  right: -50px;
   height: 100%;
-  text-wrap: nowrap;
-} */
-
-.fill_button:hover::after {
-  width: 100%;
+  width: 0;
+  border-radius: 100px;
+  z-index: -1;
+  transition: width 1s;
 }
 
 .btn_dark {
-  @apply bg-primaryLight dark:bg-primaryDark text-primaryDark dark:text-primaryLight;
+  @apply text-primaryDark dark:text-primaryLight bg-primaryLight dark:bg-primaryDark;
 }
 
 .btn_light {
-  @apply bg-primaryDark dark:bg-primaryLight text-primaryLight dark:text-primaryDark;
+  @apply text-primaryLight dark:text-primaryDark   bg-primaryDark dark:bg-primaryLight;
 }
 
-.outline_button {
-  min-height: 75px;
-  width: max-content;
-  min-width: 440px;
-  padding: 23px 100px 23px 26px;
-  position: relative;
-  @apply bg-transparent border-2 border-primaryDark hover:border-accent3 dark:bg-transparent  dark:border-primaryLight  dark:hover:border-accent3;
+.btn_dark:hover {
+  @apply text-primaryLight dark:text-primaryDark;
 }
 
-.outline_button::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 86px;
-  right: 0px;
-  top: 0;
-  border-radius: 100px;
-  transition: all 0.5s ease-in-out;
-  @apply bg-primaryDark dark:bg-primaryLight hover:bg-linear-gradient-hover active:bg-linear-gradient-hover;
+.btn_light:hover {
+  @apply text-primaryDark dark:text-primaryLight;
 }
 
-.outline_button:hover::after {
-  width: 100%;
-}
-
-.outline_button:hover .button_text {
+.global_button:hover::before {
+  width: 150%;
   color: white;
 }
 
-.outline_button .button_text {
-  position: absolute;
-  left: 30px;
-  top: 24px;
-  text-wrap: nowrap;
-  z-index: 10;
-  transition: all 0.3s ease-in;
+.global_button:active::before {
+  transition: 0s;
+  background: linear-gradient(180deg, #03a4ff 22.51%, #009ee2 55.83%, #0085d0 100%);
+  color: white;
+}
+
+.outline_button {
+  padding-right: 98px !important;
+  transition: all 0.5s ease-in-out;
+  background-color: transparent !important;
+  @apply bg-transparent border-2 border-primaryDark hover:border-accent3 dark:border-primaryLight  dark:hover:border-accent3;
+}
+
+.outline_button::before {
+  background: white;
+  right: 0;
+  width: 86px;
+  top: 0;
+}
+.outline_button:hover::before,
+.outline_button:active::before {
+  @apply hover:bg-linear-gradient-hover active:bg-linear-gradient-hover;
+}
+
+.outline_button::before {
+  z-index: -1;
 }
 
 .btn_icon {
@@ -775,15 +763,14 @@ body {
   height: 374px;
 } */
 
-.swiper {
+
+
+
+/* .swiper {
   width: 100%;
   height: 270px;
 }
 
-/* .swiper-wrapper {
-  height: 100%;
-  align-items: center;
-} */
 
 .swiper-slide {
   opacity: 0;
@@ -794,6 +781,23 @@ body {
 .swiper-slide-next {
   opacity: 1;
 }
+
+.swiper-slide-prev h4,
+.swiper-slide-next h4,
+.swiper-slide-next p,
+.swiper-slide-prev p {
+  display: none !important;
+} */
+
+
+
+
+
+
+/* .swiper-wrapper {
+  height: 100%;
+  align-items: center;
+} */
 
 /* .swiper-slide-active {
   z-index: 1;
@@ -822,9 +826,17 @@ body {
 .swiper-slide-active .slider--content {
   height: 100%;
 } */
-.swiper-slide-prev h4,
-.swiper-slide-next h4,
-.swiper-slide-next p,
-.swiper-slide-prev p {
-  display: none !important;
+
+/* solutions page */
+
+.solutions__hero--section {
+  background: url("../../public/bg_images/solution_hero-bg.png") no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+.solutions__hero--section .section_wrapper {
+  background-color: rgba(0, 0, 0, 0.74);
+  height: 100%;
 }
