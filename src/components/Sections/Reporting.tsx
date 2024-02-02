@@ -29,7 +29,7 @@ const Reporting = () => {
                 </svg>
             </div> */}
 
-            <div className="auto-padding pt-[63px] pb-[90px] flex flex-col md:flex-row gap-14 z-10">
+            <div className="auto-padding pt-[63px] pb-[90px] flex flex-col md:flex-row gap-14 relative z-10">
                 <div className="md:w-3/5">
                     <h3 className="title-h3">REPORTING</h3>
                     <h2 className="title-h2 text-nowrap mb-[33px]">Advanced Analytics<br /> & Reporting</h2>
@@ -52,12 +52,14 @@ const Reporting = () => {
 
 
             </div>
+            <div className="absolute top-0 right-0 h-full w-2/5">
+                <Image src="/reporting_animation/gear_1.png" alt="Gear" width={638} height={616} className="gear"></Image>
+                <Image src="/reporting_animation/gear_1.png" alt="Gear" width={516} height={542} className="gear-2"></Image>
+                <Image src="/reporting_animation/gear_1.png" alt="Gear" width={477} height={573} className="gear-3"></Image>
+                <Image src="/reporting_animation/magnify.png" alt="Magnify" width={462} height={553} className="magnify"></Image>
+                <Image src="/reporting_animation/phone.png" alt="Phone" width={315} height={344} className="phone"></Image>
+            </div>
 
-            <Image src="/reporting_animation/gear_1.png" alt="Gear" width={638} height={616} className="gear"></Image>
-            <Image src="/reporting_animation/gear_1.png" alt="Gear" width={516} height={542} className="gear-2"></Image>
-            <Image src="/reporting_animation/gear_1.png" alt="Gear" width={477} height={573} className="gear-3"></Image>
-            <Image src="/reporting_animation/magnify.png" alt="Magnify" width={462} height={553} className="magnify"></Image>
-            <Image src="/reporting_animation/phone.png" alt="Phone" width={315} height={344} className="phone"></Image>
         </section>
     );
 };

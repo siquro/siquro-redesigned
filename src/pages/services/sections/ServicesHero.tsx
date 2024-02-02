@@ -1,5 +1,4 @@
 import Image from "next/image"
-import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
 import Button from "@/components/Button";
 
@@ -7,7 +6,6 @@ import Button from "@/components/Button";
 
 
 const ServicesHero = () => {
-    const router = useRouter();
     const { theme, setTheme } = useTheme();
 
     return (
@@ -20,7 +18,7 @@ const ServicesHero = () => {
                         Everything is designed to make merchants' lives easier, from integration to pricing, reporting, and payouts, and everything arrives fast, orderly, and securely.
                     </p>
                     <div className="">
-                        <Button title={'start project'} onClickHandler={() => { router.push('/contact'); }} color={"light"} />
+                        <Button title={'start project'} link={"contacts"} color={"light"} />
                     </div>
                 </div>
                 {/* <div className="">

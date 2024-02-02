@@ -1,10 +1,6 @@
 import Providers from '@/components/providers'
-import Swicher from '@/components/swicher'
-import Header from './Header';
-import Footer from './Footer';
-
-
-
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 type LayoutProps = {
     children: React.ReactNode,
@@ -13,9 +9,9 @@ type LayoutProps = {
 export default function Layout({ children }: LayoutProps) {
     return (
         <Providers>
-            <Header/>
+            <Header />
             {children}
-            <Footer/>
+            <Footer />
         </Providers>
     );
 }

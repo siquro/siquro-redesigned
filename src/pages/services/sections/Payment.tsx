@@ -2,10 +2,8 @@ import Button from "@/components/Button";
 import OutlineButton from "@/components/OutlineButton";
 import { useTheme } from "next-themes";
 import Image from "next/image"
-import { useRouter } from "next/router";
 
 const Payment = () => {
-    const router = useRouter();
     const { theme, setTheme } = useTheme();
 
     return (
@@ -20,7 +18,7 @@ const Payment = () => {
                             We develop great IT products that actually work by having perfectionist workers who are easy to communicate with. Because we have extensive experience exploiting our technology, we know what it can do. So we love tailoring our solutions to fit even the most specific business needs.
                         </p>
                         <div className="">
-                            <OutlineButton themeHandler={theme} title={"view plans"} onClickHandler={() => { router.push('/solution') }} />
+                            <OutlineButton themeHandler={theme} title={"view plans"} link={"solutions"} />
                         </div>
                     </div>
 

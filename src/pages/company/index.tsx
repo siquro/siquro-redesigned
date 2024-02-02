@@ -1,7 +1,13 @@
+import { CompanyHero } from "./sections/CompanyHero";
+import { CompanyInnovation } from "./sections/CompanyInnovation";
+import CompanyIntegration from "./sections/CompanyIntegration";
+
 const Company = () => {
-    return ( <div>
-        <h3>Solutions</h3>
-        <h1>About us</h1></div> );
+    return ( <>
+    <CompanyHero/>
+    <CompanyInnovation/>
+    <CompanyIntegration/>
+    </>);
 }
  
 export default Company;<div><h1></h1></div>

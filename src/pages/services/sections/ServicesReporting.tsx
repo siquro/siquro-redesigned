@@ -14,7 +14,7 @@ const ServicesReporting = () => {
                 <p className="text mb-8">Monitor your pay in/payout information in real time through a digital merchant portal without installation and gain a deeper understanding of your customers.</p>
                 <p className="title-h5 !font-montserrat mb-8 !leading-[35px]"> Payment service providers, merchants, agents, and IT developers can benefit from Leasing services;</p>
                 <p className="title-h5 !font-montserrat mb-11 !leading-[35px]">Siquro can be integrated with your own accounting system or you can get a complete solution.</p>
-                <Button title={"learn more"} color={"light"} />
+                <Button title={"learn more"} color={"light"} link={"solutions"}/>
             </div>
         </div>
     </section>);

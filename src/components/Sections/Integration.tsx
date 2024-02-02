@@ -1,4 +1,5 @@
 import Button from "../Button";
+import Link from "next/link";
 import Image from "next/image";
 
 const Integration = () => {
@@ -27,16 +28,16 @@ const Integration = () => {
                             <p className="text mb-7 text-primaryLight dark:text-primaryDark !font-bold uppercase">All operational and financial issues can be quickly resolved with a personal manager.</p>
 
                         </div>
-                        <div className="bg-[#323232] dark:bg-[#323232] rounded-b-[17px] text-center">
-                            <button className="py-[25px] px-11 font-[18px] uppercase font-montserrat ">get started</button>
-                        </div>
+          
+                            <Link className="bg-[#323232] dark:bg-[#323232] rounded-b-[17px] text-center block py-[25px] px-11 font-[18px] uppercase font-montserrat " href={"/contacts"}>get started</Link>
+                            
                     </div>
 
 
                     <div className="second-item w-2/5 pt-5 ps-36">
                         <h4 className="title-h4 !font-montserrat">Crypto Payment Solutions</h4>
                         <p className="text mb-12">In our crypto checkouts and wallets, all transactions are automatic, guaranteed, support different cryptocurrencies, and there are no chargebacks. Our crypto solutions require only one approval stage, ensuring seamless integration.</p>
-                        <Button title="About us" color={"light"} />
+                        <Button title="About us" color={"light"} link={"about"}/>
                     </div>
                 </div>
             </div>
