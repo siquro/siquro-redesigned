@@ -849,7 +849,9 @@ body {
   background-size: 100% 100%;
 }
 
-/* .solutions__hero--section .section_wrapper {
-  background-color: rgba(0, 0, 0, 0.74);
+.careers__hero--section {
+  background: url("../../public/bg_images/home_hero-bg-2.png") no-repeat left center;
+  width: auto;
   height: 100%;
-} */
+  background-size: auto 100%;
+}
