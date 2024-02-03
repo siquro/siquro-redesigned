@@ -21,7 +21,7 @@ const Header = () => {
                     <Link href={"/contacts"} className={`link ${router.pathname === '/contacts' ? 'active' : ''}`}>Contact Us</Link>
                 </nav>
 
-                <button className="block">
+                <button className="block mr-5">
                     <Image src="/ri-search-2-line.svg" width={31} height={31} alt={"Search"} className="mx-3"></Image>
                 </button>
                 <Swicher />
