@@ -25,6 +25,8 @@ const config: Config = {
       backgroundImage: {
         "linear-gradient-hover": "linear-gradient(180deg, #0075FF 0%, #00A3FF 100%);",
         "link-linear-gradient": "linear-gradient(180deg, #FF00D6 99.99%, #FF00D6 100%)",
+
+        companyInovationBg: "url('/company_innovation.png')",
       },
       boxShadow: {
         "3xl": "0px 4px 50px 0px rgba(0, 0, 0, 0.25)",

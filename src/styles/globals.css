@@ -35,27 +35,27 @@ body {
 }
 
 .title-h1 {
-  @apply font-montserrat font-extrabold text-[64px] dark:text-primaryLight text-primaryDark leading-[79px] uppercase;
+  @apply font-montserrat font-extrabold text-[32px] sm:text-[40px] md:text-[50px] xl:text-[64px] dark:text-primaryLight text-primaryDark leading-[79px] uppercase;
 }
 
 .title-h2 {
-  @apply font-montserrat font-extrabold  text-[64px] dark:text-primaryLight text-primaryDark uppercase leading-normal;
+  @apply font-montserrat font-extrabold text-[32px] sm:text-[40px] md:text-[50px] xl:text-[64px] dark:text-primaryLight text-primaryDark uppercase leading-normal;
 }
 
 .title-h3 {
-  @apply font-kodchasan font-bold text-[48px] dark:text-primaryLight text-primaryDark uppercase leading-normal;
+  @apply font-kodchasan font-bold text-[24px] md:text-[32px] xl:text-[48px] dark:text-primaryLight text-primaryDark uppercase leading-normal;
 }
+
+/* .title-h4 {
+  @apply font-kodchasan font-bold  text-[36px] dark:text-primaryLight text-primaryDark uppercase;
+} */
 
 .title-h4 {
-  @apply font-kodchasan font-bold  text-[36px] dark:text-primaryLight text-primaryDark uppercase;
-}
-
-.title-h5 {
-  @apply font-kodchasan font-bold text-[28px] dark:text-primaryLight text-primaryDark uppercase;
+  @apply font-montserrat font-bold text-[15px] sm:text-[20px] md:text-[17px] xl:text-[28px]  dark:text-primaryLight text-primaryDark;
 }
 
 .text {
-  @apply font-kodchasan font-normal text-[20px] dark:text-primaryLight text-primaryDark;
+  @apply font-kodchasan font-normal text-[13px] lg:text-[17px] xl:text-[20px] dark:text-primaryLight text-primaryDark;
 }
 
 .link {
@@ -741,9 +741,9 @@ body {
   height: auto;
 }
 
-.services__reporting--section .reporting--container {
+/* .services__reporting--section .reporting--container {
   border: solid 2px white;
-}
+} */
 
 /* .payment__custom--swiper{
   width: 694px;
@@ -762,9 +762,6 @@ body {
   width: 494px;
   height: 374px;
 } */
-
-
-
 
 /* .swiper {
   width: 100%;
@@ -788,11 +785,6 @@ body {
 .swiper-slide-prev p {
   display: none !important;
 } */
-
-
-
-
-
 
 /* .swiper-wrapper {
   height: 100%;
@@ -840,7 +832,6 @@ body {
   background-color: rgba(0, 0, 0, 0.74);
   height: 100%;
 }
-
 
 .campany__hero--section {
   background: url("../../public/bg_images/company_hero-bg.png") no-repeat;

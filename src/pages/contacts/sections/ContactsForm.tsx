@@ -9,7 +9,7 @@ export const ContactsForm = () => {
                     <div className='w-full sm:w-4/5 md:w-1/2'>
                         <p className='text uppercase'>Company</p>
                         <div className='flex flex-row flex-nowrap items-end border-b-4 border-b-primaryDark dark:border-b-primaryLight justify-between pb-6'>
-                            <p className='title-h5'>Fast Advisors OU</p>
+                            <p className='title-h4 uppercase'>Fast Advisors OU</p>
                             <Image src="/contact_company-icon.svg" width={60} height={60} alt={''} />
                         </div>
                     </div>
@@ -17,7 +17,7 @@ export const ContactsForm = () => {
                     <div className='w-full sm:w-4/5 md:w-1/2'>
                         <p className='text uppercase'>Email</p>
                         <div className='flex flex-row flex-nowrap items-end border-b-4 border-b-primaryDark dark:border-b-primaryLight justify-between pb-6'>
-                            <a href="mailto:info@siquiro.com" className='block underline title-h5'>info@siquiro.com</a>
+                            <a href="mailto:info@siquiro.com" className='block underline title-h4 uppercase'>info@siquiro.com</a>
 
                             <Image src="/ri-mail-fill.svg" width={60} height={60} alt={''} />
                         </div>
@@ -27,7 +27,7 @@ export const ContactsForm = () => {
 
                 <div className='form__wrapper flex flex-col lg:flex-row items-center gap-10 xl:gap-28'>
                     <div className='w-full sm:w-4/5 md:w-3/5 lg:w-1/2 text-center lg:text-left'>
-                        <h4 className='title-h4 !font-montserrat mb-5 !text-[32px] sm:!text-[36px]'>Send a Message</h4>
+                        <h4 className='title-h4 !font-montserrat mb-5 !text-[32px] sm:!text-[36px] uppercase'>Send a Message</h4>
                         <p className='text'>Please get in touch to get more offers on a broad range of Siquuro services from our expert support team.</p>
                     </div>
 

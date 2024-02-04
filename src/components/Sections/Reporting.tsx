@@ -37,14 +37,14 @@ const Reporting = () => {
                     <div className="mb-[40px] flex flex-col gap-7">
                         <div className="flex flex-row gap-7">
                             <Image src={"/ri-bank-fill.svg"} alt={"Bank"} width={51} height={50} />
-                            <h5 className="title-h5 !font-montserrat">A wide range of acquiring banks</h5>
+                            <h4 className="title-h4 uppercase">A wide range of acquiring banks</h4>
                         </div>
                         <div className="flex flex-row gap-7">
                             <Image src={"/ri-support.svg"} alt={"Bank"} width={51} height={47} />
-                            <h5 className="title-h5 !font-montserrat">Technical support 24/7</h5>
+                            <h4 className="title-h4 uppercase">Technical support 24/7</h4>
                         </div>
                     </div>
-                    <Button title={"learn more"} color={"light"} />
+                    <Button title={"learn more"} color={"light"} link={"services"} />
                 </div>
             </div>
 

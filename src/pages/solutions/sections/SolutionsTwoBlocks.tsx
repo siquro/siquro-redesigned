@@ -5,7 +5,7 @@ const SolutionsTwoBlocks = () => {
         <div className="section_wrapper flex flex-col md:flex-row justify-between">
             <div className="w-2/4 dark:bg-primaryDark bg-primaryLight border-primaryDark border-2 dark:border-primaryLight rounded-b-[20px] max-w-[620px] h-min=[360px] flex flex-col justify-end pt-10">
                 <div className="ps-7 py-7 pe-12 text-start">
-                    <h4 className="title-h3 !font-montserrat darktext-primaryLight text-primaryDark mb-5 !leading-[55px]">Global acquiring</h4>
+                    <h3 className="text-[24px] sm:text-[30px] xl:text-[36px] uppercase font-bold font-montserrat dark:text-primaryLight text-primaryDark mb-5 !leading-[55px]">Global acquiring</h3>
                     <p className="text mb-7 darktext-primaryLight text-primaryDark">With Siquro’s full range of comprehensive services, you can get paid in a timely and continual manner. Putting our partners at the forefront, we deliver expert consultancy and develop custom solutions for card acquiring on the international arena.</p>
 
                 </div>
@@ -15,7 +15,7 @@ const SolutionsTwoBlocks = () => {
 
             <div className="w-2/4 dark:bg-primaryDark bg-primaryLight border-primaryDark border-2 dark:border-primaryLight rounded-b-[20px] max-w-[620px] h-min-[360px] flex flex-col justify-end">
                 <div className="ps-7 py-7 pe-12 text-start">
-                    <h4 className="title-h3 !font-montserrat darktext-primaryLight text-primaryDark mb-5 !leading-[55px]">Alternative Payment Methods</h4>
+                    <h3 className="text-[24px] sm:text-[30px] xl:text-[36px] uppercase font-bold font-montserrat dark:text-primaryLight text-primaryDark mb-5 leading-auto">Alternative Payment Methods</h3>
                     <p className="text mb-7 darktext-primaryLight text-primaryDark ">With Siquuro, you can meet the challenges of specific markets and underserved segments by offering an extensive payment option to your customers.</p>
 
                 </div>

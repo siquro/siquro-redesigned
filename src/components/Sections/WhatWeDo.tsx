@@ -130,15 +130,15 @@ const WhatWeDo = () => {
 
                     <div className=' bg_element relative'>
                         <div className='item rounded-[20px] mt-[50px] max-w-[640px] border-primaryDark dark:border-primaryLight border-2'>
-                            <h5 className='title-h5 bg-transparent px-[15px] py-[19px] md:text-nowrap text-center'>A software package that is unique</h5>
+                            <h4 className='title-h4 uppercase bg-transparent px-[15px] py-[19px] md:text-nowrap text-center'>A software package that is unique</h4>
                             <div className='bg-primaryDark dark:bg-primaryLight  px-[25px] pt-[38px] pb-[47px] rounded-t-[20px] rounded-b-[18px]'>
-                                <p className='leading-[30px] text-primaryLight dark:text-primaryDark text-center text-[28px] font-semibold'>Monitoring transactions and preventing fraudulent payments.</p>
+                                <p className='title-h4  leading-[30px] text-primaryLight dark:text-primaryDark text-center font-semibold'>Monitoring transactions and preventing fraudulent payments.</p>
                             </div>
                         </div>
                         <div className='item rounded-[20px] mt-[50px] max-w-[640px] border-primaryDark dark:border-primaryLight border-2'>
-                            <h5 className='title-h5 bg-transparent px-[15px] py-[19px] md:text-nowrap text-center'>Processes for intelligent payments</h5>
+                            <h4 className='title-h4 uppercase bg-transparent px-[15px] py-[19px] md:text-nowrap text-center'>Processes for intelligent payments</h4>
                             <div className='bg-primaryDark dark:bg-primaryLight  px-[25px] pt-[38px] pb-[47px] rounded-t-[20px] rounded-b-[18px]'>
-                                <p className='leading-[30px] text-primaryLight dark:text-primaryDark text-center text-[28px] font-semibold'>Will ensure the maximum proportion of successful payments, without giving a chance for fraudster to pass!</p>
+                                <p className='title-h4  leading-[30px] text-primaryLight dark:text-primaryDark text-center font-semibold'>Will ensure the maximum proportion of successful payments, without giving a chance for fraudster to pass!</p>
                             </div>
                         </div>
                     </div>
