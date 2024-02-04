@@ -27,7 +27,7 @@ const config: Config = {
         "link-linear-gradient": "linear-gradient(180deg, #FF00D6 99.99%, #FF00D6 100%)",
       },
       boxShadow: {
-        '3xl': '0px 4px 50px 0px rgba(0, 0, 0, 0.25)',
+        "3xl": "0px 4px 50px 0px rgba(0, 0, 0, 0.25)",
       },
       animation: {
         "fade-in": "fade-in 0.5s cubic-bezier(0.4, 0, 0.2, 1) both",
@@ -37,7 +37,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
   darkMode: "class",
 };
 export default config;

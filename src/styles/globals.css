@@ -164,7 +164,7 @@ body {
 .outline_button::before {
   background: white;
   right: 0;
-  width: 86px;
+  width: 77px;
   top: 0;
 }
 .outline_button:hover::before,
@@ -180,7 +180,7 @@ body {
   position: absolute;
   content: "";
   top: calc(50% - 25px);
-  right: 17px;
+  right: 13px;
   width: 50px;
   height: 50px;
   z-index: 1;

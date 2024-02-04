@@ -7,7 +7,7 @@ const Header = () => {
     const router = useRouter();
 
     return (
-        <header className="nav-padding">
+        <header className="nav-padding relative z-50">
             <div className="flex flex-row  md:flex-wrap lg:flex-nowrap items-center justify-between py-8 bg-primaryDark dark:bg-transparent px-10 rounded-b-[15px]">
                 <Link href="/" className="">
                     <Image src="/logo_new.png" width={200} height={70} alt="logo" className=" w-[200px] h-auto" priority />
