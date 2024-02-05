@@ -4,7 +4,7 @@ import Button from '@/components/Button';
 export const CompanyInnovation = () => {
     return (<section className="services__reporting--section auto-padding">
         <div className="reporting--container flex flex-col sm:flex-row border-0 sm:border-[3px] sm:border-white">
-            <div className="hidden sm:flex p-1 w-1/2">
+            <div className="hidden sm:flex p-2 w-1/2">
                 <Image src={"/company_innovation.png"} alt={"Company inovation"} width={544} height={1792} className='w-full lg:w-11/12' />
             </div>
 

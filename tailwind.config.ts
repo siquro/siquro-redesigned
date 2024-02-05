@@ -27,6 +27,7 @@ const config: Config = {
         "link-linear-gradient": "linear-gradient(180deg, #FF00D6 99.99%, #FF00D6 100%)",
 
         companyInovationBg: "url('/company_innovation.png')",
+        careersContactUsBg: "url('/careers_2.png')",
       },
       boxShadow: {
         "3xl": "0px 4px 50px 0px rgba(0, 0, 0, 0.25)",

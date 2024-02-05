@@ -841,8 +841,8 @@ body {
 }
 
 .careers__hero--section {
-  background: url("../../public/bg_images/home_hero-bg-2.png") no-repeat left center;
-  width: auto;
-  height: 100%;
-  background-size: auto 100%;
+  background: url("../../public/bg_images/home_hero-bg-2.png") no-repeat left top;
+  /* width: auto;
+  height: 100%; */
+  background-size: auto auto;
 }
