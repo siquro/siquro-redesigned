@@ -6,7 +6,7 @@ export const CompanyHero = () => {
         <section className="campany__hero--section bg-primaryLight dark:bg-primaryDark mt-[-135px]">
             <div className="section_wrapper pt-[250px] pb-10 sm:pb-[90px] auto-padding justify-between items-center flex flex-col md:flex-row gap-10">
                 <div className="flex flex-col w-4/5 md:w-1/2 py-10 justify-center">
-                    <h3 className="title-h3 lg:mb-5">SOLUTIONS</h3>
+                    <h3 className="title-h3 ">SOLUTIONS</h3>
                     <h1 className="title-h1 font-extrabold mb-[27px] !leading-normal">About us</h1>
                     <p className="text font-bold uppercase leading-6 !font-montserrat">
                         In 2022, Siquro was established and is now one of the leading payment platform providers worldwide. Siquro’s solutions are perfect for banks, PSPs, financial institutions, and more.
