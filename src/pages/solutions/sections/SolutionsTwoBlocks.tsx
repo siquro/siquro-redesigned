@@ -10,7 +10,7 @@ const SolutionsTwoBlocks = () => {
 
                 </div>
 
-                <Link href={'/services'} className="block bg-primaryDark dark:bg-primaryLight rounded-b-[17px] text-center py-[25px] px-11 font-[18px] uppercase font-montserrat text-primaryLight dark:text-primaryDark w-full">Learn more</Link>
+                <Link href={'/services'} className="block bg-primaryDark dark:bg-primaryLight rounded-b-[17px] text-center py-[25px] px-11 text-[18px] uppercase font-montserrat font-bold text-primaryLight dark:text-primaryDark w-full">Learn more</Link>
             </div>
 
             <div className="w-2/4 dark:bg-primaryDark bg-primaryLight border-primaryDark border-2 dark:border-primaryLight rounded-b-[20px] max-w-[620px] h-min-[360px] flex flex-col justify-end">
@@ -19,7 +19,7 @@ const SolutionsTwoBlocks = () => {
                     <p className="text mb-7 darktext-primaryLight text-primaryDark ">With Siquuro, you can meet the challenges of specific markets and underserved segments by offering an extensive payment option to your customers.</p>
 
                 </div>
-                <Link href={'/company'} className="block bg-primaryDark dark:bg-primaryLight rounded-b-[17px] text-center py-[25px] px-11 font-[18px] uppercase font-montserrat text-primaryLight dark:text-primaryDark w-full">Learn more</Link>
+                <Link href={'/company'} className="block bg-primaryDark dark:bg-primaryLight rounded-b-[17px] text-center py-[25px] px-11 text-[18px] uppercase font-montserrat font-bold text-primaryLight dark:text-primaryDark w-full">Learn more</Link>
             </div>
         </div>
     </section>);
