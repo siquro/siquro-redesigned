@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-export const ContactsForm = () => {
+const ContactsForm = () => {
     return (
         <section className='auto-padding mb-10'>
             <div>
@@ -33,7 +33,7 @@ export const ContactsForm = () => {
 
                     <div className="w-full sm:w-4/5 md:w-3/5 lg:w-1/2 flex flex-col dark:bg-primaryDark bg-primaryLight border-primaryDark border-2 dark:border-[#FFE8E8] rounded-[20px] pt-10">
                         <form action="">
-                            <div className='px-10 pb-6'>
+                            <div className='px-4 md:px-10 pb-6'>
                                 <label className="block mb-6">
                                     <span className="text !font-montserrat !font-normal uppercase pb-9">name</span>
                                     <input type="text" className="mt-5 block w-full rounded-[20px] border-2 border-primaryDark dark:border-primaryLight shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-transparent h-[54px]" placeholder="" />
@@ -49,7 +49,6 @@ export const ContactsForm = () => {
                                 </label>
                             </div>
 
-
                             <button className='block bg-primaryDark dark:bg-primaryLight rounded-b-[17px] text-center py-[20px] px-11 text-[18px] uppercase font-montserrat font-bold text-primaryLight dark:text-primaryDark w-full tracking-[3px]' type='submit'>SEND</button>
                         </form>
 
@@ -59,3 +58,5 @@ export const ContactsForm = () => {
         </section>
     )
 }
+
+export default ContactsForm;

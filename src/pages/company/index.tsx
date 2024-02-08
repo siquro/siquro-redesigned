@@ -1,7 +1,8 @@
 import Head from "next/head";
-import { CompanyHero } from "./sections/CompanyHero";
-import { CompanyInnovation } from "./sections/CompanyInnovation";
 import CompanyIntegration from "./sections/CompanyIntegration";
+import CompanyHero from "./sections/CompanyHero";
+import CompanyInnovation from "./sections/CompanyInnovation";
+
 
 const Company = () => {
     return (<>

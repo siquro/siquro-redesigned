@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Button from '@/components/Button';
 
-export const CareersContactUs = () => {
+const CareersContactUs = () => {
     return (<section className="services__reporting--section auto-padding mb-10">
         <div className="reporting--container flex flex-col md:flex-row border-2 dark:border-primaryLight border-primaryDark">
             <div className="hidden md:flex p-2 w-1/2 xl:max-w-[654px]">
@@ -17,3 +17,5 @@ export const CareersContactUs = () => {
         </div>
     </section>);
 };
+
+export default CareersContactUs;

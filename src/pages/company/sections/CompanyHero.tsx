@@ -1,7 +1,7 @@
 import Button from '@/components/Button'
 import React from 'react'
 
-export const CompanyHero = () => {
+ const CompanyHero = () => {
     return (
         <section className="campany__hero--section bg-primaryLight dark:bg-primaryDark mt-[-135px]">
             <div className="section_wrapper pt-[250px] pb-10 sm:pb-[90px] auto-padding justify-between items-center flex flex-col md:flex-row gap-10">
@@ -46,3 +46,6 @@ export const CompanyHero = () => {
         </section>
     )
 }
+
+
+export default CompanyHero;

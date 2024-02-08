@@ -3,7 +3,7 @@ import OutlineButton from '@/components/OutlineButton';
 import Image from 'next/image';
 import React from 'react';
 
-export const CareersHero = () => {
+const CareersHero = () => {
     return (
         <section className="careers__hero--section bg-primaryLight dark:bg-primaryDark mt-[-135px]">
             <div className="section_wrapper pt-[250px] sm:pb-[400px]  xl:pb-0 auto-padding justify-between flex flex-col items-center sm:flex-row sm:items-start gap-10 relative">
@@ -30,3 +30,5 @@ export const CareersHero = () => {
         </section>
     )
 }
+
+export default CareersHero;

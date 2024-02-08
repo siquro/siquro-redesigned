@@ -26,7 +26,11 @@ const config: Config = {
         "linear-gradient-hover": "linear-gradient(180deg, #0075FF 0%, #00A3FF 100%);",
         "link-linear-gradient": "linear-gradient(180deg, #FF00D6 99.99%, #FF00D6 100%)",
 
+        homeHeroBg: "url('/bg_images/home_hero-bg-2.png')",
+        servicesHeroBg: " url('/bg_images/services_hero-bg.png')",
+
         companyInovationBg: "url('/company_innovation.png')",
+        weDoSectionBg: 'url("/bg_images/what_we_do-bg.png")',
         careersContactUsBg: "url('/careers_2.png')",
       },
       boxShadow: {

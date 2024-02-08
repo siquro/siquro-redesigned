@@ -51,15 +51,15 @@ body {
 } */
 
 .title-h4 {
-  @apply font-montserrat font-bold text-[15px] sm:text-[20px] md:text-[17px] xl:text-[28px]  dark:text-primaryLight text-primaryDark;
+  @apply font-montserrat font-bold text-[16px] sm:text-[17px] md:text-[20px] xl:text-[28px]  dark:text-primaryLight text-primaryDark;
 }
 
 .text {
-  @apply font-kodchasan font-normal text-[13px] lg:text-[17px] xl:text-[20px] dark:text-primaryLight text-primaryDark;
+  @apply font-kodchasan font-normal text-[16px] lg:text-[17px] xl:text-[20px] dark:text-primaryLight text-primaryDark;
 }
 
 .link {
-  @apply relative px-4 font-medium text-nowrap font-kodchasan !text-[15px] lg:!text-[20px] text-primaryLight hover:text-[#00FFF0] dark:text-primaryLight dark:hover:text-[#00FFF0];
+  @apply relative px-4 font-medium text-nowrap font-kodchasan !text-[16px] lg:!text-[20px] text-primaryLight hover:text-[#00FFF0] dark:text-primaryLight dark:hover:text-[#00FFF0];
 }
 
 .active {
@@ -70,7 +70,7 @@ body {
 .active::after {
   content: "";
   position: absolute;
-  top: -43px;
+  top: -85%;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -94,7 +94,7 @@ body {
 }
 
 .link_mob {
-  @apply relative px-4 font-medium text-nowrap font-kodchasan !text-[15px] text-primaryLight hover:text-[#00FFF0] dark:text-primaryLight dark:hover:text-[#00FFF0];
+  @apply relative px-4 font-medium text-nowrap font-kodchasan !text-[18px] text-primaryLight hover:text-[#00FFF0] dark:text-primaryLight dark:hover:text-[#00FFF0];
 }
 
 .link_mob::after,
@@ -122,14 +122,15 @@ body {
   opacity: 1;
 }
 
+.search:focus-within input {
+  width: 200px;
+  background-color: #0f0f0f;
+}
+
 /* .link_mob:hover::after {
   transform: scaleX(1);
   opacity: 1;
 } */
-
-.section_wrapper {
-  @apply flex;
-}
 
 .global_button {
   display: inline;
@@ -258,11 +259,11 @@ body {
 
 /* home page */
 
-.home__hero--section .home__hero--section {
-  background: url("../../public/bg_images/home_hero-bg-2.png") no-repeat left center;
+.home__hero--section {
+  /* background: url("../../public/bg_images/home_hero-bg-2.png") no-repeat left center;
   width: auto;
   height: 100%;
-  background-size: auto 100%;
+  background-size: auto 100%; */
 }
 
 /* .hero__animation--block #orbit.item_one {
@@ -429,17 +430,17 @@ body {
 
 /* we do section */
 .we__do--section {
-  background: url("../../public/bg_images/what_we_do-bg.png") no-repeat;
-  /* background:url("../../public/bg_images/what_we_do-bg.png") ; */
+  /* background: url("../../public/bg_images/what_we_do-bg.png") no-repeat; */
+  /* 
   width: 100%;
   height: 100%;
-  background-size: 100% 100%;
+  background-size: 100% 100%; */
 }
 
 .we__do--section .bg_element::after {
   position: absolute;
   content: "";
-  background-color: red;
+  /* background-color: red; */
   background: url("../../public/Fraud_monitoring2.png") no-repeat;
   left: -92px;
   top: calc(50% - 70px);
@@ -721,15 +722,15 @@ body {
 /* services page */
 
 .services__hero--section {
-  background: url("../../public/bg_images/services_hero-bg.png") no-repeat;
-  width: 100%;
-  height: 100%;
-  background-size: 100% 100%;
+  /* background: url("../../public/bg_images/services_hero-bg.png") no-repeat;*/
+  /* width: 100%;
+  height: auto;
+  background-size: 100% auto;  */
 }
 
 .services__hero--section .section_wrapper {
-  background-color: rgba(0, 0, 0, 0.74);
-  height: 100%;
+  /* background-color: #000000bd; */
+  /* height: 100%; */
 }
 
 .payment--section .section__bg--image {

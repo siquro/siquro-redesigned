@@ -1,7 +1,7 @@
 import Head from "next/head";
-import { CareersContactUs } from "./sections/CareersContactUs";
-import { CareersHero } from "./sections/CareersHero";
 import OpenPositions from "./sections/OpenPositions";
+import CareersContactUs from "./sections/CareersContactUs";
+import CareersHero from "./sections/CareersHero";
 
 const Careers = () => {
     return (<>

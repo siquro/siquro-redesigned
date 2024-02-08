@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ContactsHero = () => {
+ const ContactsHero = () => {
     return (
         <section className="cantacts__hero--section bg-primaryLight dark:bg-primaryDark mt-[-135px]">
             <div className="section_wrapper pt-[250px] pb-[50px] auto-padding">
@@ -12,3 +12,5 @@ export const ContactsHero = () => {
         </section>
     )
 }
+
+export default ContactsHero

@@ -45,7 +45,7 @@ const WhatWeDo = () => {
     }
 
     return (
-        <section className="we__do--section bg-primaryLight dark:bg-primaryDark">
+        <section className="we__do--section bg-weDoSectionBg dark:bg-primaryDark bg-no-repeat bg-cover">
             <div className="auto-padding pt-[63px] pb-[90px] bg-[#d3d3d314] flex flex-col md:flex-row gap-14">
                 <div className="slider--wrapper md:w-3/5 flex items-center">
                     <Swiper

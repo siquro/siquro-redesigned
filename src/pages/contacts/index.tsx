@@ -1,5 +1,5 @@
-import { ContactsForm } from "./sections/ContactsForm";
-import { ContactsHero } from "./sections/ContactsHero";
+import ContactsForm from "./sections/ContactsForm";
+import ContactsHero from "./sections/ContactsHero";
 
 const Contact = () => {
     return (<>

@@ -9,24 +9,24 @@ const Footer = () => {
                     <Image src={"/logo_new.png"} alt={"Logo"} width={227} height={74} />
                 </div>
                 <div className="flex flex-col gap-8 items-center md:items-start">
-                    <h5 className="title-h5 !text-[#696969]">Quick links</h5>
-                    <Link href={"/terms"} className="font-montserrat uppercase text-[18px] hover:underline">Terms and conditions</Link>
-                    <Link href={"/privacy"} className="font-montserrat uppercase text-[18px] hover:underline">privacy policy</Link>
+                    <h4 className="title-h4 !text-[#696969] uppercase font-bold ">Quick links</h4>
+                    <Link href={"/terms"} className="text !font-montserrat !text-primaryLight uppercase  underline !font-bold hover:text-[#00FFF0]">Terms and conditions</Link>
+                    <Link href={"/privacy"} className="text !font-montserrat !text-primaryLight uppercase  underline !font-bold hover:text-[#00FFF0]">privacy policy</Link>
                 </div>
                 <div className="flex flex-col gap-8 items-center md:items-start">
-                    <h5 className="!text-[#696969] title-h5 ">Contacts</h5>
-                    <a className="font-montserrat uppercase text-[18px] hover:underline" href="mailto:info@siquro.com">ingo@siquro.com </a>
-                    <p className="font-montserrat uppercase text-[18px]">fastadvisors ou</p>
+                    <h4 className="!text-[#696969] title-h4 uppercase ">Contacts</h4>
+                    <a className="text !md:text-[18px] !font-montserrat !text-primaryLight uppercase  underline !font-bold hover:text-[#00FFF0]" href="mailto:info@siquro.com">info@siquro.com </a>
+                    <p className="text !font-montserrat !text-primaryLight uppercase !font-bold">fastadvisors ou</p>
                 </div>
                 <div className="flex flex-row gap-11">
-                    <Image src={"/PCI.png"} alt={"PCI"} width={99} height={75} />
-                    <Image src={"/SSL.PNG"} alt={"SSL"} width={107} height={75} />
+                    <Image src={"/PCI.png"} alt={"PCI"} width={99} height={75} className="w-[60px] md:w-[99px] h-[44px] md:h-[75px]" />
+                    <Image src={"/SSL.PNG"} alt={"SSL"} width={107} height={75} className="w-[65px] md:w-[107px] h-[44px] md:h-[75px]" />
                 </div>
 
             </div>
 
-            <div className="bg-primaryLight dark:bg-PirmaryLight py-1">
-                <p className="font-montserrat text-center text-[20px] uppercase text-primaryLight dark:text-primaryDark">all right reserved</p>
+            <div className="bg-primaryLight py-1">
+                <p className="font-montserrat text-center text-[20px] font-bold uppercase text-primaryDark">all right reserved</p>
             </div>
         </footer>
     );

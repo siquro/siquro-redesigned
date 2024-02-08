@@ -13,7 +13,7 @@ const montserrat = Montserrat({
 const kodchasan = Kodchasan({
   subsets: ['latin'],
   display: 'swap',
-  weight: ['400', '500', "700"],
+  weight: ['400', '500', "600", "700"],
   variable: '--font-kodchasan',
 });
 
