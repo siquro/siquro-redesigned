@@ -1,7 +1,7 @@
+import CompanyHero from "@/components/CompanySections/CompanyHero";
+import CompanyInnovation from "@/components/CompanySections/CompanyInnovation";
+import CompanyIntegration from "@/components/CompanySections/CompanyIntegration";
 import Head from "next/head";
-import CompanyIntegration from "./sections/CompanyIntegration";
-import CompanyHero from "./sections/CompanyHero";
-import CompanyInnovation from "./sections/CompanyInnovation";
 
 
 const Company = () => {
@@ -16,7 +16,7 @@ const Company = () => {
         </Head>
         <CompanyHero />
         <CompanyInnovation />
-        <CompanyIntegration />
+        <CompanyIntegration/>
     </>);
 }
 

@@ -225,6 +225,10 @@ body {
   filter: invert(1);
 }
 
+.filter-invert {
+  filter: invert(1); 
+}
+
 /* theme toggle button */
 #checkbox {
   display: none;

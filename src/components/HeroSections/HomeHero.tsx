@@ -11,7 +11,7 @@ const HomeHero = () => {
 
     return (
         <section className="home__hero--section bg-homeHeroBg bg-no-repeat dark:bg-primaryDark mt-[-135px]">
-            <div className="section_wrapper pt-[175px] pb-[90px] auto-padding justify-between flex flex-col md:flex-row">
+            <div className="section_wrapper pt-[150px] md:pt-[175px] pb-[90px] auto-padding justify-between flex flex-col md:flex-row">
                 <div className="flex flex-col justify-center basis-3/5">
                     <h1 className="title-h1 font-extrabold mb-[50px]">UNIQUE PAYMENT GATEWAY</h1>
                     <p className="text  font-bold mb-[58px]">

@@ -5,30 +5,48 @@ const ContactsForm = () => {
     return (
         <section className='auto-padding mb-10'>
             <div>
-                <div className='flex flex-col md:flex-row gap-10 xl:gap-28 items-center md:justify-between mb-28'>
-                    <div className='w-full sm:w-4/5 md:w-1/2'>
-                        <p className='text uppercase'>Company</p>
-                        <div className='flex flex-row flex-nowrap items-end border-b-4 border-b-primaryDark dark:border-b-primaryLight justify-between pb-6'>
-                            <p className='title-h4 uppercase'>Fast Advisors OU</p>
-                            <Image src="/contact_company-icon.svg" width={60} height={60} alt={''} />
+                <div className='flex flex-col gap-10 xl:gap-28 items-center md:justify-between mb-28'>
+                    <div className='w-full flex flex-col sm:flex-row gap-10 xl:gap-28'>
+                        <div className='w-full sm:w-4/5 md:w-1/2'>
+                            <p className='text uppercase'>Company</p>
+                            <div className='flex flex-row flex-nowrap items-end border-b-4 border-b-primaryDark dark:border-b-primaryLight justify-between pb-6'>
+                                <p className='title-h4 uppercase'>Fast Advisors OU</p>
+                                <Image src="/contact_company-icon.svg" width={60} height={60} alt={''} className='w-[25px] sm:w-[35px] md:w-[60px] h-auto filter-invert dark:filter-none' />
+                            </div>
                         </div>
+
+                        <div className='w-full sm:w-4/5 md:w-1/2'>
+                            <p className='text uppercase'>Email</p>
+                            <div className='flex flex-row flex-nowrap items-end border-b-4 border-b-primaryDark dark:border-b-primaryLight justify-between pb-6'>
+                                <a href="mailto:info@siquiro.com" className='block hover:underline title-h4 uppercase'>info@siquiro.com</a>
+
+                                <Image src="/ri-mail-fill.svg" width={60} height={60} alt={''} className='w-[25px] sm:w-[35px] md:w-[60px] h-auto filter-invert dark:filter-none' />
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div className='w-full sm:w-4/5 md:w-1/2'>
-                        <p className='text uppercase'>Email</p>
-                        <div className='flex flex-row flex-nowrap items-end border-b-4 border-b-primaryDark dark:border-b-primaryLight justify-between pb-6'>
-                            <a href="mailto:info@siquiro.com" className='block underline title-h4 uppercase'>info@siquiro.com</a>
 
-                            <Image src="/ri-mail-fill.svg" width={60} height={60} alt={''} />
+
+                    <div className='w-full sm:w-4/5 md:w-1/2'>
+                        <p className='text uppercase'>Support</p>
+                        <div className='flex flex-row flex-nowrap items-end border-b-4 border-b-primaryDark dark:border-b-primaryLight justify-between pb-6'>
+                            <a href="https://t.me/SiQURO_Support" target='_blanc' className='block hover:underline title-h4 uppercase'>https://t.me/SiQURO_Support</a>
+
+                            <Image src="/telegram_l.svg" width={60} height={60} alt={'Telegram'} className='w-[25px] sm:w-[35px] md:w-[60px] h-auto filter-invert dark:filter-none' />
                         </div>
                     </div>
                 </div>
 
 
-                <div className='form__wrapper flex flex-col lg:flex-row items-center gap-10 xl:gap-28'>
-                    <div className='w-full sm:w-4/5 md:w-3/5 lg:w-1/2 text-center lg:text-left'>
-                        <h4 className='title-h4 !font-montserrat mb-5 !text-[32px] sm:!text-[36px] uppercase'>Send a Message</h4>
-                        <p className='text'>Please get in touch to get more offers on a broad range of Siquuro services from our expert support team.</p>
+                <div className='form__wrapper flex flex-col lg:flex-row gap-10 xl:gap-28'>
+                    <div className='w-full flex flex-col sm:w-4/5 md:w-3/5 lg:w-1/2 lg:text-left justify-between'>
+
+                        <div className=''>
+                            <h4 className='title-h4 !font-montserrat mb-5 !text-[32px] sm:!text-[36px] uppercase'>Send a Message</h4>
+                            <p className='text'>Please get in touch to get more offers on a broad range of Siquuro services from our expert support team.</p>
+                        </div>
+
                     </div>
 
                     <div className="w-full sm:w-4/5 md:w-3/5 lg:w-1/2 flex flex-col dark:bg-primaryDark bg-primaryLight border-primaryDark border-2 dark:border-[#FFE8E8] rounded-[20px] pt-10">

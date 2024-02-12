@@ -1,7 +1,7 @@
+import CareersContactUs from "@/components/CareersSections/CareersContactUs";
+import CareersHero from "@/components/CareersSections/CareersHero";
+import OpenPositions from "@/components/CareersSections/OpenPositions";
 import Head from "next/head";
-import OpenPositions from "./sections/OpenPositions";
-import CareersContactUs from "./sections/CareersContactUs";
-import CareersHero from "./sections/CareersHero";
 
 const Careers = () => {
     return (<>

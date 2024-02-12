@@ -1,7 +1,7 @@
-import HomeHero from "@/components/Sections/HomeHero";
-import Integration from "@/components/Sections/Integration";
-import Reporting from "@/components/Sections/Reporting";
-import WhatWeDo from "@/components/Sections/WhatWeDo";
+import HomeHero from "@/components/HeroSections/HomeHero";
+import Integration from "@/components/HeroSections/Integration";
+import Reporting from "@/components/HeroSections/Reporting";
+import WhatWeDo from "@/components/HeroSections/WhatWeDo";
 import Head from "next/head";
 
 const Home = () => {

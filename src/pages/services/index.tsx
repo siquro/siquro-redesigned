@@ -1,7 +1,8 @@
-import Payment from "./sections/Payment";
-import ServicesHero from "./sections/ServicesHero";
-import ServicesReporting from "./sections/ServicesReporting";
-import ServicesIntegration from "./sections/ServicesIntegration";
+import Payment from "@/components/ServicesSections/Payment";
+import ServicesHero from "@/components/ServicesSections/ServicesHero";
+import ServicesIntegration from "@/components/ServicesSections/ServicesIntegration";
+import ServicesReporting from "@/components/ServicesSections/ServicesReporting";
+
 
 const Services = () => {
     return (<div>

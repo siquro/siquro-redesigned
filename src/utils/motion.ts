@@ -86,22 +86,3 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
     },
   };
 };
-
-// @ts-ignore
-export const typeWriterEffect = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      delay: 0,
-      staggerChildren: 0.2,
-      delayChildren: 0,
-    },
-  },
-};
-
-// @ts-ignore
-export const letterAnimation = {
-  hidden: { opacity: 0, y: 80 },
-  show: { opacity: 1, y: 0},
-};

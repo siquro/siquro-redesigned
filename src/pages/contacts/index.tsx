@@ -1,5 +1,6 @@
-import ContactsForm from "./sections/ContactsForm";
-import ContactsHero from "./sections/ContactsHero";
+import ContactsForm from "@/components/ContactsSections/ContactsForm";
+import ContactsHero from "@/components/ContactsSections/ContactsHero";
+
 
 const Contact = () => {
     return (<>

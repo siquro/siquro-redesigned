@@ -11,7 +11,7 @@ const ServicesHero = () => {
     return (
         <section className="services__hero--section bg-servicesHeroBg bg-no-repeat bg-cover mt-[-130px] ">
             <div className="section_wrapper auto-padding justify-between flex flex-col dark:bg-[#000000bd] md:flex-row h-full">
-                <div className="flex flex-col justify-center pt-[250px] pb-[310px] w-full md:w-3/5">
+                <div className="flex flex-col justify-center pt-[150px] md:pt-[250px] pb-[310px] w-full md:w-3/5">
                     <h2 className="title-h2 !font-kodchasan !text-5xl mb-5 !text-primaryLight">SERVICES</h2>
                     <h1 className="title-h1 font-extrabold mb-[27px] !text-primaryLight">BUSINESS POTENTIAL</h1>
                     <p className="text  font-bold mb-[40px] !text-primaryLight">

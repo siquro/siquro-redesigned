@@ -10,17 +10,17 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col gap-8 items-center md:items-start">
                     <h4 className="title-h4 !text-[#696969] uppercase font-bold ">Quick links</h4>
-                    <Link href={"/terms"} className="text !font-montserrat !text-primaryLight uppercase  underline !font-bold hover:text-[#00FFF0]">Terms and conditions</Link>
-                    <Link href={"/privacy"} className="text !font-montserrat !text-primaryLight uppercase  underline !font-bold hover:text-[#00FFF0]">privacy policy</Link>
+                    <Link href={"/terms"} className="text !font-montserrat !text-primaryLight uppercase  hover:underline !font-bold hover:text-[#00FFF0]">Terms and conditions</Link>
+                    <Link href={"/privacy"} className="text !font-montserrat !text-primaryLight uppercase  hover:underline !font-bold hover:text-[#00FFF0]">privacy policy</Link>
                 </div>
                 <div className="flex flex-col gap-8 items-center md:items-start">
                     <h4 className="!text-[#696969] title-h4 uppercase ">Contacts</h4>
-                    <a className="text !md:text-[18px] !font-montserrat !text-primaryLight uppercase  underline !font-bold hover:text-[#00FFF0]" href="mailto:info@siquro.com">info@siquro.com </a>
+                    <a className="text !md:text-[18px] !font-montserrat !text-primaryLight uppercase  uhover:nderline !font-bold hover:text-[#00FFF0]" href="mailto:info@siquro.com">info@siquro.com </a>
                     <p className="text !font-montserrat !text-primaryLight uppercase !font-bold">fastadvisors ou</p>
                 </div>
                 <div className="flex flex-row gap-11">
                     <Image src={"/PCI.png"} alt={"PCI"} width={99} height={75} className="w-[60px] md:w-[99px] h-[44px] md:h-[75px]" />
-                    <Image src={"/SSL.PNG"} alt={"SSL"} width={107} height={75} className="w-[65px] md:w-[107px] h-[44px] md:h-[75px]" />
+                    <Image src={"/SSL.png"} alt={"SSL"} width={107} height={75} className="w-[65px] md:w-[107px] h-[44px] md:h-[75px]" />
                 </div>
 
             </div>

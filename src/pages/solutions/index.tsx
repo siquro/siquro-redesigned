@@ -1,8 +1,9 @@
-import CryptoSolutions from "./sections/CryptoSolutions";
-import SolutionsHero from "./sections/SolutionsHero";
-import SolutionsList from "./sections/SolutionsList";
-import SolutionsReporting from "./sections/SolutionsReporting";
-import SolutionsTwoBlocks from "./sections/SolutionsTwoBlocks";
+import CryptoSolutions from "@/components/SolutionsSections/CryptoSolutions";
+import SolutionsHero from "@/components/SolutionsSections/SolutionsHero";
+import SolutionsList from "@/components/SolutionsSections/SolutionsList";
+import SolutionsReporting from "@/components/SolutionsSections/SolutionsReporting";
+import SolutionsTwoBlocks from "@/components/SolutionsSections/SolutionsTwoBlocks";
+
 
 const Solutions = () => {
     return (

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image"
-import Swicher from "./swicher";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const Header = () => {
     const router = useRouter();
@@ -32,7 +32,7 @@ const Header = () => {
                 </div>
 
                 <div className="flex flex-row">
-                    <Swicher small={false} />
+                    <ThemeSwitcher small={false} />
                     <Image className="block md:hidden cursor-pointer ms-4" src="/burger.svg" width={24} height={21} alt="menu" onClick={() => {
                         setBurgerActive(true)
                     }} />
@@ -45,7 +45,7 @@ const Header = () => {
                         </Link>
 
                         <div className="flex flex-row gap-4">
-                            <Swicher small={true} />
+                            <ThemeSwitcher small={true} />
 
                             <Image className="block cursor-pointer w-[16px] h-auto ms-2" src="/close.svg" width={16} height={16} alt="cancel" onClick={() => {
                                 setBurgerActive(false)
