@@ -13,8 +13,8 @@ const Header = () => {
     const [burgerActive, setBurgerActive] = useState(false);
 
     return (
-        <header className="nav-padding relative z-50">
-            <div className="flex flex-row  md:flex-wrap lg:flex-nowrap items-center justify-between  py-5 md:py-8 bg-primaryDark dark:bg-transparent px-5 md:px-10 rounded-b-[15px]">
+        <header className="container relative z-50">
+            <div className="flex flex-row  md:flex-wrap lg:flex-nowrap items-center justify-between  py-5 md:py-8 bg-primaryDark dark:bg-transparent  rounded-b-[15px]">
                 <Link href="/" className="min-w-[132px] w-[132px] md:w-[166px] xl:w-[200px]">
                     <Image src="/logo_new.png" width={200} height={70} alt="logo" className="w-full h-auto" priority />
                 </Link>

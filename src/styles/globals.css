@@ -26,16 +26,16 @@ body {
 
 /* gloabl,custom tailwind classes */
 
-.nav-padding {
+/* .nav-padding {
   @apply xl:px-[calc((100%-1360px)*0.5)];
-}
+} */
 
 .auto-padding {
   @apply xl:px-[calc((100%-1280px)*0.5)] px-3;
-}
+} 
 
 .title-h1 {
-  @apply font-kodchasan font-extrabold text-[32px] sm:text-[40px] md:text-[50px] xl:text-[64px] dark:text-primaryLight text-primaryDark leading-[79px] uppercase;
+  @apply font-kodchasan font-extrabold text-[32px] sm:text-[40px] md:text-[50px] xl:text-[64px] dark:text-primaryLight text-primaryDark leading-normal;
 }
 
 .title-h2 {
@@ -134,15 +134,17 @@ body {
   z-index: 1;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
-
+  text-wrap: nowrap;
   border-radius: 100px;
   font-family: var(--font-montserrat);
-  font-size: 18px;
-  line-height: 25px;
+  /* font-size: 18px; */
+  /* line-height: 25px; */
   text-transform: uppercase;
   letter-spacing: 0.72px;
   font-weight: 700;
-  padding: 24px 34px;
+  /* padding: 12px 24px; */
+  border: 2px solid white;
+  @apply font-[16px] sm:font-[18px] px-[16px] sm:px-[24px] py-[12px];
 }
 
 .global_button::before {
@@ -180,23 +182,25 @@ body {
 }
 
 .global_button:active::before {
-  transition: 0s;
+  transition: 3s;
   background: linear-gradient(180deg, #03a4ff 22.51%, #009ee2 55.83%, #0085d0 100%);
   color: white;
 }
 
 .outline_button {
-  padding-right: 98px !important;
-  transition: all 0.5s ease-in-out;
+  padding-right: 60px;
+  transition: all .5s ease-in-out;
   background-color: transparent !important;
-  @apply bg-transparent border-2 border-primaryDark hover:border-accent3 dark:border-primaryLight  dark:hover:border-accent3;
+  @apply bg-transparent border-2 border-primaryDark hover:border-accent3 dark:border-primaryLight  dark:hover:border-accent3 pe-[16px] sm:pe-[60px];
 }
 
 .outline_button::before {
   background: white;
   right: 0;
-  width: 77px;
+  /* width: 51px; */
+  /* max-height: 51px; */
   top: 0;
+  @apply w-[48px] h-[48px] ;
 }
 .outline_button:hover::before,
 .outline_button:active::before {
@@ -210,11 +214,13 @@ body {
 .btn_icon {
   position: absolute;
   content: "";
-  top: calc(50% - 25px);
-  right: 13px;
-  width: 50px;
-  height: 50px;
+  top: calc(50% - 20px);
+  right: 2px;
+  width: 40px;
+  height: 40px;
   z-index: 1;
+  /* background: white;
+  border-radius: 50%; */
 }
 
 .outline_button:hover .dark_icon {
@@ -303,9 +309,9 @@ body {
 } */
 
 .home__hero--section .hero__animation--block .item_main {
-  width: 316px;
-  height: auto;
-  z-index: 0;
+  /* width: 316px; */
+  /* height: auto; */
+  /* z-index: 0; */
   /* transform-style: preserve-3d; */
 }
 
@@ -326,14 +332,14 @@ body {
   animation-timing-function: linear; */
 }
 
-@keyframes orbit {
+/* @keyframes orbit {
   from {
     transform: rotate(0deg) translateX(200px) rotate(0deg);
   }
   to {
     transform: rotate(360deg) translateX(200px) rotate(-360deg);
   }
-}
+} */
 
 .home__hero--section .hero__animation--block .item_two {
   top: 130px;
@@ -371,6 +377,7 @@ body {
   top: 255px;
   left: -125px;
   width: 130px;
+
   z-index: 5;
   /* transition-duration: 4s;
   animation-duration: 7s;
@@ -443,10 +450,12 @@ body {
   /* background-color: red; */
   background: url("../../public/Fraud_monitoring2.png") no-repeat;
   left: -92px;
-  top: calc(50% - 70px);
-  width: 92px;
-  height: 290px;
+  top: calc(50% - 90px);
+  /* width: 92px;*/
+  height: 290px; 
+
   z-index: 1;
+  @apply hidden sm:block sm:w-[92px];
 }
 
 /* .custom__swiper .swiper-slide-prev{
@@ -709,7 +718,7 @@ body {
   border-top: solid 2px white;
 }
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
   .title-h1 {
     @apply font-montserrat font-extrabold text-[34px] dark:text-primaryLight text-primaryDark leading-[79px] uppercase;
   }
@@ -717,7 +726,7 @@ body {
   .title-h2 {
     @apply font-montserrat font-extrabold  text-[34px] dark:text-primaryLight text-primaryDark uppercase leading-normal;
   }
-}
+} */
 
 /* services page */
 

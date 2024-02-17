@@ -1,6 +1,6 @@
-import Image
-    from "next/image";
+import Image from "next/image";
 import Link from "next/link";
+
 const Footer = () => {
     return (
         <footer className="bg-[#0F0F0F] dark:bg-[#0F0F0F]">
@@ -13,26 +13,25 @@ const Footer = () => {
 
                     <div className="flex flex-col sm:flex-row gap-10 w-full md:w-1/2 justify-between md:justify-end">
                         <div className="flex flex-col items-center md:items-end gap-4 sm:gap-5">
-                            <h4 className="title-h4">
+                            <h4 className="title-h4 !text-primaryLight">
                                 quick links
                             </h4>
                             <Link href={"/terms"} className="text !text-primaryLight hover:underline hover:text-[#00FFF0]">Terms and conditions</Link>
                             <Link href={"/privacy"} className="text !text-primaryLight hover:underline hover:text-[#00FFF0]">privacy policy</Link>
                         </div>
                         <div className="flex flex-col items-center md:items-end gap-4 sm:gap-5">
-                            <h4 className="title-h4">
+                            <h4 className="title-h4 !text-primaryLight">
                                 contacts
                             </h4>
                             <Link href={""} className="text !text-primaryLight hover:underline hover:text-[#00FFF0]">info@siquro.com</Link>
                             <p className="text !text-primaryLight">fastadvisors ou</p>
                         </div>
                     </div>
-
                 </div>
 
                 <div className="flex flex-col items-center sm:flex-row justify-between gap-4 sm:gap-5 mb-5">
                     <div className="flex flex-row gap-4 sm:gap-5 items-center">
-                        <h4 className="title-h4">follow us:</h4>
+                        <h4 className="title-h4 !text-primaryLight">follow us:</h4>
 
                         <div className="flex flex-row flex-nowrap gap-3 ">
                             <Image src={"/social_links/facebook.svg"} alt={"Facebook"} width={32} height={32} className="w-[32px] h-[32px]" />
@@ -50,7 +49,7 @@ const Footer = () => {
 
                 <div className="py-5">
                     <div className="h-[1px] bg-primaryLight w-1/4 mb-5"></div>
-                    <p className="text !text-[16px] sm:!text-[18px] ">SiQURO is an authorised payment institution regulated by the Financial Conduct Authority under the Payment Services Regulations 2017 (Firm Registration Number: 804718) for the provision of payment services. SiQURO an authorised payment institution regulated by the Central Bank under the  Financial Supervision Act for the provision of payment services (account information services). SiQURO is included in the public register of the Central Bank (License number: 1) and registered at the Chamber of Commerce (CoC number: 2).</p>
+                    <p className="text !text-[16px] sm:!text-[18px] !text-primaryLight">SiQURO is an authorised payment institution regulated by the Financial Conduct Authority under the Payment Services Regulations 2017 (Firm Registration Number: 804718) for the provision of payment services. SiQURO an authorised payment institution regulated by the Central Bank under the  Financial Supervision Act for the provision of payment services (account information services). SiQURO is included in the public register of the Central Bank (License number: 1) and registered at the Chamber of Commerce (CoC number: 2).</p>
                 </div>
             </div>
 

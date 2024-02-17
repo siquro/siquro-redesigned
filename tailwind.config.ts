@@ -19,8 +19,8 @@ const config: Config = {
           DEFAULT: '15px',
           sm: '15px',
           lg: '20px',
-          xl: '20px',
-          '2xl': '20px',
+          xl: '5rem',
+          '2xl': '5rem',
         },
       },
       colors: {
