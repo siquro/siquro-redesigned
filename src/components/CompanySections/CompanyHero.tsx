@@ -6,15 +6,15 @@ import React from 'react'
         <section className="campany__hero--section bg-primaryLight dark:bg-primaryDark mt-[-135px]">
             <div className="section_wrapper pt-[150px] md:pt-[250px] pb-10 sm:pb-[90px] auto-padding justify-between items-center flex flex-col md:flex-row gap-10">
                 <div className="flex flex-col w-4/5 md:w-1/2 py-10 justify-center">
-                    <h3 className="title-h3 ">SOLUTIONS</h3>
-                    <h1 className="title-h1 font-extrabold mb-[27px] !leading-normal">About us</h1>
-                    <p className="text font-bold uppercase leading-6 !font-montserrat">
+                    <h4 className="title-h4">SOLUTIONS</h4>
+                    <h1 className="title-h1 mb-[27px] !leading-normal">About us</h1>
+                    <p className="text leading-6">
                         In 2022, Siquro was established and is now one of the leading payment platform providers worldwide. Siquro’s solutions are perfect for banks, PSPs, financial institutions, and more.
                     </p>
                 </div>
 
                 <div className="flex border-[3px] border-primaryDark dark:border-[#FFE8E8] w-full md:w-1/2  max-w-[670px] flex-col py-7 sm:py-10 px-7 sm:px-12 bg-transparent h-min">
-                    <h3 className="title-h3 !font-montserrat !text-[24px] sm:!text-[32px] md:!text-[36px]  dark:text-primaryLight text-primaryDark mb-5 !leading-[55px] !capitalize">Our Vision</h3>
+                    <h3 className="title-h3 mb-5 !capitalize">Our Vision</h3>
                     <p className="text mb-7 darktext-primaryLight text-primaryDark">No matter what your risk level is, we offer credit and debit cards, e-wallets, electronic payment systems, local direct debit systems – you name it!</p>
 
                     <Button title={'Contact Us'} color={'light'} link={'contacts'} />

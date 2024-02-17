@@ -1,13 +1,12 @@
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const SolutionsList = () => {
     return (<section className="py-10">
 
         <Swiper
-
             loop={true}
             autoplay={{
                 delay: 1500,
@@ -32,16 +31,12 @@ const SolutionsList = () => {
             }}
         >
             <SwiperSlide className="flex flex-row w-min">
-
-
                 <Image src="/solution-1.png" alt="Solution 1" width={142} height={91} />
 
-
                 <div>
-                    <h4 className="title-h3 !font-montserrat darktext-primaryLight text-primaryDark mb-5 !leading-[55px]">DIGITAL WALLET</h4>
-                    <p className="text mb-7 darktext-primaryLight text-primaryDark ">With Siquuro, you can meet the challenges of specific markets and underserved segments by offering an extensive payment option to your customers.</p>
+                    <h4 className="title-h4 mb-5">DIGITAL WALLET</h4>
+                    <p className="text mb-7 dark:text-primaryLight text-primaryDark ">With Siquuro, you can meet the challenges of specific markets and underserved segments by offering an extensive payment option to your customers.</p>
                 </div>
-
             </SwiperSlide>
             <SwiperSlide className="flex flex-row w-min">
 
@@ -49,7 +44,7 @@ const SolutionsList = () => {
 
 
                 <div>
-                    <h4 className="title-h3 !font-montserrat darktext-primaryLight text-primaryDark mb-5 !leading-[55px]">PAYMENT GATEWAY</h4>
+                    <h4 className="title-h4 mb-5">PAYMENT GATEWAY</h4>
                     <p className="text mb-7 darktext-primaryLight text-primaryDark ">With Siquuro, you can meet the challenges of specific markets and underserved segments by offering an extensive payment option to your customers.</p>
 
                 </div>
@@ -61,7 +56,7 @@ const SolutionsList = () => {
 
 
                 <div>
-                    <h4 className="title-h3 !font-montserrat darktext-primaryLight text-primaryDark mb-5 !leading-[55px]">ADVANCED ANALYTICS</h4>
+                    <h4 className="title-h4 mb-5">ADVANCED ANALYTICS</h4>
                     <p className="text mb-7 darktext-primaryLight text-primaryDark ">With Siquuro, you can meet the challenges of specific markets and underserved segments by offering an extensive payment option to your customers.</p>
                 </div>
 
@@ -73,7 +68,7 @@ const SolutionsList = () => {
 
 
                 <div>
-                    <h4 className="title-h3 !font-montserrat darktext-primaryLight text-primaryDark mb-5 !leading-[55px]">PAYMENT METHODS</h4>
+                    <h4 className="title-h4 mb-5">PAYMENT METHODS</h4>
                     <p className="text mb-7 darktext-primaryLight text-primaryDark ">With Siquuro, you can meet the challenges of specific markets and underserved segments by offering an extensive payment option to your customers.</p>
                 </div>
 

@@ -1,19 +1,19 @@
 
 const Terms = () => {
     return (
-        <main className="w-full bg-primary mx-auto">
+        <main className="w-full bg-primaryLight dark:bg-primaryDark mx-auto">
             <div className="auto-padding py-14">
-                <div className="">
-                    <p className="py-5 font-monserrat font-bold">TERMS AND CONDITIONS</p>
+            
+                    <p className="py-5 title-h3 text-center">TERMS AND CONDITIONS</p>
                     <p className="text !text-[16px] mb-2">This document governs the Business relationships between <strong>FastAdvisors OU</strong> (“<strong>Siquro</strong>”) and you as a “<strong>Merchant</strong>”. Access to and use of <strong>Siquro</strong> services by the <strong>Merchant</strong> is subject to compliance with all terms and conditions set forth hereinafter together with payment processing services contract and annexes if any. Please read carefully before signing and accepting the terms and conditions of this Agreement.</p>
                     <p className="text !text-[16px] mb-2">By accepting these General Terms and Conditions (hereinafter – “Agreement”), you declare that you are the authorized representative of the <strong>Merchant</strong> and that with your signature (or acceptance if online), the <strong>Merchant</strong> acknowledges that the Terms and Conditions were read and understood (or have sought legal advice on them) and agrees to be bound by them. Acceptance of these Terms and Conditions will also be considered any use of one or more of the services described below. If the <strong>Merchant</strong> does not agree with these Terms and Conditions, then the <strong>Merchant</strong> should not use any of the services, nor sign this Agreement (or decline if online). By using the Services, you authorize <strong>Siquro </strong>to act as your agent so <strong>Siquro</strong> may receive, hold, and disburse funds on your behalf and to take any and all actions that it thinks are necessary to provide the Services and to comply with all applicable laws.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>INTRODUCTION</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">1.1. This Agreement along with the Payment Processing Services Contract and other applicable policies the <strong>Merchant</strong> has agreed for by signing them or agreed online form the relationship between the <strong>Merchant</strong> (“You”, “Your”) and its agents and/or authorized representatives, and <strong>Siquro</strong> (hereinafter – the “Company”). Making use of any of the services of <strong>Siquro</strong> constitutes acceptance of the Terms and Conditions, and for <strong>Siquro</strong> to establish a <strong>Merchant</strong> account for the <strong>Merchant</strong>. The <strong>Merchant</strong> further agrees that the Agreement (and any update thereof) will also cover <strong>Merchant</strong>’s use of the <strong>Merchant</strong> account to add services to <strong>Merchant</strong>’s service plan, to modify or to cancel <strong>Merchant</strong>’s service plan. Even in the absence of any notification to <strong>Siquro</strong>, the Agreement is also applicable to any other person (legal or natural) <strong>Merchant</strong> grants permission to use its <strong>Merchant</strong> account.</p>
                     <p className="text !text-[16px] mb-2">1.2. <strong>Merchant</strong> confirms that the designated person (or persons) as its authorized representative(s) has/have been granted full authority to act on its behalf in relation to the <strong>Siquro</strong> Service/s (and as this may be modified from time to time), and that any such actions taken by him/her/them including but not limited to purchase of additional services, modification of the service plan, termination, or transfer of the service plan, would be considered binding and final.</p>
                     <p className="text !text-[16px] mb-2">1.3. All Paragraphs described below apply to any (and all) of the services that <strong>Merchant</strong> purchases/uses under this Agreement.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li> DEFINITIONS AND INTERPRETATIONS</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">In the present Terms and Conditions the following terms shall, unless the context otherwise requires, have the following meanings and may be used in the singular or plural as appropriate:</p>
@@ -54,7 +54,7 @@ const Terms = () => {
                     <p className="text !text-[16px] mb-2">2.35. <strong>Services:</strong> The authorization, processing, and settlement services provided by <strong>Siquro</strong> to <strong>Merchant</strong> pursuant to the terms and conditions set forth in this Agreement;</p>
                     <p className="text !text-[16px] mb-2">2.36. <strong>Settlement Account:</strong> An account or account(s) at a financial institution designated by <strong>Merchant</strong> as the account to be debited and credited by <strong>Siquro</strong> for Card transactions, fees, Chargebacks, and other amounts due under or in connection with this Agreement and Payment Processing Services Contract;</p>
                     <p className="text !text-[16px] mb-2">2.37. <strong>Third Party Service Provider:</strong> Any Person engaged to provide services involving or relating to (i) access to Cardholder data, transaction data or information related to either Cardholder data or transaction data or (ii) PIN encryption, including without limitation, Encryption Service Organizations (ESOs), also referred to as “Merchant Provider.”</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>SCOPE OF THE SERVICES</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">3.1. The Services allow <strong>Merchant</strong> to accept payment card (Visa and/or Mastercard) transactions into its <strong>Merchant</strong> account, which is handled by <strong>Siquro</strong>.</p>
@@ -64,7 +64,7 @@ const Terms = () => {
                     <p className="text !text-[16px] mb-2">3.5. By entering into this Agreement, <strong>Merchant</strong> provides an authorization for <strong>Siquro</strong> to share provided information with bank or other financial institution <strong>Siquro</strong> has established contractual relationship with.</p>
                     <p className="text !text-[16px] mb-2">3.6. If the request to open a <strong>Merchant</strong> account is approved, <strong>Siquro</strong> is entitled to request additional information from <strong>Merchant</strong> at any time. <strong>Siquro</strong> may also require additional information at any time to keep up to date Merchant’s record and to determine whether <strong>Merchant</strong> continues to meet the requirements for a <strong>Merchant</strong> Account.  Additionally, <strong>Merchant</strong> may be required to enter into additional agreements as required by <strong>Siquro</strong> or the card organizations (Mastercard and Visa).</p>
                     <p className="text !text-[16px] mb-2 text-wrap">3.7. The Services work with Visa and Mastercard Card Organizations’ credit, debit, and prepaid cards.<strong> Siquro</strong> may remove or add Cards or alternative payment methods that it accepts at any time and without prior notice to <strong>Merchant</strong>. The Card Organizations require that <strong>Merchant</strong> complies with all applicable laws, rules, and regulations, which may benamended at any time. <strong>Siquro</strong> may be required to amend this agreement to comply with such amendments on case-by-case basis.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>MERCHANT’S DUTIES AND RESPONSIBILITIES</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">It is the <strong>Merchant</strong>’s sole responsibility to:</p>
@@ -77,7 +77,7 @@ const Terms = () => {
                     <p className="text !text-[16px] mb-2">4.7. Ensure that any information procured through the use of the <strong>Siquro</strong> service should only be used in conjunction with the service and in such a way that it is not acceptable in accordance with the Agreement and the <strong>Siquro</strong> policies. The <strong>Merchant</strong> should not permit the use of such information by any other third party other than in conjunction with the service.</p>
                     <p className="text !text-[16px] mb-2">4.8. Use the <strong>Siquro</strong> service in accordance with the terms and conditions stipulated in the Agreement, Payment Processing Services Contract, the Policies, and other User Guides and/or Manuals that <strong>Siquro</strong> may publish from time to time.</p>
                     <p className="text !text-[16px] mb-2">4.9. Ensure that the <strong>Merchant</strong> is up to date with any amendments to the terms and conditions of the Agreement and with any changes to the services provided by <strong>Siquro</strong> from time to time.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>SIQURO DUTIES AND RESPONSIBILITIES</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">5.1. <strong>Siquro</strong> agrees (always subject to the terms and conditions of the Agreement) and is responsible to:</p>
@@ -90,7 +90,7 @@ const Terms = () => {
                     <p>5.4. Continued use of the services by the <strong>Merchant</strong> will be considered as acceptance of the amendments and/or changes, and the <strong>Merchant</strong> agrees to be bound by them. By continuing to use <strong>Siquro</strong> services after any revision to this Agreement or change in Services, <strong>Merchant</strong> agrees to abide by and be bound by any such revisions or changes.</p>
                     <p className="text !text-[16px] mb-2">5.5. Security of transactions is significant to <strong>Siquro</strong>, which has employed and will sustain adequate security systems to ensure secure transmission of <strong>Merchant</strong>’s Transactions over the internet. The security measures taken consist of encryption and firewall systems as well as publicly known intrusion prevention mechanisms. For encryption <strong>Siquro</strong> will use Secure Socket Layer (SSL) technology which is considered the standard, while for the firewall system it will use a combination of hardware and software that will result in all external traffic terminating at a demilitarized firewalled zone.</p>
                     <p className="text !text-[16px] mb-2">5.6. <strong>Siquro</strong> does not guarantee the security of the Services or Transaction data and will not be responsible in the event of any infiltration of its security systems, provided that <strong>Siquro</strong> has used commercially reasonable efforts to prevent any such infiltration. <strong>Merchant</strong> further acknowledges and agrees that it, and not <strong>Siquro</strong>, is responsible for the security of Transaction data, or information or any other information stored on <strong>Merchant</strong>’s servers, and that <strong>Siquro</strong> is not responsible for any other party’s servers (other than subcontractors of <strong>Siquro</strong> solely to the extent it is liable for its own actions hereunder).</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>MERCHANT ACCOUNT</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">6.1. By establishing a <strong>Merchant</strong> Account, <strong>Merchant</strong> confirms that <strong>Merchant</strong>’s business-operating entity and activity are authorized to conduct business by the country in which it operates.</p>
@@ -102,29 +102,29 @@ const Terms = () => {
                     <p className="text !text-[16px] mb-2">(iii) Not accept payments in connection with any illegal activity;</p>
                     <p className="text !text-[16px] mb-2">(iv) Use the Services only for lawful <strong>Merchant</strong> activities as approved by <strong>Siquro</strong> and not in a manner that results in or may result in complaints, disputes, chargebacks, fees, fines, or penalties; and</p>
                     <p className="text !text-[16px] mb-2">(v) Not use the Services to process cash advances.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>UNAUTHORIZED USE OF THE SERVICES</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">7.1. <strong>Merchant</strong> is entitled to use the Services only in compliance with all laws, rules, and regulations applicable to the use of the Services.</p>
                     <p className="text !text-[16px] mb-2">7.2. <strong>Siquro</strong> may choose not to authorize or settle any submitted transaction, if <strong>Siquro</strong> considers the transaction is  in  violation  of  this  Agreement  and Payment Processing Services Contract may  cause  harm  to <strong>Merchant</strong>,  the  <strong>Siquro</strong>  or  its  partners.</p>
                     <p className="text !text-[16px] mb-2">7.3. <strong>Merchant</strong> expressly provides the authorization <strong>Siquro</strong> to share information about <strong>Merchant</strong>, <strong>Merchant</strong>’s Account or its transactions with law enforcement if <strong>Siquro</strong> considers the Services have been used for an illegal, unauthorized or criminal purpose.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>FINANCIAL INFORMATION</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">8.1. The <strong>Merchant</strong> is obliged to provide <strong>Siquro</strong> with financial statements and other related information upon request by <strong>Siquro</strong>.  Such financial statements and other related documents required to be prepared in accordance with generally accepted accounting standards.</p>
                     <p className="text !text-[16px] mb-2">8.2. <strong>Siquro</strong> may also require providing other information concerning <strong>Merchant</strong>’s business activity and its compliance with the terms and provisions of this Agreement as <strong>Siquro</strong> may reasonably request.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>FEES AND PAYMENTS</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">9.1. <strong>Merchant</strong> agrees to pay the applicable fees set forth in this Agreement, as well as in Payment Processing Services Contract.</p>
                     <p className="text !text-[16px] mb-2">9.2. <strong>Siquro</strong> reserves the right to change Fees at any time with reasonable prior notice of such changes to the <strong>Merchant</strong>. <strong>Merchant</strong>’s continuous use of the Services indicates its consent to the change in Fees. If <strong>Merchant</strong> does not provide the consent to the change in Fees, then <strong>Merchant</strong> must immediately close <strong>Merchant</strong>’s Account.</p>
                     <p className="text !text-[16px] mb-2">9.3. <strong>Merchant</strong> agrees that <strong>Siquro</strong> will make settlement transaction on a weekly basis (or otherwise agreed) transferring the funds to the settlement account specified by <strong>Merchant</strong> in Payment Processing Services Contract.</p>
                     <p className="text !text-[16px] mb-2">9.4. Where payments received through <strong>Merchant</strong>’s website are held by <strong>Siquro</strong>, <strong>Merchant</strong> agrees that it will assume the volatility risks of the local currency that have chosen to receive payment in from <strong>Siquro</strong>, between the time that <strong>Siquro</strong> receives the payment from the <strong>Merchant</strong> Customer and the time that <strong>Siquro</strong> transfers the payment to <strong>Merchant</strong>’s bank account in accordance with the Payment Processing Services Contract.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>RETURNS AND REFUNDS</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">10.1. <strong>Merchant</strong> agrees to process returns of, and provide refunds and adjustments for the goods or services rendered through its website and <strong>Merchant</strong> Account in accordance with this Agreement, Payment Processing Services Contract and Card Organization rules.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>CHARGEBACKS</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">11.1. Chargebacks can be received for a number of reasons, including, but not limited to, any one of the following: </p>
@@ -134,11 +134,11 @@ const Terms = () => {
                     <p>(iv) The  customer  disputes  the  Card  sale  or  the  signature  on  the  sale documentation,  or  claims  that  the  sale  is  subject  to  a  set-off, defense or counterclaim; or</p>
                     <p className="text !text-[16px] mb-2">(v) The customer refuses to make payment for a Card sale because in the customer’s good faith opinion, a claim or complaint has not been resolved, or has been resolved but in an unsatisfactory manner. </p>
                     <p className="text !text-[16px] mb-2">11.2. For any transaction that results in a Chargeback, <strong>Siquro</strong> may withhold the Chargeback amount from the <strong>Merchant</strong>’s Rolling Reserve or <strong>Merchant</strong> Account. <strong>Merchant</strong> may be subject to a chargeback on sales for a minimum period of 180 days from the date the sale was processed. Siquro may deduct the amount of any Chargeback and any associated fees, fines, or penalties assessed by <strong>Siquro</strong> from <strong>Merchant</strong> Account, its Rolling Reserve, if any, any proceeds due to <strong>Merchant</strong>, or its bank account.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>TAXES</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">12.1. It is the <strong>Merchant</strong>’s sole responsibility to determine which, if any, taxes apply to the payments received, and to report and remit the  correct  tax  to  the  appropriate  tax  authority. <strong>Siquro</strong> is  not  obligated   to   determine   whether   taxes   apply,   and   is not responsible to  collect,  report,  or  remit  any  taxes  arising  from any Transaction.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>RESTRICTED ACTIVITIES ON THE MERCHANT ACCOUNT</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">13.1. <strong>Siquro</strong> does not accept and process payments from or to sanctioned countries and territories in accordance with Canadian laws and regulations, as well as other binding international legal standards.</p>
@@ -166,20 +166,20 @@ const Terms = () => {
                     <p className="text !text-[16px] mb-2">9.5.21. Using the <strong>Siquro</strong> Services in a manner that may result in complaints, disputes, claims, reversals, chargebacks, fees, fines, penalties and other liability to <strong>Siquro</strong>, a <strong>Merchant</strong>, or a third party;</p>
                     <p className="text !text-[16px] mb-2">9.5.22. Disclosing information of other <strong>Merchant</strong>’s to third parties;</p>
                     <p className="text !text-[16px] mb-2">9.5.23. Using the Service in a manner that deviates from what is prescribed in this Terms and Conditions.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>UNAUTHORIZED TRANSACTIONS</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">14.1. <strong>Siquro</strong> shall make every effort to avoid unauthorized transactions to take place on the <strong>Merchant</strong>’s Account. For these reasons every <strong>Merchant</strong> shall be fully identified by presenting all the necessary information and/or documentation.</p>
                     <p className="text !text-[16px] mb-2">14.2. In the events, if the <strong>Merchant</strong> reasonably believes that his Account has been compromised, hacked, misused by third parties in any way or had been otherwise used in an unauthorized way the <strong>Merchant</strong> duly agrees to notify <strong>Siquro</strong> immediately by using any available communication channel. In such a case the <strong>Merchant</strong> duly impliedly authorizes <strong>Siquro</strong> to block any Transactions on the Account immediately. For further communication further identification verification may be carried out by <strong>Siquro</strong>.</p>
                     <p className="text !text-[16px] mb-2">14.3. <strong>Siquro</strong> reserves a right to block the <strong>Merchant</strong>’s account in case it reasonably believes that the <strong>Merchant</strong>’s Account has been compromised, hacked, misused by third parties in any way or had been otherwise used in an unauthorised way. <strong>Siquro</strong> shall notify the <strong>Merchant</strong> in event of blocking as soon as it might be reasonably necessary in the situation.</p>
                     <p className="text !text-[16px] mb-2">14.4. <strong>Siquro</strong> shall not bear any responsibility for any losses resulting from unauthorised use of the Account or Services, including to any Transactions made in the <strong>Siquro</strong> System or outside it.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>AMENDMENTS OF CONDITIONS</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">15.1. <strong>Siquro</strong> shall be entitled to amend these Conditions at any time without giving a prior notice. It is <strong>Merchant</strong>’s responsibility to track the changes are available.</p>
                     <p className="text !text-[16px] mb-2">15.2. <strong>Siquro</strong> expressly reserves the right to use its website to inform the <strong>Merchant</strong> about any changes in these Conditions and the posting of a notice on <strong>Siquro</strong> website shall be deemed a valid notification of such changes to the <strong>Merchant</strong>. The <strong>Merchant</strong> undertakes to regularly review <strong>Siquro</strong> website and/or to regularly access his online reporting where relevant information may be published.</p>
                     <p className="text !text-[16px] mb-2">15.3. Also immediate will be any amendments necessary due to the enrichment of the Service and its delivery or in cases where <strong>Merchant</strong>’s rights and obligations are not adversely affected. <strong>Siquro</strong> will not provide the <strong>Merchant</strong> with any notice of such immediate changes.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>SUSPENSION AND TERMINATION OF THE RELATIONSHIPS</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">16.1. The Business relationships between the <strong>Merchant</strong> and <strong>Siquro</strong> shall remain in force until terminated by mutual agreement between the <strong>Merchant</strong> and <strong>Siquro</strong>.</p>
@@ -204,7 +204,7 @@ const Terms = () => {
                     <p className="text !text-[16px] mb-2">16.7.1.9. if <strong>Siquro</strong> is given a direction to do so by any regulator or other competent regulatory, tax or other authority.</p>
                     <p className="text !text-[16px] mb-2">16.8. The <strong>Merchant</strong> acknowledges, recognizes and agrees that <strong>Siquro</strong> shall not be liable for any consequences of it taking the steps described in this Paragraph. The rights described in this Paragraph shall be in addition to any other rights which <strong>Siquro</strong> may have against the <strong>Merchant</strong> under these Conditions or under applicable law.</p>
                     <p>16.9. If <strong>Siquro</strong> terminates its relationship with a <strong>Merchant</strong>: (i) the funds of <strong>Merchant</strong>’s Account will be transferred to the most recent details <strong>Merchant</strong> has given the bank account in <strong>Merchant</strong>’s name after deducting any charges due and payable by <strong>Merchant</strong>; and (ii) any of <strong>Merchant</strong>’s or <strong>Siquro</strong> rights or liabilities which have accrued prior to the termination shall continue until fully discharged by the relevant party, save for any rights or liabilities, which are expressed to continue after these Conditions end.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>CONFIDENTIALITY</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">17.1. Neither party shall disclose to any person (unless required to do so by any applicable law or by any regulatory or supervisory authority or by any other person entitled by law to require such disclosure) any information relating to the business, transactions, finances or other matters of confidential nature of the other party which it may in the course of its duties or otherwise become aware, and each party shall use all reasonable endeavors to prevent any such disclosure.</p>
@@ -216,37 +216,37 @@ const Terms = () => {
                     <p className="text !text-[16px] mb-2">18.1.1. impair or prevent any further or other exercise of such right, power or remedy; or</p>
                     <p className="text !text-[16px] mb-2">18.1.2. operate as a waiver of such right, power or remedy;</p>
                     <p className="text !text-[16px] mb-2">18.1.3. No waiver of breach of all or part of these Conditions shall (unless expressly agreed in writing by the waiving party) be construed as a waiver of any future breach of the same or as authorizing a continuation of a particular breach.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>REMEDIES</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">19.1. The <strong>Merchant</strong> shall indemnify <strong>Siquro</strong> and keep <strong>Siquro</strong> indemnified against all losses, taxes, expenses, costs and liabilities whatsoever (present, future, contingent or otherwise, and including reasonable legal fees) which may be suffered or incurred by <strong>Siquro</strong> as a result of or in connection with:</p>
                     <p className="text !text-[16px] mb-2">19.1.1. Any breach of these Conditions or Payment Processing Services Contract by the <strong>Merchant</strong>;</p>
                     <p className="text !text-[16px] mb-2">19.1.2. As a result of illegal actions performed by the <strong>Merchant</strong> using <strong>Siquro</strong> services.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>NO LIABILITY FOR TAX</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">20.1. Notwithstanding it is required by the relevant laws <strong>Siquro</strong> has no obligation whatsoever to any taxation or similar authority in respect of any taxation or other similar duty or levy payable by any account holder. It is <strong>Merchant</strong>’s obligation to pay all taxation, duties and levies that are payable by it in respect of <strong>Merchant</strong>’s Account and the Services <strong>Merchant</strong> instructs <strong>Siquro</strong> to carry out.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>FORCE MAJEURE</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">21.1. <strong>Siquro</strong> is not responsible for any breach of these Terms by it, or for any loss <strong>Merchant</strong> incurs in connection with such breach, due to any Force Majeure circumstances.</p>
                     <p className="text !text-[16px] mb-2">21.2. The performance of the <strong>Siquro</strong> Services is deemed to be suspended for the period that the Force Majeure circumstances continue, and <strong>Siquro</strong> will have an extension of time for performance for the duration of that period.</p>
                     <p className="text !text-[16px] mb-2">21.3. If any Force Majeure circumstances occur, <strong>Siquro</strong> may take any action it considers appropriate in connection with the Services and use reasonable endeavors to end the Force Majeure.</p>
                     <p className="text !text-[16px] mb-2">21.4. The condition beyond its reasonable control (Force Majeure) includes but is not limited to governmental action, the war, riots, hurricane, typhoon, acts of terrorism, earthquake, fire, flood, lightning, explosion strikes, lockouts, emergency state, pandemic or any other diseases as defined by the World Health Organization (WHO), prolonged shortage of energy supplies, and acts of state or governmental action prohibiting or impeding any party from performing its respective obligations under the Agreement or other acts of God, labor conditions, power failures, and Internet disturbances.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>COMPLAINTS PROCEDURE</li>
                     </ol>
                     <p>22.1. If the <strong>Merchant</strong> has a complaint regarding the Services or any other matter contained in these Agreement, the <strong>Merchant</strong> can contact <strong>Siquro</strong> through any available communication channel.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>DISPUTE RESOLUTION</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">23.1. The <strong>Merchant</strong> and <strong>Siquro</strong> shall make every endeavor to amicably resolve any dispute, in good faith and in a constructive manner. The <strong>Merchant</strong> acknowledges and agrees that threats and blackmailing towards <strong>Siquro</strong> are prohibited and constitute valid ground for interrupting negotiations and for immediate termination of any Business relationships.</p>
-                    <ol className="py-5 font-monserrat font-bold">
+                    <ol className="py-5 title-h4">
                         <li>APPLICABLE LAW AND JURISDICTION</li>
                     </ol>
                     <p className="text !text-[16px] mb-2">24.1. These Conditions are construed in accordance with and shall be governed by the laws of Canada.</p>
                     <p className="text !text-[16px] mb-2">24.2. Any dispute, controversy or claim arising out of or in relation to these Conditions, including the validity, invalidity, breach or termination thereof, shall be settled before the courts of Canada and in accordance with Canadian law.</p>
-                    <p className="text !text-[16px] mb-2">24.3. In the event of any conflict between the provisions of this agreement and a Payment Processing Services Contract, the provisions of Payment Processing Services Contract shall prevail, unless the relevant clause expressly provides that it shall prevail, thereby referencing the clause of this agreement over which the applicable schedule is intended to prevail.</p></div>
+                    <p className="text !text-[16px] mb-2">24.3. In the event of any conflict between the provisions of this agreement and a Payment Processing Services Contract, the provisions of Payment Processing Services Contract shall prevail, unless the relevant clause expressly provides that it shall prevail, thereby referencing the clause of this agreement over which the applicable schedule is intended to prevail.</p>
             </div>
         </main>
     )

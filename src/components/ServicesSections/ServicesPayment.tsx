@@ -1,9 +1,8 @@
-import Button from "@/components/Button";
 import OutlineButton from "@/components/OutlineButton";
 import { useTheme } from "next-themes";
-import Image from "next/image"
+import Image from "next/image";
 
-const Payment = () => {
+const ServicesPayment = () => {
     const { theme, setTheme } = useTheme();
 
     return (
@@ -11,9 +10,9 @@ const Payment = () => {
             <div className=" section__bg--image">
                 <div className="section_wrapper pt-[110px] pb-[290px] justify-between flex flex-col md:flex-row gap-14">
                     <div className="payment--content flex flex-col justify-center basis-3/5">
-                        <h3 className="title-h3 text-5xl">payment</h3>
+                        <h4 className="title-h4">payment</h4>
                         <h2 className="title-h2 !leading-[78px] mb-8">A PERFECT PAYMENT SOLUTIONS</h2>
-                        <p className="text font-bold mb-[55px] md:w-4/5">
+                        <p className="text mb-[55px] md:w-4/5">
                             We know our online payment system is scalable, secure and fast because we designed and developed it ourselves.
                             We develop great IT products that actually work by having perfectionist workers who are easy to communicate with. Because we have extensive experience exploiting our technology, we know what it can do. So we love tailoring our solutions to fit even the most specific business needs.
                         </p>
@@ -38,4 +37,4 @@ const Payment = () => {
     )
 }
 
-export default Payment;
+export default ServicesPayment;

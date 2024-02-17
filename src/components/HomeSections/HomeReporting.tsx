@@ -1,7 +1,7 @@
 import Button from "../Button";
 import Image from 'next/image';
 
-const Reporting = () => {
+const HomeReporting = () => {
     return (
         <section className="reporting--section bg-primaryLight dark:bg-primaryDark relative">
             {/* <div className="line__wrapper">
@@ -64,4 +64,4 @@ const Reporting = () => {
     );
 };
 
-export default Reporting;
+export default HomeReporting;

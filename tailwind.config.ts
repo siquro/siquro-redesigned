@@ -13,6 +13,16 @@ const config: Config = {
         montserrat: ["var(--font-montserrat)"],
         kodchasan: ["var(--font-kodchasan)"],
       },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '15px',
+          sm: '15px',
+          lg: '20px',
+          xl: '20px',
+          '2xl': '20px',
+        },
+      },
       colors: {
         primaryLight: "#FFFFFF",
         primaryDark: "#000000",

@@ -3,9 +3,9 @@ import Image
 import Link from "next/link";
 const Footer = () => {
     return (
-        <footer className=" bg-primaryDark dark:bg-primaryDark ">
-            <div className="auto-padding flex flex-col md:flex-row justify-between pb-[82px] pt-[40px] items-center flex-wrap gap-5">
-                <div>
+        <footer className="bg-[#0F0F0F] dark:bg-[#0F0F0F]">
+            <div className="container flex flex-col gap-4 sm:gap-5">
+                {/* <div>
                     <Image src={"/logo_new.png"} alt={"Logo"} width={227} height={74} />
                 </div>
                 <div className="flex flex-col gap-8 items-center md:items-start">
@@ -21,12 +21,26 @@ const Footer = () => {
                 <div className="flex flex-row gap-11">
                     <Image src={"/PCI.png"} alt={"PCI"} width={99} height={75} className="w-[60px] md:w-[99px] h-[44px] md:h-[75px]" />
                     <Image src={"/SSL.png"} alt={"SSL"} width={107} height={75} className="w-[65px] md:w-[107px] h-[44px] md:h-[75px]" />
-                </div>
+                </div> */}
 
+                <div></div>
+                <div></div>
+                <div className="py-5">
+                    <p className="text !text-[16px] sm:!text-[18px] ">SiQURO is an authorised payment institution regulated by the Financial Conduct Authority under the Payment Services Regulations 2017 (Firm Registration Number: 804718) for the provision of payment services. SiQURO an authorised payment institution regulated by the Central Bank under the  Financial Supervision Act for the provision of payment services (account information services). SiQURO is included in the public register of the Central Bank (License number: 1) and registered at the Chamber of Commerce (CoC number: 2).</p>
+                </div>
             </div>
 
-            <div className="bg-primaryLight py-1">
-                <p className="font-montserrat text-center text-[20px] font-bold uppercase text-primaryDark">all right reserved</p>
+            <div className="bg-primaryLight py-4 md:py-5">
+                <div className="container flex flex-col items-center md:flex-row justify-between gap-4 md:gap-5">
+                    <div className="">
+                        <p className="font-montserrat text-[16px] sm:text-[18px] !text-primaryDark text-center">© 2024 SiQURO. All right reserved</p>
+                    </div>
+
+                    <div className="font-montserrat text-[16px] sm:text-[18px] !text-primaryDark hover:text-[#00FFF0] flex flex-col sm:flex-row gap-4">
+                        <Link href={"/terms"} className="hover:text-[#00FFF0] inline text-center">Terms & conditions</Link>
+                        <Link href={"/rivacy"} className="hover:text-[#00FFF0] inline text-center">Privacy policy</Link>
+                    </div>
+                </div>
             </div>
         </footer>
     );

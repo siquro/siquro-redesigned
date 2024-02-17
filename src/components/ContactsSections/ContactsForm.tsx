@@ -40,7 +40,7 @@ const ContactsForm = () => {
 
 
                 <div className='form__wrapper flex flex-col lg:flex-row gap-10 xl:gap-28'>
-                    <div className='w-full flex flex-col sm:w-4/5 md:w-3/5 lg:w-1/2 lg:text-left justify-between'>
+                    <div className='w-full mx-auto flex flex-col sm:w-4/5 md:w-3/5 lg:w-1/2 lg:text-left justify-between'>
 
                         <div className=''>
                             <h4 className='title-h4 !font-montserrat mb-5 !text-[32px] sm:!text-[36px] uppercase'>Send a Message</h4>
@@ -49,7 +49,7 @@ const ContactsForm = () => {
 
                     </div>
 
-                    <div className="w-full sm:w-4/5 md:w-3/5 lg:w-1/2 flex flex-col dark:bg-primaryDark bg-primaryLight border-primaryDark border-2 dark:border-[#FFE8E8] rounded-[20px] pt-10">
+                    <div className="w-full sm:w-4/5 md:w-3/5 lg:w-1/2 flex flex-col mx-auto dark:bg-primaryDark bg-primaryLight border-primaryDark border-2 dark:border-[#FFE8E8] rounded-[20px] pt-10">
                         <form action="">
                             <div className='px-4 md:px-10 pb-6'>
                                 <label className="block mb-6">

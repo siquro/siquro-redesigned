@@ -1,15 +1,16 @@
-import Payment from "@/components/ServicesSections/Payment";
+
 import ServicesHero from "@/components/ServicesSections/ServicesHero";
-import ServicesIntegration from "@/components/ServicesSections/ServicesIntegration";
+import ServicesGoLocal from "@/components/ServicesSections/ServicesIGoLocal";
+import ServicesPayment from "@/components/ServicesSections/ServicesPayment";
 import ServicesReporting from "@/components/ServicesSections/ServicesReporting";
 
 
 const Services = () => {
     return (<div>
         <ServicesHero />
-        <Payment />
+        <ServicesPayment />
         <ServicesReporting />
-        <ServicesIntegration />
+        <ServicesGoLocal />
     </div>);
 }
 

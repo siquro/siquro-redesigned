@@ -1,8 +1,8 @@
 'use client'
 
 import { useTheme } from "next-themes";
-import { FC, useEffect, useState } from "react";
 import Image from "next/image";
+import { FC, useEffect, useState } from "react";
 
 type SwicherProps = {
     small?: boolean;

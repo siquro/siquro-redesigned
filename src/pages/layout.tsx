@@ -1,6 +1,6 @@
-import Header from '../components/Header';
+import { Kodchasan, Montserrat } from 'next/font/google';
 import Footer from '../components/Footer';
-import { Montserrat, Kodchasan } from 'next/font/google';
+import Header from '../components/Header';
 
 const montserrat = Montserrat({
     subsets: ['latin'],

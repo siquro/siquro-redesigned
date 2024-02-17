@@ -35,27 +35,23 @@ body {
 }
 
 .title-h1 {
-  @apply font-montserrat font-extrabold text-[32px] sm:text-[40px] md:text-[50px] xl:text-[64px] dark:text-primaryLight text-primaryDark leading-[79px] uppercase;
+  @apply font-kodchasan font-extrabold text-[32px] sm:text-[40px] md:text-[50px] xl:text-[64px] dark:text-primaryLight text-primaryDark leading-[79px] uppercase;
 }
 
 .title-h2 {
-  @apply font-montserrat font-extrabold text-[32px] sm:text-[40px] md:text-[50px] xl:text-[64px] dark:text-primaryLight text-primaryDark uppercase leading-normal;
+  @apply font-kodchasan font-extrabold text-[32px] sm:text-[40px] md:text-[50px] xl:text-[64px] dark:text-primaryLight text-primaryDark uppercase leading-normal;
 }
 
 .title-h3 {
   @apply font-kodchasan font-bold text-[24px] md:text-[32px] xl:text-[48px] dark:text-primaryLight text-primaryDark uppercase leading-normal;
 }
 
-/* .title-h4 {
-  @apply font-kodchasan font-bold  text-[36px] dark:text-primaryLight text-primaryDark uppercase;
-} */
-
 .title-h4 {
-  @apply font-montserrat font-bold text-[16px] sm:text-[17px] md:text-[20px] xl:text-[28px]  dark:text-primaryLight text-primaryDark;
+  @apply font-kodchasan uppercase font-bold text-[16px] sm:text-[17px] md:text-[20px] xl:text-[28px]  dark:text-primaryLight text-primaryDark;
 }
 
 .text {
-  @apply font-kodchasan font-normal text-[16px] lg:text-[17px] xl:text-[20px] dark:text-primaryLight text-primaryDark;
+  @apply font-montserrat font-normal text-[16px] lg:text-[17px] xl:text-[20px] dark:text-primaryLight text-primaryDark;
 }
 
 .link {

@@ -1,11 +1,15 @@
+import Image from "next/image";
 import Link from "next/link";
-import Image from "next/image"
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import { useState } from "react";
+import MainNavigation from "./NavBar/MainNavigation";
+import MobNavigation from "./NavBar/MobNavigation";
 import ThemeSwitcher from "./ThemeSwitcher";
+// import { usePathname } from "next/navigation";
 
 const Header = () => {
-    const router = useRouter();
+    // const router = useRouter();
+    // const pathname = usePathname();
     const [burgerActive, setBurgerActive] = useState(false);
 
     return (
@@ -15,14 +19,7 @@ const Header = () => {
                     <Image src="/logo_new.png" width={200} height={70} alt="logo" className="w-full h-auto" priority />
                 </Link>
 
-                <nav className="hidden md:flex md:justify-between md:order-last md:w-full lg:order-none lg:justify-center">
-                    <Link href={"/"} className={`link ${router.pathname === '/' ? 'active' : ''}`}>Home</Link>
-                    <Link href={"/solutions"} className={`link ${router.pathname === '/solutions' ? 'active' : ''}`}>Solutions</Link>
-                    <Link href={"/services"} className={`link ${router.pathname === '/services' ? 'active' : ''}`}>Services</Link>
-                    <Link href={"/company"} className={`link ${router.pathname === '/company' ? 'active' : ''}`}>Company</Link>
-                    <Link href={"/careers"} className={`link ${router.pathname === '/careers' ? 'active' : ''}`}>Careers</Link>
-                    <Link href={"/contacts"} className={`link ${router.pathname === '/contacts' ? 'active' : ''}`}>Contact Us</Link>
-                </nav>
+                <MainNavigation/>
 
                 <div className="search hidden mr-5 relative md:flex items-center ">
                     <input type="text" placeholder="SEARCH" className="transition-[width] duration-500 border-0 rounded-[20px] bg-transparent font-kodchasan text-primaryLight dark:text-primaryLight placeholder:text-primaryLight placeholder:text-[13px] w-0 " />
@@ -58,27 +55,7 @@ const Header = () => {
                         <Image src="/ri-search-2-line.svg" width={31} height={31} alt={"Search"} className="w-[15px] h-auto absolute top-3 right-3" />
                     </div>
 
-                    <nav className="flex flex-col gap-1">
-                        <Link href={"/"} className={`link_mob py-4 ${router.pathname === '/' ? 'active_mob' : ''}`} onClick={() => {
-                            setBurgerActive(false)
-                        }}>Home</Link>
-                        <Link href={"/solutions"} className={`link_mob py-4 ${router.pathname === '/solutions' ? 'active_mob' : ''}`} onClick={() => {
-                            setBurgerActive(false)
-                        }} >Solutions</Link>
-                        <Link href={"/services"} className={`link_mob py-4 ${router.pathname === '/services' ? 'active_mob' : ''}`} onClick={() => {
-                            setBurgerActive(false)
-                        }}>Services</Link>
-                        <Link href={"/company"} className={`link_mob py-4 ${router.pathname === '/company' ? 'active_mob' : ''}`} onClick={() => {
-                            setBurgerActive(false)
-                        }}>Company</Link>
-                        <Link href={"/careers"} className={`link_mob py-4 ${router.pathname === '/careers' ? 'active_mob' : ''}`} onClick={() => {
-                            setBurgerActive(false)
-                        }}>Careers</Link>
-                        <Link href={"/contacts"} className={`link_mob py-4 ${router.pathname === '/contacts' ? 'active_mob' : ''}`} onClick={() => {
-                            setBurgerActive(false)
-                        }}>Contact Us</Link>
-                    </nav>
-
+                    <MobNavigation onClickHandler={() => {setBurgerActive(false)}}/>
                 </div>}
             </div>
         </header>

@@ -42,7 +42,7 @@ const OpenPositions = () => {
 
     return (<section className="auto-padding flex flex-col sm:flex-row py-10 sm:py-40">
         <div className="title--container">
-            <h3 className="title-h3 text-5xl">Work</h3>
+            <h4 className="title-h4">Work</h4>
             <h2 className="title-h2  mb-8 !leading-[75px]">Open<br/>positions</h2>
         </div>
 

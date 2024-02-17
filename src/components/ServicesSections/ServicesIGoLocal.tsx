@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 
-const PaymentIntegration = () => {
+const ServicesGoLocal = () => {
     const content = [
         {
             title: "EXTENSIVE POSSIBILITIES FOR ACCEPTING PAYMENTS",
@@ -42,8 +42,8 @@ const PaymentIntegration = () => {
 
     return (<section className="auto-padding flex flex-col py-40">
         <div className="title--container">
-            <h3 className="title-h3 text-5xl text-center">payment</h3>
-            <h2 className="title-h2  mb-8 text-center">Forget trouble<br />with integration</h2>
+            <h4 className="title-h4 text-center">payment</h4>
+            <h2 className="title-h2 mb-8 text-center">Forget trouble<br />with integration</h2>
         </div>
 
         <div className="payment__slider--container mt-[100px] mb-24">
@@ -100,4 +100,4 @@ const PaymentIntegration = () => {
     </section >);
 }
 
-export default PaymentIntegration;
+export default ServicesGoLocal;

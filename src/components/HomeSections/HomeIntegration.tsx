@@ -1,8 +1,7 @@
-import Button from "../Button";
 import Link from "next/link";
-import Image from "next/image";
+import Button from "../Button";
 
-const Integration = () => {
+const HomeIntegration = () => {
     return (
         <section className="integration--section bg-primaryLight dark:bg-primaryDark relative pt-16">
             {/* <Image src="/grey_ring.png" alt="Phone" width={315} height={344} className="grey_circle"></Image> */}
@@ -12,7 +11,7 @@ const Integration = () => {
 
                 <div className=" flex justify-end first-item text-center pr-28 ">
                     <div className="w-1/2">
-                        <h3 className="title-h3">INTEGRATION</h3>
+                        <h4 className="title-h4">INTEGRATION</h4>
                         <h2 className="title-h2 mb-7">Fraud monitoring</h2>
                         <p className="text mb-7">Everything is designed to make merchants' lives easier, from integration to pricing, reporting, and payouts, and everything arrives fast, orderly, and securely.</p>
                         <h4 className="title-h4 mb-4 uppercase">Fraud prevention technology</h4>
@@ -24,18 +23,18 @@ const Integration = () => {
                 <div className=" text-end flex flex-col md:flex-row justify-end">
                     <div className="w-2/4 bg-primaryDark dark:bg-primaryLight rounded-b-[20px] max-w-[516px] h-min">
                         <div className="ps-7 py-7 pe-12 text-start">
-                            <h3 className="title-h3 !font-montserrat text-primaryLight dark:text-primaryDark mb-5 !leading-[55px]">Individual approach</h3>
-                            <p className="text mb-7 text-primaryLight dark:text-primaryDark !font-bold uppercase">All operational and financial issues can be quickly resolved with a personal manager.</p>
+                            <h3 className="title-h3 text-primaryLight dark:text-primaryDark mb-5 !leading-[55px]">Individual approach</h3>
+                            <p className="text mb-7 text-primaryLight dark:text-primaryDark ">All operational and financial issues can be quickly resolved with a personal manager.</p>
 
                         </div>
           
-                            <Link className="bg-[#323232] dark:bg-[#323232] rounded-b-[17px] text-center block py-[25px] px-11 font-[18px] uppercase font-montserrat " href={"/contacts"}>get started</Link>
+                            <Link className="bg-[#323232] dark:bg-[#323232] rounded-b-[17px] text-center block py-[25px] px-11 font-[18px] uppercase font-montserrat font-bold" href={"/contacts"}>get started</Link>
                             
                     </div>
 
 
                     <div className="second-item w-2/5 pt-5 ps-36">
-                        <h3 className="title-h3 !font-montserrat">Crypto Payment Solutions</h3>
+                        <h3 className="title-h3">Crypto Payment Solutions</h3>
                         <p className="text mb-12">In our crypto checkouts and wallets, all transactions are automatic, guaranteed, support different cryptocurrencies, and there are no chargebacks. Our crypto solutions require only one approval stage, ensuring seamless integration.</p>
                         <Button title="About us" color={"light"} link={"about"}/>
                     </div>
@@ -73,4 +72,4 @@ const Integration = () => {
     );
 };
 
-export default Integration;
+export default HomeIntegration;
