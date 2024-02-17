@@ -4,28 +4,52 @@ import Link from "next/link";
 const Footer = () => {
     return (
         <footer className="bg-[#0F0F0F] dark:bg-[#0F0F0F]">
-            <div className="container flex flex-col gap-4 sm:gap-5">
-                {/* <div>
-                    <Image src={"/logo_new.png"} alt={"Logo"} width={227} height={74} />
-                </div>
-                <div className="flex flex-col gap-8 items-center md:items-start">
-                    <h4 className="title-h4 !text-[#696969] uppercase font-bold ">Quick links</h4>
-                    <Link href={"/terms"} className="text !font-montserrat !text-primaryLight uppercase  hover:underline !font-bold hover:text-[#00FFF0]">Terms and conditions</Link>
-                    <Link href={"/privacy"} className="text !font-montserrat !text-primaryLight uppercase  hover:underline !font-bold hover:text-[#00FFF0]">privacy policy</Link>
-                </div>
-                <div className="flex flex-col gap-8 items-center md:items-start">
-                    <h4 className="!text-[#696969] title-h4 uppercase ">Contacts</h4>
-                    <a className="text !md:text-[18px] !font-montserrat !text-primaryLight uppercase  uhover:nderline !font-bold hover:text-[#00FFF0]" href="mailto:info@siquro.com">info@siquro.com </a>
-                    <p className="text !font-montserrat !text-primaryLight uppercase !font-bold">fastadvisors ou</p>
-                </div>
-                <div className="flex flex-row gap-11">
-                    <Image src={"/PCI.png"} alt={"PCI"} width={99} height={75} className="w-[60px] md:w-[99px] h-[44px] md:h-[75px]" />
-                    <Image src={"/SSL.png"} alt={"SSL"} width={107} height={75} className="w-[65px] md:w-[107px] h-[44px] md:h-[75px]" />
-                </div> */}
+            <div className="container flex flex-col py-16 sm:py-20">
 
-                <div></div>
-                <div></div>
+                <div className="flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-5 pb-16 sm:pb-20">
+                    <div className="max-w-[336px]">
+                        <Image src={"/logo_new.png"} alt={"Logo"} width={336} height={116} className="w-full h-auto" />
+                    </div>
+
+                    <div className="flex flex-col sm:flex-row gap-10 w-full md:w-1/2 justify-between md:justify-end">
+                        <div className="flex flex-col items-center md:items-end gap-4 sm:gap-5">
+                            <h4 className="title-h4">
+                                quick links
+                            </h4>
+                            <Link href={"/terms"} className="text !text-primaryLight hover:underline hover:text-[#00FFF0]">Terms and conditions</Link>
+                            <Link href={"/privacy"} className="text !text-primaryLight hover:underline hover:text-[#00FFF0]">privacy policy</Link>
+                        </div>
+                        <div className="flex flex-col items-center md:items-end gap-4 sm:gap-5">
+                            <h4 className="title-h4">
+                                contacts
+                            </h4>
+                            <Link href={""} className="text !text-primaryLight hover:underline hover:text-[#00FFF0]">info@siquro.com</Link>
+                            <p className="text !text-primaryLight">fastadvisors ou</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div className="flex flex-col items-center sm:flex-row justify-between gap-4 sm:gap-5 mb-5">
+                    <div className="flex flex-row gap-4 sm:gap-5 items-center">
+                        <h4 className="title-h4">follow us:</h4>
+
+                        <div className="flex flex-row flex-nowrap gap-3 ">
+                            <Image src={"/social_links/facebook.svg"} alt={"Facebook"} width={32} height={32} className="w-[32px] h-[32px]" />
+                            <Image src={"/social_links/instagram.svg"} alt={"Instagram"} width={32} height={32} className="w-[32px] h-[32px]" />
+                            <Image src={"/social_links/twitter.svg"} alt={"Twitter"} width={32} height={32} className="w-[32px] h-[32px]" />
+                            <Image src={"/social_links/linkedin.svg"} alt={"Youtube"} width={32} height={32} className="w-[32px] h-[32px]" />
+                        </div>
+                    </div>
+
+                    <div className="flex flex-row gap-4 sm:gap-5">
+                        <Image src={"/PCI.png"} alt={"PCI"} width={99} height={75} className="w-[45px] h-auto sm:w-[60px] sm:h-[44px]" />
+                        <Image src={"/SSL.png"} alt={"SSL"} width={107} height={75} className="w-[40px] h-auto sm:w-[65px] sm:h-[44px]" />
+                    </div>
+                </div>
+
                 <div className="py-5">
+                    <div className="h-[1px] bg-primaryLight w-1/4 mb-5"></div>
                     <p className="text !text-[16px] sm:!text-[18px] ">SiQURO is an authorised payment institution regulated by the Financial Conduct Authority under the Payment Services Regulations 2017 (Firm Registration Number: 804718) for the provision of payment services. SiQURO an authorised payment institution regulated by the Central Bank under the  Financial Supervision Act for the provision of payment services (account information services). SiQURO is included in the public register of the Central Bank (License number: 1) and registered at the Chamber of Commerce (CoC number: 2).</p>
                 </div>
             </div>
@@ -33,6 +57,7 @@ const Footer = () => {
             <div className="bg-primaryLight py-4 md:py-5">
                 <div className="container flex flex-col items-center md:flex-row justify-between gap-4 md:gap-5">
                     <div className="">
+
                         <p className="font-montserrat text-[16px] sm:text-[18px] !text-primaryDark text-center">© 2024 SiQURO. All right reserved</p>
                     </div>
 
