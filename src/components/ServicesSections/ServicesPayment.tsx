@@ -6,7 +6,7 @@ const ServicesPayment = () => {
     const { theme, setTheme } = useTheme();
 
     return (
-        <section className="payment--section bg-primaryLight dark:bg-primaryDark mt-[-135px] auto-padding">
+        <section className="payment--section bg-primaryLight dark:bg-primaryDark mt-[-135px] container">
             <div className=" section__bg--image">
                 <div className="section_wrapper pt-[110px] pb-[290px] justify-between flex flex-col md:flex-row gap-14">
                     <div className="payment--content flex flex-col justify-center basis-3/5">

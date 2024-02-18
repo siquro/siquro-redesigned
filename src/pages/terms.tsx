@@ -2,7 +2,7 @@
 const Terms = () => {
     return (
         <main className="w-full bg-primaryLight dark:bg-primaryDark mx-auto">
-            <div className="auto-padding py-14">
+            <div className="container py-14">
             
                     <p className="py-5 title-h3 text-center">TERMS AND CONDITIONS</p>
                     <p className="text !text-[16px] mb-2">This document governs the Business relationships between <strong>FastAdvisors OU</strong> (“<strong>Siquro</strong>”) and you as a “<strong>Merchant</strong>”. Access to and use of <strong>Siquro</strong> services by the <strong>Merchant</strong> is subject to compliance with all terms and conditions set forth hereinafter together with payment processing services contract and annexes if any. Please read carefully before signing and accepting the terms and conditions of this Agreement.</p>

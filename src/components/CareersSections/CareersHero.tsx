@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 const CareersHero = () => {
     return (
-        <section className="careers__hero--section bg-primaryLight dark:bg-primaryDark mt-[-135px]">
-            <div className="section_wrapper pt-[150px] md:pt-[250px] sm:pb-[400px]  xl:pb-0 auto-padding justify-between flex flex-col items-center sm:flex-row sm:items-start gap-10 relative">
+        <section className="careers__hero--section bg-homeHeroBg bg-no-repeat  mt-[-135px]">
+            <div className="section_wrapper pt-[150px] md:pt-[250px] sm:pb-[400px]  xl:pb-0 container justify-between flex flex-col items-center sm:flex-row sm:items-start gap-10 relative">
                 <div className="flex flex-col mb-10 sm:mb-0 py-10 w-4/5 sm:w-2/5 md:w-[44%] xl:w-3/5">
                     <h2 className="title-h1 mb-[27px]">careers</h2>
                     <p className="text mb-10 !leading-loose">

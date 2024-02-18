@@ -2,7 +2,7 @@
 const Privacy = () => {
     return (
         <main className="w-full bg-primaryLight dark:bg-primaryDark mx-auto">
-            <div className="auto-padding py-14">
+            <div className="container py-14">
 
                 <p className="py-5 title-h3 text-center">PRIVACY POLICY</p>
                 <p className="text !text-[16px] mb-2">Our Privacy Policy may be made available in several languages; all versions are legally binding, but in the event of inconsistency between English version and a translated version English version prevails.</p>

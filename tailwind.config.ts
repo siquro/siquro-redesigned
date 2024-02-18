@@ -16,11 +16,11 @@ const config: Config = {
       container: {
         center: true,
         padding: {
-          DEFAULT: '15px',
-          sm: '15px',
-          lg: '20px',
-          xl: '5rem',
-          '2xl': '5rem',
+          DEFAULT: "15px",
+          sm: "15px",
+          lg: "20px",
+          xl: "5rem",
+          "2xl": "5rem",
         },
       },
       colors: {
@@ -39,6 +39,8 @@ const config: Config = {
 
         homeHeroBg: "url('/bg_images/home_hero-bg-2.png')",
         servicesHeroBg: " url('/bg_images/services_hero-bg.png')",
+        companyHeroBg: "url('/bg_images/company_hero-bg.png')",
+        solutionsHeroBg: "url('/bg_images/solution_hero-bg.png')",
 
         companyInovationBg: "url('/company_innovation.png')",
         weDoSectionBg: 'url("/bg_images/what_we_do-bg.png")',
@@ -52,6 +54,13 @@ const config: Config = {
         "fade-out": "fade-out 0.5s cubic-bezier(0.4, 0, 0.2, 1) both",
         "spin-slower": "spin 35s ease infinite",
         "spin-faster": "spin 25s ease-in-out infinite",
+        orbit: "orbit 10s linear infinite",
+      },
+      keyframes: {
+        orbit: {
+          from: { transform: "rotate(0deg) translateX(200px) rotate(0deg)" },
+          to: { transform: "rotate(360deg) translateX(200px) rotate(-360deg)" },
+        },
       },
     },
   },

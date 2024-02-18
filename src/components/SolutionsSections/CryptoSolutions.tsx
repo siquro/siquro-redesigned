@@ -2,8 +2,8 @@ import Button from "@/components/Button";
 import Image from "next/image";
 
 const CryptoSolutions = () => {
-    return (<section className="services__reporting--section auto-padding border-white mb-10">
-        <div className="reporting--container flex flex-col md:flex-row px-11 bg-primaryLight relative">
+    return (<section className="services__reporting--section container dark:border-primaryLight border-primaryDark mb-10">
+        <div className="reporting--container flex flex-col md:flex-row px-11 dark:bg-primaryLight bg-primaryDark relative">
             <div className="pt-[50px] pb-[62px] w-3/5 ">
                 <h4 className="title-h4 !text-primaryLight dark:!text-primaryDark ">CRYPTO</h4>
                 <h2 className="title-h2 mb-8 !text-primaryLight dark:!text-primaryDark">Crypto Solutions</h2>

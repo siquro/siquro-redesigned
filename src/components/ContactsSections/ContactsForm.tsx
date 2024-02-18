@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const ContactsForm = () => {
     return (
-        <section className='auto-padding mb-10'>
+        <section className='container mb-10'>
             <div>
                 <div className='flex flex-col gap-10 xl:gap-28 items-center md:justify-between mb-28'>
                     <div className='w-full flex flex-col sm:flex-row gap-10 xl:gap-28'>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const SolutionsTwoBlocks = () => {
-    return (<section className="solutions__two__blocks--section auto-padding mt-10">
+    return (<section className="solutions__two__blocks--section container mt-10">
         <div className="section_wrapper flex flex-col md:flex-row justify-between gap-5">
             <div className="w-full md:w-2/4 pt-4 md:pt-16 dark:bg-primaryDark bg-primaryLight border-primaryDark border-2 dark:border-primaryLight rounded-b-[20px]  my-auto md:max-w-[620px] h-min-[360px] h-full flex flex-col justify-end">
                 <div className="p-4 md:p-6 text-start">

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 const CompanyIntegration = () => {
-    return (<section className="services__reporting--section auto-padding border-white mb-10">
+    return (<section className="services__reporting--section container border-white mb-10">
         <div className="reporting--container flex flex-col sm:flex-row ps-16 pe-7 pt-7 bg-primaryLight relative justify-between">
             <div className="pt-[50px] pb-8 w-full sm:3/5 md:w-3/5  z-10">
                 <h4 className="title-h4 !text-primaryLight dark:!text-primaryDark ">INTEGRATION</h4>

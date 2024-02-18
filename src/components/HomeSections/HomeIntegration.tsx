@@ -1,72 +1,47 @@
 import Link from "next/link";
 import Button from "../Button";
+import Image from "next/image";
 
 const HomeIntegration = () => {
     return (
-        <section className="integration--section bg-primaryLight dark:bg-primaryDark relative pt-16">
-            {/* <Image src="/grey_ring.png" alt="Phone" width={315} height={344} className="grey_circle"></Image> */}
-
-
-            <div className="pt-32 pb-[90px] flex flex-col pe-40">
-
-                <div className=" flex justify-end first-item text-center pr-28 ">
-                    <div className="w-1/2">
-                        <h4 className="title-h4">INTEGRATION</h4>
-                        <h2 className="title-h2 mb-7">Fraud monitoring</h2>
-                        <p className="text mb-7">Everything is designed to make merchants' lives easier, from integration to pricing, reporting, and payouts, and everything arrives fast, orderly, and securely.</p>
-                        <h4 className="title-h4 mb-4 uppercase">Fraud prevention technology</h4>
-                        <h4 className="title-h4 mb-5 uppercase">Payouts that are prompt and frequent</h4>
-                    </div>
-
-                </div>
-
-                <div className=" text-end flex flex-col md:flex-row justify-end">
-                    <div className="w-2/4 bg-primaryDark dark:bg-primaryLight rounded-b-[20px] max-w-[516px] h-min">
-                        <div className="ps-7 py-7 pe-12 text-start">
-                            <h3 className="title-h3 text-primaryLight dark:text-primaryDark mb-5 !leading-[55px]">Individual approach</h3>
-                            <p className="text mb-7 text-primaryLight dark:text-primaryDark ">All operational and financial issues can be quickly resolved with a personal manager.</p>
-
-                        </div>
-          
-                            <Link className="bg-[#323232] dark:bg-[#323232] rounded-b-[17px] text-center block py-[25px] px-11 font-[18px] uppercase font-montserrat font-bold" href={"/contacts"}>get started</Link>
-                            
-                    </div>
-
-
-                    <div className="second-item w-2/5 pt-5 ps-36">
-                        <h3 className="title-h3">Crypto Payment Solutions</h3>
-                        <p className="text mb-12">In our crypto checkouts and wallets, all transactions are automatic, guaranteed, support different cryptocurrencies, and there are no chargebacks. Our crypto solutions require only one approval stage, ensuring seamless integration.</p>
-                        <Button title="About us" color={"light"} link={"about"}/>
-                    </div>
-                </div>
+        <section className="integration--section bg-primaryLight dark:bg-primaryDark relative mb-10">
+            <div className="hidden sm:block absolute top-[-10%] left-[0%] overflow-hidden w-[20%] z-10">
+                <Image src="/grey_ring-2.png" alt="Phone" width={862} height={862} className="w-full h-auto invert dark:invert-0" />
             </div>
+            <div className="container">
+                <div className="flex flex-col items-end">
+                    <div className="flex flex-col justify-end items-center first-item text-center border-b-[4px] border-primaryLight sm:border-b-0">
+                        <div className="border-b-[4px] border-primaryDark dark:border-primaryLight w-full flex justify-end">
+                            <h4 className="title-h4 w-full md:w-4/5 lg:w-3/5">INTEGRATION</h4>
+                        </div>
+                        <div className="z-20 sm:border-e-[4px] border-primaryDark dark:border-primaryLight flex justify-end px-0 sm:px-4 md:px-11">
+                            <div className="w-full md:w-4/5 lg:w-3/5">
+                                <h2 className="title-h2 mb-7">Fraud monitoring</h2>
+                                <p className="text mb-7">Everything is designed to make merchants' lives easier, from integration to pricing, reporting, and payouts, and everything arrives fast, orderly, and securely.</p>
+                                <h4 className="title-h4 mb-4">Fraud prevention technology</h4>
+                                <h4 className="title-h4 mb-5">Payouts that are prompt and frequent</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className=" z-20 text-end flex flex-col md:flex-row sm:border-t-[4px] border-primaryDark dark:border-primaryLight w-full md:w-[90%]">
+                        <div className=" bg-primaryDark dark:bg-primaryLight rounded-b-[20px]  m-auto md:m-0 w-4/5 h-full">
+                            <div className="p-4 md:py-11 md:ps-11 md:pe-32 text-start">
+                                <h3 className="title-h3 !text-primaryLight dark:!text-primaryDark mb-5 text-center md:text-start">Individual approach</h3>
+                                <p className="text !text-primaryLight dark:!text-primaryDark text-center md:text-start">All operational and financial issues can be quickly resolved with a personal manager.</p>
+                            </div>
+
+                            <Link className="bg-[#323232] dark:bg-[#323232] text-primaryLight  rounded-b-[17px] text-center block py-[12px] md:py-[25px] px-11 text-[18px] font-bold uppercase font-montserrat " href={"/contacts"}>get started</Link>
+                        </div>
 
 
-            <div className="line__wrapper2">
-                {/* <svg
-                    id="Metro_Map_Lines"
-                    className="map2"
-                    data-name="Metro Map Lines"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 208.5 204.5"
-                >
-                    <defs>
-                        <style>
-                            {`.cls-3{fill: none;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 3px;}.cls-3 {stroke: #fff;}`}
-                        </style>
-                    </defs>
-                    <title>metro-map-svg</title>
-                    <path
-                        id="yellow-line"
-                        className="lin2 cls-3"
-                        d="M10,100
-                        H160
-                        V190
-                        H10
-                        V750"
-                        transform="translate(-27 -21)"
-                    />
-                </svg> */}
+                        <div className="py-4 md:ps-11 md:py-11  text-center md:text-end">
+                            <h3 className="title-h3">Crypto Payment Solutions</h3>
+                            <p className="text mb-12">In our crypto checkouts and wallets, all transactions are automatic, guaranteed, support different cryptocurrencies, and there are no chargebacks. Our crypto solutions require only one approval stage, ensuring seamless integration.</p>
+                            <Button title="About us" color={"light"} link={"about"} />
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     );

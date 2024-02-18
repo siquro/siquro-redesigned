@@ -40,7 +40,7 @@ const ServicesGoLocal = () => {
     }
 
 
-    return (<section className="auto-padding flex flex-col py-40">
+    return (<section className="container flex flex-col py-40">
         <div className="title--container">
             <h4 className="title-h4 text-center">payment</h4>
             <h2 className="title-h2 mb-8 text-center">Forget trouble<br />with integration</h2>

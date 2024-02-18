@@ -3,10 +3,10 @@ import React from 'react'
 
  const CompanyHero = () => {
     return (
-        <section className="campany__hero--section bg-primaryLight dark:bg-primaryDark mt-[-135px]">
-            <div className="section_wrapper pt-[150px] md:pt-[250px] pb-10 sm:pb-[90px] auto-padding justify-between items-center flex flex-col md:flex-row gap-10">
+        <section className="campany__hero--section mt-[-135px] bg-companyHeroBg bg-no-repeat">
+            <div className="section_wrapper pt-[150px] md:pt-[250px] pb-10 sm:pb-[90px] container justify-between items-center flex flex-col md:flex-row gap-10">
                 <div className="flex flex-col w-4/5 md:w-1/2 py-10 justify-center">
-                    <h4 className="title-h4">SOLUTIONS</h4>
+                    <h4 className="title-h4 ">SOLUTIONS</h4>
                     <h1 className="title-h1 mb-[27px] !leading-normal">About us</h1>
                     <p className="text leading-6">
                         In 2022, Siquro was established and is now one of the leading payment platform providers worldwide. Siquro’s solutions are perfect for banks, PSPs, financial institutions, and more.
@@ -21,7 +21,7 @@ import React from 'react'
                 </div>
             </div>
 
-            <div className='auto-padding sm:mt-12'>
+            <div className='container sm:mt-12'>
                 <div className='item flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 sm:mb-9'>
                     <h3 className='title-h3 text-nowrap !font-montserrat text-start mb-1'>Fast integrations</h3>
                     <p className='text w-full sm:w-1/2 text-start sm:text-right'>Integrating has never been easier or faster thanks to Siquro’s technology.</p>
