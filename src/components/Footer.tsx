@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="container flex flex-col py-16 sm:py-20">
 
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-5 pb-16 sm:pb-20">
-                    <div className="max-w-[336px]">
+                    <div className="max-w-[280px] sm:max-w-[320px]">
                         <Image src={"/logo_new.png"} alt={"Logo"} width={336} height={116} className="w-full h-auto" />
                     </div>
 
@@ -53,7 +53,7 @@ const Footer = () => {
 
                 <div className="py-5">
                     <div className="h-[1px] bg-primaryLight w-1/4 mb-5"></div>
-                    <p className="text !text-[16px] sm:!text-[18px] !text-primaryLight dark:text-primaryLight">SiQURO is an authorised payment institution regulated by the Financial Conduct Authority under the Payment Services Regulations 2017 (Firm Registration Number: 804718) for the provision of payment services. SiQURO an authorised payment institution regulated by the Central Bank under the  Financial Supervision Act for the provision of payment services (account information services). SiQURO is included in the public register of the Central Bank (License number: 1) and registered at the Chamber of Commerce (CoC number: 2).</p>
+                    <p className="text !text-[15px] sm:!text-[16px]  !text-primaryLight dark:text-primaryLight">SiQURO is an authorised payment institution regulated by the Financial Conduct Authority under the Payment Services Regulations 2017 (Firm Registration Number: 804718) for the provision of payment services. SiQURO an authorised payment institution regulated by the Central Bank under the  Financial Supervision Act for the provision of payment services (account information services). SiQURO is included in the public register of the Central Bank (License number: 1) and registered at the Chamber of Commerce (CoC number: 2).</p>
                 </div>
             </div>
 
@@ -61,10 +61,10 @@ const Footer = () => {
                 <div className="container flex flex-col items-center md:flex-row justify-between gap-4 md:gap-5">
                     <div className="">
 
-                        <p className="font-montserrat text-[16px] sm:text-[18px] !text-primaryDark text-center">© 2024 SiQURO. All right reserved</p>
+                        <p className="font-montserrat !text-[15px] sm:!text-[16px] !text-primaryDark text-center">© 2024 SiQURO. All right reserved</p>
                     </div>
 
-                    <div className="font-montserrat text-[16px] sm:text-[18px] !text-primaryDark hover:text-[#00FFF0] flex flex-col sm:flex-row gap-4">
+                    <div className="font-montserrat !text-[15px] sm:!text-[16px] !text-primaryDark hover:text-[#00FFF0] flex flex-col sm:flex-row gap-4">
                         <Link href={"/terms"} className="hover:text-[#00FFF0] inline text-center transition-colors">Terms & conditions</Link>
                         <Link href={"/privacy"} className="hover:text-[#00FFF0] inline text-center transition-colors">Privacy policy</Link>
                     </div>

@@ -8,19 +8,19 @@ const ContactsForm = () => {
                 <div className='flex flex-col gap-10 xl:gap-28 items-center md:justify-between mb-28'>
                     <div className='w-full flex flex-col sm:flex-row gap-10 xl:gap-28'>
                         <div className='w-full sm:w-4/5 md:w-1/2'>
-                            <p className='text uppercase'>Company</p>
+                            <p className='title-h4'>Company</p>
                             <div className='flex flex-row flex-nowrap items-end border-b-4 border-b-primaryDark dark:border-b-primaryLight justify-between pb-6'>
-                                <p className='title-h4 uppercase'>Fast Advisors OU</p>
-                                <Image src="/contact_company-icon.svg" width={60} height={60} alt={''} className='w-[25px] sm:w-[35px] md:w-[60px] h-auto filter-invert dark:filter-none' />
+                                <p className='text uppercase'>Fast Advisors OU</p>
+                                <Image src="/contact_company-icon.svg" width={60} height={60} alt={''} className='w-[25px] sm:w-[35px] md:w-[50px] h-auto filter-invert dark:filter-none' />
                             </div>
                         </div>
 
                         <div className='w-full sm:w-4/5 md:w-1/2'>
-                            <p className='text uppercase'>Email</p>
+                            <p className='title-h4'>Email</p>
                             <div className='flex flex-row flex-nowrap items-end border-b-4 border-b-primaryDark dark:border-b-primaryLight justify-between pb-6'>
-                                <a href="mailto:info@siquiro.com" className='block hover:underline title-h4 uppercase'>info@siquiro.com</a>
+                                <a href="mailto:info@siquiro.com" className='block hover:underline text uppercase'>info@siquiro.com</a>
 
-                                <Image src="/ri-mail-fill.svg" width={60} height={60} alt={''} className='w-[25px] sm:w-[35px] md:w-[60px] h-auto filter-invert dark:filter-none' />
+                                <Image src="/ri-mail-fill.svg" width={60} height={60} alt={''} className='w-[25px] sm:w-[35px] md:w-[50px] h-auto filter-invert dark:filter-none' />
                             </div>
                         </div>
 
@@ -29,11 +29,11 @@ const ContactsForm = () => {
 
 
                     <div className='w-full sm:w-4/5 md:w-1/2'>
-                        <p className='text uppercase'>Support</p>
+                        <p className='title-h4'>Support</p>
                         <div className='flex flex-row flex-nowrap items-end border-b-4 border-b-primaryDark dark:border-b-primaryLight justify-between pb-6'>
-                            <a href="https://t.me/SiQURO_Support" target='_blanc' className='block hover:underline title-h4 uppercase'>https://t.me/SiQURO_Support</a>
+                            <a href="https://t.me/SiQURO_Support" target='_blanc' className='block hover:underline text uppercase'>https://t.me/SiQURO_Support</a>
 
-                            <Image src="/telegram_l.svg" width={60} height={60} alt={'Telegram'} className='w-[25px] sm:w-[35px] md:w-[60px] h-auto filter-invert dark:filter-none' />
+                            <Image src="/telegram_l.svg" width={60} height={60} alt={'Telegram'} className='w-[25px] sm:w-[35px] md:w-[50px] h-auto filter-invert dark:filter-none' />
                         </div>
                     </div>
                 </div>
@@ -43,7 +43,7 @@ const ContactsForm = () => {
                     <div className='w-full mx-auto flex flex-col sm:w-4/5 md:w-3/5 lg:w-1/2 lg:text-left justify-between'>
 
                         <div className=''>
-                            <h4 className='title-h4 !font-montserrat mb-5 !text-[32px] sm:!text-[36px] uppercase'>Send a Message</h4>
+                            <h4 className='title-h3 mb-5'>Send a Message</h4>
                             <p className='text'>Please get in touch to get more offers on a broad range of Siquuro services from our expert support team.</p>
                         </div>
 
