@@ -1,5 +1,5 @@
-import { nextui } from "@nextui-org/react";
 import type { Config } from "tailwindcss";
+const {nextui} = require("@nextui-org/react");
 
 const config: Config = {
   content: [
@@ -45,22 +45,38 @@ const config: Config = {
         companyInovationBg: "url('/company_innovation.png')",
         weDoSectionBg: 'url("/bg_images/what_we_do-bg.png")',
         careersContactUsBg: "url('/careers_2.png')",
+        servicesPaymentBg: "url('/bg_images/payment_bg.png')",
       },
       boxShadow: {
         "3xl": "0px 4px 50px 0px rgba(0, 0, 0, 0.25)",
       },
-      animation: {
-        "fade-in": "fade-in 0.5s cubic-bezier(0.4, 0, 0.2, 1) both",
-        "fade-out": "fade-out 0.5s cubic-bezier(0.4, 0, 0.2, 1) both",
-        "spin-slower": "spin 35s ease infinite",
-        "spin-faster": "spin 25s ease-in-out infinite",
-        orbit: "orbit 10s linear infinite",
-      },
       keyframes: {
         orbit: {
-          from: { transform: "rotate(0deg) translateX(200px) rotate(0deg)" },
-          to: { transform: "rotate(360deg) translateX(200px) rotate(-360deg)" },
+          from: { transform: "rotate(0deg) translateX(100px) rotate(0deg)" },
+          to: { transform: "rotate(360deg) translateX(100px) rotate(-360deg)" },
         },
+        spin: {
+          "100%": { transform: "rotate(360deg)" },
+        },
+        reversSpin: {
+          "100%": { transform: "rotate(-360deg)" },
+        },
+        zoomIn: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(0.8)" },
+        },
+        moovingRightToLeft: {
+          "0%, 100%": { left: "-15%" },
+          "50%": { left: "10%" },
+        },
+      },
+      animation: {
+        "spin-slow": "spin 20s linear infinite",
+
+        // "fade-in": "fade-in 0.5s cubic-bezier(0.4, 0, 0.2, 1) both",
+        // "fade-out": "fade-out 0.5s cubic-bezier(0.4, 0, 0.2, 1) both",
+        // "spin-faster": "spin 25s ease-in-out infinite",
+        orbit: "orbit 8s linear infinite",
       },
     },
   },

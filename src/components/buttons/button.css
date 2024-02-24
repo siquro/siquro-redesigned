@@ -1,0 +1,91 @@
+.global_button {
+  display: inline;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  text-wrap: nowrap;
+  border-radius: 100px;
+  font-family: var(--font-montserrat);
+  text-transform: uppercase;
+  letter-spacing: 0.72px;
+  font-weight: 700;
+  border: 2px solid white;
+  @apply font-[16px] sm:font-[18px] px-[16px] sm:px-[24px] py-[12px];
+}
+
+.global_button::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg, #03a4ff 22.51%, #009ee2 55.83%, #0085d0 100%);
+  top: 0;
+  right: -50px;
+  height: 100%;
+  width: 0;
+  border-radius: 100px;
+  z-index: -1;
+  transition: width 1s;
+}
+
+.btn_dark {
+  @apply text-primaryDark dark:text-primaryLight bg-primaryLight dark:bg-primaryDark;
+}
+
+.btn_light {
+  @apply text-primaryLight dark:text-primaryDark   bg-primaryDark dark:bg-primaryLight;
+}
+
+.btn_dark:hover {
+  @apply text-primaryLight dark:text-primaryDark;
+}
+
+.btn_light:hover {
+  @apply text-primaryDark dark:text-primaryLight;
+}
+
+.global_button:hover::before {
+  width: 150%;
+  color: white;
+}
+
+.global_button:active::before {
+  transition: 3s;
+  background: linear-gradient(180deg, #03a4ff 22.51%, #009ee2 55.83%, #0085d0 100%);
+  color: white;
+}
+
+.outline_button {
+  padding-right: 60px;
+  transition: all 0.5s ease-in-out;
+  background-color: transparent !important;
+  @apply bg-transparent border-2 border-primaryDark hover:border-accent3 dark:border-primaryLight  dark:hover:border-accent3 pe-[16px] sm:pe-[60px];
+}
+
+.outline_button::before {
+  background: white;
+  right: 0;
+  top: 0;
+  @apply w-[48px] h-[48px];
+}
+.outline_button:hover::before,
+.outline_button:active::before {
+  @apply hover:bg-linear-gradient-hover active:bg-linear-gradient-hover;
+}
+
+.outline_button::before {
+  z-index: -1;
+}
+
+.btn_icon {
+  position: absolute;
+  content: "";
+  top: calc(50% - 20px);
+  right: 2px;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.outline_button:hover .dark_icon {
+  filter: invert(1);
+}

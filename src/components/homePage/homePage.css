@@ -1,0 +1,166 @@
+.we__do--section .bg_element::after {
+  content: "";
+  background: url("../../../public/Fraud_monitoring2.png") no-repeat;
+
+  top: calc(50% - 90px);
+
+  /* z-index: 1; */
+  /* @apply hidden sm:block sm:w-[92px] invert dark:invert-0; */
+}
+
+/* we do section  */
+
+.we__do--swiper .swiper-slide-prev {
+  height: 400px;
+  z-index: 2;
+  transform: translate3d(0px, -48px, -100px) scale(1) !important;
+  transition-duration: 0ms;
+}
+
+.we__do--swiper .swiper-slide-next {
+  transform: translate3d(0px, 48px, -100px) scale(1) !important;
+}
+
+.we__do--swiper {
+  padding-left: 55px !important;
+}
+
+.we__do--swiper .swiper-pagination {
+  position: absolute;
+  top: calc(50% - 85px);
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.we__do--swiper .swiper-pagination .swiper-pagination-bullet {
+  background: white;
+  width: 24px;
+  height: 24px;
+  display: block;
+  border-radius: 100px;
+}
+
+.we__do--swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  height: 70px;
+}
+
+/* reporting section */
+
+/* .gear {
+  animation: spin 15s linear infinite;
+} */
+
+/* .gear-2 {
+  animation: spin2 15s linear infinite;
+} */
+
+/* .gear-3 {
+  animation: spin 15s linear infinite;
+} */
+
+/* @-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+} */
+
+/* @-webkit-keyframes spin2 {
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@-moz-keyframes spin2 {
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin2 {
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+} */
+
+/* .magnify {
+  animation: zoomInOut 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+}
+
+@-moz-keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+} */
+
+.phone {
+  /* transform: rotate(3.859deg); */
+  /* animation: moveRightLeft 5s linear infinite; */
+}
+
+/* @-webkit-keyframes moveRightLeft {
+  0%,
+  100% {
+    right: 350px;
+  }
+  50% {
+    right: 400px;
+  }
+}
+
+@-moz-keyframes moveRightLeft {
+  0%,
+  100% {
+    right: 350px;
+  }
+  50% {
+    right: 400px;
+  }
+} */
+
+/* @keyframes moveRightLeft {
+  0%,
+  100% {
+    right: 350px;
+  }
+  50% {
+    right: 400px;
+  }
+} */

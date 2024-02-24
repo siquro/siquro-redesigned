@@ -1,0 +1,103 @@
+/* payment section  */
+
+/*.payment--section .section__bg--image {
+   background: url("../../../public/bg_images/payment_bg.png") no-repeat;
+  width: 60%;
+    height: auto;
+  background-size: contain; 
+}*/
+
+.payment__animation--block .main__animation--container {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 409px;
+}
+.payment__animation--block .main__animation--container img {
+  width: 100%;
+  height: auto;
+}
+.payment__animation--block #lick {
+  left: 0px;
+  bottom: 205px;
+  width: 145px;
+  height: auto;
+}
+.payment__animation--block #gear {
+  left: 10px;
+  bottom: -60px;
+  width: 130px;
+  height: auto;
+}
+.payment__animation--block #coin {
+  left: -90px;
+  bottom: 80px;
+  width: 120px;
+  height: auto;
+}
+.payment__animation--block #lock {
+  left: 130px;
+  bottom: 60px;
+  width: 110px;
+  height: auto;
+}
+
+/* services swiper */
+
+.services-swiper.swiper {
+  width: 100%;
+  height: 370px;
+}
+
+.services-swiper .swiper-wrapper {
+  height: 270px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.services-swiper .swiper-slide {
+  opacity: 0;
+}
+
+.services-swiper .swiper-slide-prev,
+.services-swiper .swiper-slide-active,
+.services-swiper .swiper-slide-next {
+  opacity: 1;
+}
+
+.services-swiper .swiper-slide-active {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 450px;
+  margin-top: 65px;
+}
+
+.services-swiper .swiper-slide-prev h4,
+.services-swiper .swiper-slide-next h4,
+.services-swiper .swiper-slide-next p,
+.services-swiper .swiper-slide-prev p {
+  display: none !important;
+}
+
+.services-swiper .swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  z-index: 1;
+  justify-content: center;
+}
+
+.services-swiper .swiper-pagination .swiper-pagination-bullet {
+  background: white;
+  width: 24px;
+  height: 24px;
+  display: block;
+  border-radius: 100px;
+}
+
+.services-swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 70px;
+}
