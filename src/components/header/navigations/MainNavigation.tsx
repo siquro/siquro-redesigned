@@ -10,7 +10,6 @@ const MainNavigation = () => {
       <Link href={"/"} className={`link ${pathname === '/' ? 'active' : ''}`}>Home</Link>
       <Link href={"/solutions"} className={`link ${pathname === '/solutions' ? 'active' : ''}`}>Solutions</Link>
       <Link href={"/services"} className={`link ${pathname === '/services' ? 'active' : ''}`}>Services</Link>
-      <Link href={"/company"} className={`link ${pathname === '/company' ? 'active' : ''}`}>Company</Link>
       <Link href={"/careers"} className={`link ${pathname === '/careers' ? 'active' : ''}`}>Careers</Link>
       <Link href={"/contacts"} className={`link ${pathname === '/contacts' ? 'active' : ''}`}>Contact Us</Link>
     </nav>

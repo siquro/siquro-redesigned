@@ -9,7 +9,7 @@ const ServicesPayment = () => {
             <div className="bg-servicesPaymentBg bg-no-repeat bg-contain">
                 <div className="section_wrapper pt-[110px] pb-[290px] justify-between flex flex-col md:flex-row gap-14">
                     <div className="payment--content flex flex-col justify-center basis-3/5">
-                        <h4 className="title-h4">payment</h4>
+                        <p className="badge">payment</p>
                         <h2 className="title-h2 !leading-[78px] mb-8">A PERFECT PAYMENT SOLUTIONS</h2>
                         <p className="text mb-[55px] md:w-4/5">
                             We know our online payment system is scalable, secure and fast because we designed and developed it ourselves.
@@ -26,10 +26,10 @@ const ServicesPayment = () => {
                         </div>
 
                         <div className="">
-                            <Image src="/payment_animation/like.png" alt="like" width={154} height={138} className="orbit absolute  animate-orbit" id="lick"></Image>
-                            <Image src="/payment_animation/coin.png" alt="coin" width={132} height={148} className="orbit absolute animate-orbit" id="coin"></Image>
-                            <Image src="/payment_animation/lock.png" alt="lock" width={160} height={170} className="orbit absolute animate-orbit" id="lock"></Image>
-                            <Image src="/payment_animation/gear.png" alt="gear" width={136} height={148} className="orbit absolute animate-orbit" id="gear"></Image>
+                            <Image src="/payment_animation/like.png" alt="like" width={154} height={138} className="orbit absolute  " id="lick"></Image>
+                            <Image src="/payment_animation/coin.png" alt="coin" width={132} height={148} className="orbit absolute " id="coin"></Image>
+                            <Image src="/payment_animation/lock.png" alt="lock" width={160} height={170} className="orbit absolute " id="lock"></Image>
+                            <Image src="/payment_animation/gear.png" alt="gear" width={136} height={148} className="orbit absolute " id="gear"></Image>
                         </div>
 
                     </div>

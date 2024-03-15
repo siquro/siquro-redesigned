@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Button from '../buttons/Button';
 
 const CareersContactUs = () => {
-    return (<section className="services__reporting--section container mb-10">
+    return (<section className="services__reporting--section container mb-[90px]">
         <div className="reporting--container flex flex-col md:flex-row border-2 dark:border-primaryLight border-primaryDark">
             <div className="hidden md:flex p-2 w-1/2 xl:max-w-[654px]">
                 <Image src={"/careers_2.png"} alt={"Careers 2"} width={554} height={368}  className='!w-full h-auto'/>

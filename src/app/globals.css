@@ -24,15 +24,15 @@ body {
 
 /* gloabl,custom tailwind classes */
 .title-h1 {
-  @apply font-kodchasan font-extrabold text-[32px] sm:text-[40px] md:text-[50px] xl:text-[64px] dark:text-primaryLight text-primaryDark leading-normal uppercase;
+  @apply font-kodchasan font-extrabold text-[32px] sm:text-[40px] md:text-[50px] xl:text-[64px] dark:text-primaryLight text-primaryDark leading-[1.2] uppercase;
 }
 
 .title-h2 {
-  @apply font-kodchasan font-extrabold text-[32px] sm:text-[40px] md:text-[50px] xl:text-[64px] dark:text-primaryLight text-primaryDark uppercase leading-normal;
+  @apply font-kodchasan font-extrabold text-[32px] sm:text-[40px] md:text-[50px] xl:text-[64px] dark:text-primaryLight text-primaryDark uppercase leading-[1.2];
 }
 
 .title-h3 {
-  @apply font-kodchasan font-bold text-[24px] md:text-[32px] xl:text-[48px] dark:text-primaryLight text-primaryDark uppercase leading-normal;
+  @apply font-kodchasan font-bold text-[24px] md:text-[32px] xl:text-[48px] dark:text-primaryLight text-primaryDark uppercase leading-[1.2];
 }
 
 .title-h4 {
@@ -41,6 +41,10 @@ body {
 
 .text {
   @apply font-montserrat font-normal text-[16px] lg:text-[17px] xl:text-[20px] dark:text-primaryLight text-primaryDark;
+}
+
+.badge {
+  @apply font-kodchasan font-bold text-[22px] dark:text-primaryLight text-primaryDark uppercase;
 }
 
 .link {

@@ -109,7 +109,6 @@ const WhatWeDo = () => {
                     </div>
                 </div>
             </div>
-
         </section>
     );
 };

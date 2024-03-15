@@ -12,15 +12,24 @@ const Footer = () => {
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-10 w-full md:w-1/2 justify-between md:justify-end">
-                        <div className="flex flex-col items-center md:items-end gap-4 sm:gap-5">
+                        <div className="flex flex-col items-center md:items-end gap-4 sm:gap-5 w-3/5">
                             <h4 className="title-h4 !text-primaryLight">
                                 quick links
                             </h4>
-                            <Link href={"/contact"} className="text !text-primaryLight hover:underline hover:!text-[#00FFF0] transition-colors">Contact Us</Link>
-                            <Link href={"/company"} className="text !text-primaryLight hover:underline hover:!text-[#00FFF0] transition-colors">Company</Link>
-                            <Link href={"/career"} className="text !text-primaryLight hover:underline hover:!text-[#00FFF0] transition-colors">Career</Link>
+                            <div className="flex flex-row gap-4 sm:gap-[50px] w-full justify-end">
+                                <div className="flex flex-col justify-end gap-5">
+                                    <Link href={"/solutions"} className="text !text-primaryLight hover:underline hover:!text-[#00FFF0] transition-colors text-end">Solution</Link>
+                                    <Link href={"/services"} className="text !text-primaryLight hover:underline hover:!text-[#00FFF0] transition-colors text-end">Services</Link>
+                                </div>
+                                <div className="flex flex-col justify-end gap-5">
+                                    <Link href={"/career"} className="text !text-primaryLight hover:underline hover:!text-[#00FFF0] transition-colors  text-end">Career</Link>
+                                    <Link href={"/contact"} className="text !text-primaryLight hover:underline hover:!text-[#00FFF0] transition-colors text-end">Contact Us</Link>
+                                </div>
+                            </div>
+
                         </div>
-                        <div className="flex flex-col items-center md:items-end gap-4 sm:gap-5">
+
+                        <div className="flex flex-col items-center md:items-end gap-4 sm:gap-5 w-2/5">
                             <h4 className="title-h4 !text-primaryLight dark:text-primaryLight">
                                 contacts
                             </h4>

@@ -6,8 +6,8 @@ const HomeHero = () => {
 
     return (
         <section className="home__hero--section bg-homeHeroBg bg-no-repeat mt-[-135px]">
-            <div className="container pt-[150px] md:pt-[250px] pb-10 sm:pb-[90px] justify-between items-center flex flex-col-reverse sm:flex-row gap-5 md:gap-10">
-                <div className="flex flex-col w-full sm:w-3/5 py-4 sm:py-10 justify-center">
+            <div className="container pt-[150px] md:pt-[200px] pb-10 sm:pb-[90px] justify-between items-center flex flex-col-reverse sm:flex-row gap-5 md:gap-10">
+                <div className="flex flex-col w-full sm:w-3/5 py-4 sm:py-5 ">
                     <h1 className="title-h1 mb-6 md:mb-12">UNIQUE PAYMENT GATEWAY</h1>
                     <p className="text mb-6 md:mb-12">
                         Accept payments with us and open up new <br /> markets and opportunities in the online payments <br />industry
@@ -18,13 +18,13 @@ const HomeHero = () => {
                     </div>
                 </div>
 
-                <div className="hero__animation--block hidden sm:flex w-full sm:w-2/5 relative justify-end">
-                    <div className="max-w-[130px] sm:max-w-[320px]  relative">
+                <div className="hero__animation--block hidden sm:flex w-full sm:w-2/6 relative justify-end">
+                    <div className="max-w-[130px] sm:max-w-[300px]  relative">
                         <Image src="/hero_home_animation/phone2.png" alt="phone" width={316} height={610} className="item_main w-full h-auto z-0 animate-pulse" id="orbit" />
 
 
                         <div className="absolute z-[2] w-[25%] top-[5%] left-[30%] ">
-                            <Image src="/hero_home_animation/coin.png" alt="coin" width={159} height={142} className="item_one w-full h-auto" id="orbit" />
+                            <Image src="/hero_home_animation/coin.png" alt="coin" width={159} height={142} className="item_one " id="orbit" />
                         </div>
 
                         <div className="absolute z-[3] w-[30%] top-[20%] left-[5%]">

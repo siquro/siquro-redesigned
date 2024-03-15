@@ -9,7 +9,7 @@ const ServicesReporting = () => {
             </div>
 
             <div className="w-full md:w-3/5 p-0 lg:p-11">
-                <h4 className="title-h4  ">REPORTING</h4>
+                <p className="badge">REPORTING</p>
                 <h2 className="title-h2 mb-8 w-full lg:w-4/5">Put your brand on it</h2>
                 <p className="text mb-8 ">Monitor your pay in/payout information in real time through a digital merchant portal without installation and gain a deeper understanding of your customers.</p>
                 <p className="title-h4 uppercase mb-8 ">Payment service providers, merchants, agents, and IT developers can benefit from Leasing services;</p>

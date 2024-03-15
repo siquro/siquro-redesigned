@@ -2,7 +2,7 @@ import Image from "next/image";
 import Button from "../buttons/Button";
 
 const CryptoSolutions = () => {
-    return (<section className="services__reporting--section container dark:border-primaryLight border-primaryDark mb-10">
+    return (<section className="services__reporting--section container dark:border-primaryLight border-primaryDark pb-[90px]">
         <div className="reporting--container flex flex-col md:flex-row px-11 dark:bg-primaryLight bg-primaryDark relative">
             <div className="pt-[50px] pb-[62px] w-3/5 ">
                 <h4 className="title-h4 !text-primaryLight dark:!text-primaryDark ">CRYPTO</h4>

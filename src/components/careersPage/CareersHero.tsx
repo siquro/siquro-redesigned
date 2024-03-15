@@ -21,7 +21,7 @@ const CareersHero = () => {
                         <Image src={'/careers.png'} alt={'Carerrs'} width={434} height={357} className='w-full h-auto' />
                     </div>
 
-                    <h4 className="title-h4 mb-2">CAREERS</h4>
+                    <p className="badge">work</p>
                     <h1 className="title-h1">Become a member of our team</h1>
                     <p className="text dark:text-primaryLight text-primaryDark pb-7 pe-7">A broad range of projects are being offered at Siquro, and ambitious self-motivated professionals are welcome to apply their talents. A lot needs to be done in the world’s most promising fintech company, from developing innovative payment systems to helping the company reach new markets.</p>
 

@@ -4,7 +4,7 @@ import Button from "../buttons/Button";
 
 const HomeIntegration = () => {
     return (
-        <section className="integration--section bg-primaryLight dark:bg-primaryDark relative mb-10">
+        <section className="integration--section bg-primaryLight dark:bg-primaryDark relative pb-[90px]">
             <div className="hidden sm:block absolute top-[-10%] left-[0%] overflow-hidden w-[20%] z-10">
                 <Image src="/grey_ring-2.png" alt="Phone" width={862} height={862} className="w-full h-auto invert dark:invert-0" />
             </div>
