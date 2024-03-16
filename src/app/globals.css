@@ -44,7 +44,7 @@ body {
 }
 
 .badge {
-  @apply font-kodchasan font-bold text-[22px] dark:text-primaryLight text-primaryDark uppercase;
+  @apply font-kodchasan font-bold text-[16px] md:text-[22px] dark:text-primaryLight text-primaryDark uppercase;
 }
 
 .link {
@@ -115,61 +115,3 @@ body {
   width: 200px;
   background-color: #0f0f0f;
 }
-
-/* integration section */
-
-
-/* .payment__custom--swiper{
-  width: 694px;
-  height: 274px;
-}
-
-.payment__custom--swiper .swiper {
-  width: 700px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.payment__custom--swiper .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 494px;
-  height: 374px;
-} */
-
-
-
-
-/* 
-.swiper-wrapper {
-  height: 100%;
-  align-items: center;
-}
-
-.swiper-slide-active {
-  z-index: 1;
-  width: 80%;
-}
-
-.swiper-slide-prev {
-  margin-right: -150px;
-}
-
-.swiper-slide-next {
-  margin-left: -150px;
-}
-
-.swiper-slide-next,
-.swiper-slide-prev {
-  z-index: 0;
-  height: 95% !important;
-}
-
-.swiper-slide-next .slider--content,
-.swiper-slide-prev .slider--content {
-  height: 95%;
-}
-
-.swiper-slide-active .slider--content {
-  height: 100%;
-} */

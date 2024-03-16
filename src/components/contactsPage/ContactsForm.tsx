@@ -10,7 +10,7 @@ const ContactsForm = () => {
                             <p className='title-h4'>Company</p>
                             <div className='flex flex-row flex-nowrap items-end border-b-4 border-b-primaryDark dark:border-b-primaryLight justify-between pb-6'>
                                 <p className='text uppercase'>Fast Advisors OU</p>
-                                <Image src="/contact_company-icon.svg" width={60} height={60} alt={''} className='w-[25px] sm:w-[35px] md:w-[50px] h-auto dark:invert-0 invert' />
+                                <Image src="/contact_company-icon.svg" width={60} height={60} alt={''} className='w-[25px] md:w-[30px] h-auto dark:invert-0 invert' />
                             </div>
                         </div>
 
@@ -19,7 +19,7 @@ const ContactsForm = () => {
                             <div className='flex flex-row flex-nowrap items-end border-b-4 border-b-primaryDark dark:border-b-primaryLight justify-between pb-6'>
                                 <a href="mailto:info@siquiro.com" className='block hover:underline text uppercase'>info@siquiro.com</a>
 
-                                <Image src="/ri-mail-fill.svg" width={60} height={60} alt={''} className='w-[25px] sm:w-[35px] md:w-[50px] h-auto dark:invert-0 invert dark:filter-none' />
+                                <Image src="/ri-mail-fill.svg" width={60} height={60} alt={''} className='w-[25px] md:w-[30px] h-auto dark:invert-0 invert dark:filter-none' />
                             </div>
                         </div>
 
@@ -32,7 +32,7 @@ const ContactsForm = () => {
                         <div className='flex flex-row flex-nowrap items-end border-b-4 border-b-primaryDark dark:border-b-primaryLight justify-between pb-6'>
                             <a href="https://t.me/SiQURO_Support" target='_blanc' className='block hover:underline text uppercase'>https://t.me/SiQURO_Support</a>
 
-                            <Image src="/telegram_l.svg" width={60} height={60} alt={'Telegram'} className='w-[25px] sm:w-[35px] md:w-[50px] h-auto dark:invert-0 invert dark:filter-none' />
+                            <Image src="/telegram_l.svg" width={60} height={60} alt={'Telegram'} className='w-[25px] md:w-[30px] h-auto dark:invert-0 invert dark:filter-none' />
                         </div>
                     </div>
                 </div>
@@ -42,13 +42,13 @@ const ContactsForm = () => {
                     <div className='w-full mx-auto flex flex-col sm:w-4/5 md:w-3/5 lg:w-1/2 lg:text-left justify-between'>
 
                         <div className=''>
-                            <h4 className='title-h3 mb-5'>Send a Message</h4>
-                            <p className='text'>Please get in touch to get more offers on a broad range of Siquuro services from our expert support team.</p>
+                            <h4 className='title-h3 mb-5 text-center lg:text-start'>Send a Message</h4>
+                            <p className='text  text-center lg:text-start'>Please get in touch to get more offers on a broad range of Siquuro services from our expert support team.</p>
                         </div>
 
                     </div>
 
-                    <div className="w-full sm:w-4/5 md:w-3/5 lg:w-1/2 flex flex-col mx-auto dark:bg-primaryDark bg-primaryLight border-primaryDark border-2 dark:border-[#FFE8E8] rounded-[20px] pt-10">
+                    <div className="w-full sm:w-4/5 md:w-4/5 lg:w-1/2 flex flex-col mx-auto dark:bg-primaryDark bg-primaryLight border-primaryDark border-2 dark:border-[#FFE8E8] rounded-[20px] pt-10">
                         <form action="">
                             <div className='px-4 md:px-10 pb-6'>
                                 <label className="block mb-6">

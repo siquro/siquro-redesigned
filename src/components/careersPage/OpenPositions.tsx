@@ -9,8 +9,8 @@ import { Autoplay, EffectCoverflow, Mousewheel, Pagination } from "swiper/module
 const OpenPositions = () => {
     const content = [
         {
-            title: "1 position",
-            description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+            title: "FRONT-END DEVELOPER",
+            description: "Our company is looking for a Front-end developer who can help us develop efficient user interfaces, optimize pages, and implement best practices.",
         },
         {
             title: " 2 position",
@@ -21,30 +21,29 @@ const OpenPositions = () => {
             description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
         },
         {
-            title: "4 position",
-            description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+            title: "KEY ACCOUNT MANAGER",
+            description: "Customer questions, issues, and concerns are addressed via online communication channels in this role.",
         },
     ]
 
     const Card = ({ title, description }: { title: string, description: string }) => {
         return <>
-            <h4 className='title-h4 text-primaryLight dark:text-primaryDark mb-7 text-center'>{title}</h4>
+            <h4 className='title-h4  text-primaryLight dark:text-primaryDark mb-5 text-center'>{title}</h4>
             <p className='text text-primaryLight dark:text-primaryDark text-center'>{description}</p>
         </>
     }
 
-
     return (
-        <section className="container flex flex-col  pb-10 sm:pb-[40px] lg:mt-[-50px]">
-            <div className="title--container">
-                <h3 className="title-h3">Open<br/>positions</h3>
+        <section className="container flex flex-col pb-10 sm:pb-[40px] mt-[40px] sm:mt-[350px] md:mt-[-43px] lg:mt-[-55px] xl:mt-[-117px]">
+            <div className="title--container md:border-b-[3px] border-primaryDark dark:border-primaryLight">
+                <h3 className="title-h3 text-center md:text-start">Open<br/>positions</h3>
             </div>
 
-            <div className="position__slider--container mt-[60px] mb-24">
+            <div className="position__slider--container mb-[40px] md:mb-24 overflow-hidden">
                 <Swiper
                     loop={true}
                     autoplay={{
-                        delay: 3000,
+                        delay: 4000,
                         disableOnInteraction: false,
                     }}
                     navigation
@@ -58,13 +57,21 @@ const OpenPositions = () => {
                         slideShadows: false,
                         scale: 1.5,
                     }}
-                    slidesPerView={3}
+                    breakpoints={{
+                        320: {
+                            slidesPerView: 1,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                        },
+
+                    }}
                     centeredSlides
                     modules={[Autoplay, EffectCoverflow, Mousewheel, Pagination]}
                     className="open__position-swiper"
                 >
                     {content.map((item, index) =>
-                        <SwiperSlide key={index} className="slider--content bg-primaryLight rounded-[20px] px-8 pt-[45px] pb-[71px] ">
+                        <SwiperSlide key={index} className="slider--content bg-primaryLight rounded-[20px] px-5 md:px-8 md:pt-[45px] md:pb-[71px] ">
                             <Card title={item.title} description={item.description} />
                         </SwiperSlide>
                     )}

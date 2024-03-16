@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-const {nextui} = require("@nextui-org/react");
+const { nextui } = require("@nextui-org/react");
 
 const config: Config = {
   content: [
@@ -80,7 +80,35 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("@tailwindcss/forms"), nextui()],
+  corePlugins: {
+    container: false,
+  },
+  plugins: [
+    require("@tailwindcss/forms"),
+    nextui(),
+    // @ts-ignore
+    function ({ addComponents }) {
+      addComponents({
+        ".container": {
+          maxWidth: "100%",
+          margin: "0 auto",
+          padding: "0 15px",
+          "@screen sm": {
+            maxWidth: "640px",
+          },
+          "@screen md": {
+            maxWidth: "768px",
+          },
+          "@screen lg": {
+            maxWidth: "1280px",
+          },
+          "@screen xl": {
+            maxWidth: "1400px",
+          },
+        },
+      });
+    },
+  ],
   darkMode: "class",
 };
 export default config;
