@@ -10,7 +10,44 @@
 
 /* we do section  */
 
-.we__do--swiper .swiper-slide-prev {
+.we__do--swiper.swiper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+  padding: 40px 0;
+}
+
+.we__do--swiper .swiper-wrapper {
+  /* height: 270px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.we__do--swiper .swiper-slide {
+  opacity: 0;
+
+  min-height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.we__do--swiper .swiper-slide-prev,
+.we__do--swiper .swiper-slide-active,
+.we__do--swiper .swiper-slide-next {
+  opacity: 1;
+}
+
+.we__do--swiper .swiper-slide-prev h4,
+.we__do--swiper .swiper-slide-next h4,
+.we__do--swiper .swiper-slide-next p,
+.we__do--swiper .swiper-slide-prev p {
+  display: none !important;
+}
+
+/* .we__do--swiper .swiper-slide-prev {
   height: 400px;
   z-index: 2;
   transform: translate3d(0px, -48px, -100px) scale(1) !important;
@@ -25,6 +62,16 @@
   padding-left: 55px !important;
 }
 
+.we__do--swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  height: 70px;
+} */
+
+.we__do--swiper .swiper-slide-active {
+  /* width: 450px; */
+  /* height: 250px; */
+  @apply dark:shadow-3xl shadow-light;
+}
+
 .we__do--swiper .swiper-pagination {
   position: absolute;
   top: calc(50% - 85px);
@@ -32,18 +79,32 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  z-index: 1;
+  justify-content: center;
 }
 
 .we__do--swiper .swiper-pagination .swiper-pagination-bullet {
-  background: white;
   width: 24px;
   height: 24px;
   display: block;
   border-radius: 100px;
+  @apply dark:bg-primaryLight bg-primaryDark;
 }
-
 .we__do--swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   height: 70px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .we__do--swiper .swiper-slide-prev,
+  .we__do--swiper .swiper-slide-next {
+    opacity: 0;
+  }
+
+  .we__do--section .swiper-slide {
+    width: 80% !important;
+    padding: 0;
+    margin-left: 40px;
+  }
 }
 
 /* reporting section */

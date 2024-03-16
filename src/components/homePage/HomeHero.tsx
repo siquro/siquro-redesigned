@@ -14,7 +14,7 @@ const HomeHero = () => {
                     </p>
                     <div className="gap-x-3.5 flex flex-col-reverse md:flex-row flex-wrap gap-5">
                         <OutlineButton title={"start accepting payments"} link={"solutions"} />
-                        <Button title={'contact us'} color={"light"} link={"contacts"} />
+                        <Button title={'contact us'} color={"light"} link={"contacts"} customClass={"w-full md:w-fit"}/>
                     </div>
                 </div>
 

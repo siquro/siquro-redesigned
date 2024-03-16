@@ -49,6 +49,7 @@ const config: Config = {
       },
       boxShadow: {
         "3xl": "0px 4px 50px 0px rgba(0, 0, 0, 0.25)",
+        "light": "0px 4px 50px 0px rgba(225, 225, 225, 0.25)",
       },
       keyframes: {
         orbit: {

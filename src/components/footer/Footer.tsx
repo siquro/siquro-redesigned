@@ -6,22 +6,22 @@ const Footer = () => {
         <footer className="bg-[#0F0F0F] dark:bg-[#0F0F0F]">
             <div className="container flex flex-col py-16 sm:py-20">
 
-                <div className="flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-5 pb-16 sm:pb-20">
-                    <div className="max-w-[280px] sm:max-w-[320px]">
-                        <Image src={"/logo_new.png"} alt={"Logo"} width={336} height={116} className="w-full h-auto" />
+                <div className="flex flex-col items-center md:items-start md:flex-row md:justify-between gap-4 sm:gap-5 pb-16 sm:pb-20">
+                    <div className="max-w-[280px] sm:max-w-[300px]">
+                        <Image src={"/logo_new.png"} alt={"Logo"} width={336} height={116} className="w-[280px] md:w-[320px] h-auto" />
                     </div>
 
-                    <div className="flex flex-col sm:flex-row gap-10 w-full md:w-1/2 justify-between md:justify-end">
-                        <div className="flex flex-col items-center md:items-end gap-4 sm:gap-5 w-3/5">
+                    <div className="flex flex-col sm:flex-row gap-5 lg:gap-10 w-full md:w-1/2 ">
+                        <div className="flex flex-col items-center md:items-end gap-4 sm:gap-5 w-full md:w-3/5">
                             <h4 className="title-h4 !text-primaryLight">
                                 quick links
                             </h4>
-                            <div className="flex flex-row gap-4 sm:gap-[50px] w-full justify-end">
-                                <div className="flex flex-col justify-end gap-5">
+                            <div className="flex flex-row gap-4 sm:gap-[50px] w-full justify-evenly md:justify-end">
+                                <div className="flex flex-col gap-5">
                                     <Link href={"/solutions"} className="text !text-primaryLight hover:underline hover:!text-[#00FFF0] transition-colors text-end">Solution</Link>
                                     <Link href={"/services"} className="text !text-primaryLight hover:underline hover:!text-[#00FFF0] transition-colors text-end">Services</Link>
                                 </div>
-                                <div className="flex flex-col justify-end gap-5">
+                                <div className="flex flex-col gap-5">
                                     <Link href={"/career"} className="text !text-primaryLight hover:underline hover:!text-[#00FFF0] transition-colors  text-end">Career</Link>
                                     <Link href={"/contact"} className="text !text-primaryLight hover:underline hover:!text-[#00FFF0] transition-colors text-end">Contact Us</Link>
                                 </div>
@@ -29,7 +29,7 @@ const Footer = () => {
 
                         </div>
 
-                        <div className="flex flex-col items-center md:items-end gap-4 sm:gap-5 w-2/5">
+                        <div className="flex flex-col items-center md:items-end gap-4 sm:gap-5 w-full md:w-2/5">
                             <h4 className="title-h4 !text-primaryLight dark:text-primaryLight">
                                 contacts
                             </h4>
@@ -43,7 +43,7 @@ const Footer = () => {
                     <div className="flex flex-row gap-4 sm:gap-5 items-center">
                         <h4 className="title-h4 !text-primaryLight dark:text-primaryLight">follow us:</h4>
 
-                        <div className="flex flex-row flex-nowrap gap-3 ">
+                        <div className="flex flex-row flex-nowrap gap-3">
                             <Link href={"/"}> <Image src={"/social_links/facebook.svg"} alt={"Facebook"} width={32} height={32} className="hover:animate-pulse pointer w-[32px] h-[32px]" />
                             </Link>
                             <Link href={"/"}> <Image src={"/social_links/instagram.svg"} alt={"Instagram"} width={32} height={32} className="hover:animate-pulse w-[32px] h-[32px]" />
@@ -63,7 +63,7 @@ const Footer = () => {
 
                 <div className="py-5">
                     <div className="h-[1px] bg-primaryLight w-1/4 mb-5"></div>
-                    <p className="text !text-[15px] sm:!text-[16px]  !text-primaryLight dark:text-primaryLight">SiQURO is an authorised payment institution regulated by the Financial Conduct Authority under the Payment Services Regulations 2017 (Firm Registration Number: 804718) for the provision of payment services. SiQURO an authorised payment institution regulated by the Central Bank under the  Financial Supervision Act for the provision of payment services (account information services). SiQURO is included in the public register of the Central Bank (License number: 1) and registered at the Chamber of Commerce (CoC number: 2).</p>
+                    <p className="text !text-[14px] sm:!text-[16px]  !text-primaryLight dark:text-primaryLight">SiQURO is an authorised payment institution regulated by the Financial Conduct Authority under the Payment Services Regulations 2017 (Firm Registration Number: 804718) for the provision of payment services. SiQURO an authorised payment institution regulated by the Central Bank under the  Financial Supervision Act for the provision of payment services (account information services). SiQURO is included in the public register of the Central Bank (License number: 1) and registered at the Chamber of Commerce (CoC number: 2).</p>
                 </div>
             </div>
 

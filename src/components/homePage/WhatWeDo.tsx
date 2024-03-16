@@ -35,31 +35,31 @@ const WhatWeDo = () => {
     ]
 
     const Card = ({ title, description, icon }: { title: string, description: string, icon: string }) => {
-        return <div className='bg-primaryLight rounded-[20px] px-8 pt-[45px] pb-[71px] shadow-3xl max-w-[480px]'>
+        return <div className='bg-primaryLight rounded-[20px] p-[15px] md:pt-[45px] md:pb-[71px] max-w-[480px]'>
             <div className='mb-6'>
-                <Image className='my-0 mx-auto' src="/what_we_do-icon/SSL.png" alt={""} width={75} height={75} />
+                <Image className='my-0 mx-auto h-auto w-[45px] md:w-[70px]' src="/what_we_do-icon/SSL.png" alt={""} width={75} height={75} />
             </div>
             <div>
-                <h4 className='title-h4 text-primaryLight dark:text-primaryDark mb-7 text-center'>{title}</h4>
-                <p className='text text-primaryLight dark:text-primaryDark text-center'>{description}</p>
+                <h4 className='title-h4  !text-primaryLight dark:!text-primaryDark mb-5 text-center'>{title}</h4>
+                <p className='text !text-primaryLight dark:!text-primaryDark text-center'>{description}</p>
             </div>
         </div>
     }
 
     return (
-        <section className="we__do--section bg-weDoSectionBg dark:bg-primaryDark bg-no-repeat bg-cover">
-            <div className='bg-[#d3d3d314] pt-[63px] pb-[90px] '>
+        <section className="we__do--section bg-weDoSectionBg dark:bg-primaryDark bg-no-repeat bg-[20% 20%] md:bg-cover">
+            <div className='bg-[#d3d3d314] pt-[63px] pb-[40px] md:pb-[90px] '>
                 <div className="container flex flex-col-reverse md:flex-row gap-5 items-center">
-                    <div className="w-full md:w-2/5 flex items-center h-[420px] bg-transparent">
+                    <div className="overflow-hidden mt-[40px]">
                         <Swiper
                             direction={'vertical'}
                             grabCursor={true}
                             pagination={true}
                             loop={true}
-                            autoplay={{
-                                delay: 4500,
-                                disableOnInteraction: false,
-                            }}
+                            // autoplay={{
+                            //     delay: 4500,
+                            //     disableOnInteraction: false,
+                            // }}
                             navigation
                             effect="coverflow"
                             coverflowEffect={{
@@ -70,13 +70,21 @@ const WhatWeDo = () => {
                                 slideShadows: false,
                                 scale: 1,
                             }}
-                            slidesPerView={3}
+                            breakpoints={{
+                                320: {
+                                    slidesPerView: 1,
+                                },
+                                1024: {
+                                    slidesPerView: 3,
+                                },
+
+                            }}
                             centeredSlides
                             modules={[EffectCoverflow, Mousewheel, Autoplay, Pagination]}
                             className="we__do--swiper h-[420px] w-full"
                         >
                             {content.map((item, index) =>
-                                <SwiperSlide key={index}>
+                                <SwiperSlide key={index} className=' dark:bg-primaryLight bg-primaryDark rounded-[20px] px-5 md:px-8 md:pt-[45px] md:pb-[71px]'>
                                     <Card title={item.title} description={item.description} icon={item.icon} />
                                 </SwiperSlide>
                             )}

@@ -26,8 +26,8 @@ const HomeIntegration = () => {
 
                     <div className=" z-20 text-end flex flex-col md:flex-row sm:border-t-[4px] border-primaryDark dark:border-primaryLight w-full md:w-[90%]">
                         <div className=" bg-primaryDark dark:bg-primaryLight rounded-b-[20px]  m-auto md:m-0 w-4/5 h-full">
-                            <div className="p-4 md:py-11 md:ps-11 md:pe-32 text-start">
-                                <h3 className="title-h3 !text-primaryLight dark:!text-primaryDark mb-5 text-center md:text-start">Individual approach</h3>
+                            <div className="p-4 md:py-11 md:px-16 text-start">
+                                <h3 className="title-h3 !text-primaryLight dark:!text-primaryDark mb-[20px] text-center md:text-start">Individual approach</h3>
                                 <p className="text !text-primaryLight dark:!text-primaryDark text-center md:text-start">All operational and financial issues can be quickly resolved with a personal manager.</p>
                             </div>
 
@@ -35,10 +35,10 @@ const HomeIntegration = () => {
                         </div>
 
 
-                        <div className="py-4 md:ps-11 md:py-11  text-center md:text-end">
-                            <h3 className="title-h3">Crypto Payment Solutions</h3>
+                        <div className="py-4 md:ps-11 md:py-11 text-center md:text-end">
+                            <h3 className="title-h3 my-[20px] md:mb-[20px] md:mt-0">Crypto Payment Solutions</h3>
                             <p className="text mb-12">In our crypto checkouts and wallets, all transactions are automatic, guaranteed, support different cryptocurrencies, and there are no chargebacks. Our crypto solutions require only one approval stage, ensuring seamless integration.</p>
-                            <Button title="About us" color={"light"} link={"about"} />
+                            <Button title="About us" color={"light"} link={"about"} customClass={"w-full md:w-fit"}/>
                         </div>
                     </div>
                 </div>

@@ -28,15 +28,15 @@ const OpenPositions = () => {
 
     const Card = ({ title, description }: { title: string, description: string }) => {
         return <>
-            <h4 className='title-h4  text-primaryLight dark:text-primaryDark mb-5 text-center'>{title}</h4>
-            <p className='text text-primaryLight dark:text-primaryDark text-center'>{description}</p>
+            <h4 className='title-h4  !text-primaryLight dark:!text-primaryDark mb-5 text-center'>{title}</h4>
+            <p className='text !text-primaryLight dark:!text-primaryDark text-center'>{description}</p>
         </>
     }
 
     return (
         <section className="container flex flex-col pb-10 sm:pb-[40px] mt-[40px] sm:mt-[350px] md:mt-[-43px] lg:mt-[-55px] xl:mt-[-117px]">
             <div className="title--container md:border-b-[3px] border-primaryDark dark:border-primaryLight">
-                <h3 className="title-h3 text-center md:text-start">Open<br/>positions</h3>
+                <h3 className="title-h3 text-center md:text-start">Open<br />positions</h3>
             </div>
 
             <div className="position__slider--container mb-[40px] md:mb-24 overflow-hidden">
@@ -71,7 +71,7 @@ const OpenPositions = () => {
                     className="open__position-swiper"
                 >
                     {content.map((item, index) =>
-                        <SwiperSlide key={index} className="slider--content bg-primaryLight rounded-[20px] px-5 md:px-8 md:pt-[45px] md:pb-[71px] ">
+                        <SwiperSlide key={index} className="slider--content dark:bg-primaryLight bg-primaryDark rounded-[20px] px-5 md:px-8 md:pt-[45px] md:pb-[71px] ">
                             <Card title={item.title} description={item.description} />
                         </SwiperSlide>
                     )}

@@ -6,7 +6,7 @@ const MainNavigation = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="hidden md:flex md:justify-between md:order-last md:w-full lg:order-none lg:justify-center">
+    <nav className="hidden lg:flex lg:w-full lg:order-none lg:justify-center">
       <Link href={"/"} className={`link ${pathname === '/' ? 'active' : ''}`}>Home</Link>
       <Link href={"/solutions"} className={`link ${pathname === '/solutions' ? 'active' : ''}`}>Solutions</Link>
       <Link href={"/services"} className={`link ${pathname === '/services' ? 'active' : ''}`}>Services</Link>
