@@ -45,8 +45,7 @@ export const WelcomeEmailEmail = ({
 
           </Text>
           <Text style={paragraph}>
-            You get message from {name}, {email},
-            {message}
+            You get message from {name}, {email}
           </Text>
           <Text style={paragraph}>
 
