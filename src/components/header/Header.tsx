@@ -15,7 +15,7 @@ const Header = () => {
 
     return (
         <header className="container relative z-50">
-            <div className="flex flex-row  md:flex-wrap lg:flex-nowrap items-center justify-between px-1  py-5 md:py-5 bg-primaryDark dark:bg-transparent  rounded-b-[15px]">
+            <div className="flex flex-row  md:flex-wrap lg:flex-nowrap items-center justify-between px-1 py-5 md:py-5 bg-primaryDark dark:bg-transparent  rounded-b-[15px]">
                 <Link href="/" className="min-w-[132px] w-[132px] md:w-[166px] xl:w-[200px]">
                     <Image src="/logo_new.png" width={200} height={70} alt="logo" className="w-full h-auto" priority />
                 </Link>
