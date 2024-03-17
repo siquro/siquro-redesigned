@@ -10,7 +10,7 @@ export async function POST(request: Request) {
 
     await resend.emails.send({
         from: 'siquro_email@resend.dev',
-        to: 'ikuzmina88@gmail.com',
+        to: ['ikuzmina88@gmail.com', 'vg@siquro.com'],
         subject: 'Siquro contact form',
         react: WelcomeEmail({
             name, message, email
