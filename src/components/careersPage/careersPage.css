@@ -43,7 +43,7 @@
 
 .open__position-swiper .swiper-pagination {
   position: absolute;
-  bottom: 0px;
+  bottom: 3px;
   left: 0;
   right: 0;
   display: flex;
