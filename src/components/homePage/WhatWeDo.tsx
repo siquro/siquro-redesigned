@@ -52,6 +52,43 @@ const WhatWeDo = () => {
                 <div className="container flex flex-col-reverse md:flex-row gap-5 items-center">
                     <div className="overflow-hidden mt-[40px]">
                         <Swiper
+                            //   scrollbar= '.swiper-scrollbar'
+                            effect='coverflow'
+                            direction='vertical'
+                            loop={false}
+                            slideToClickedSlide={true}
+                            grabCursor={true}
+                            centeredSlides={true}
+                            slidesPerView='auto'
+                            coverflowEffect={{
+                                rotate: 0,
+                                stretch: 0,
+                                depth: 100,
+                                modifier: 4,
+                                slideShadows: false,
+                                scale: 1,
+                            }}
+                            breakpoints={{
+                                320: {
+                                    slidesPerView: 1,
+                                },
+                                1024: {
+                                    slidesPerView: 3,
+                                },
+
+                            }}
+                            freeMode={false}
+                            modules={[EffectCoverflow, Mousewheel, Autoplay, Pagination]}
+                            className='we_do--slider h-[500px]'
+                        >
+                            {content.map((item, index) =>
+                                <SwiperSlide key={index} className=' dark:bg-primaryLight bg-primaryDark rounded-[20px] px-5 md:px-8 md:pt-[45px] md:pb-[71px]'>
+                                    <Card title={item.title} description={item.description} icon={item.icon} />
+                                </SwiperSlide>
+                            )}
+
+                        </Swiper>
+                        {/* <Swiper
                             direction={'vertical'}
                             grabCursor={true}
                             pagination={true}
@@ -88,7 +125,7 @@ const WhatWeDo = () => {
                                     <Card title={item.title} description={item.description} icon={item.icon} />
                                 </SwiperSlide>
                             )}
-                        </Swiper>
+                        </Swiper> */}
                     </div>
 
                     <div className='w-full md:w-3/5 flex flex-col items-end'>
