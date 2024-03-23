@@ -62,7 +62,6 @@ const ContactsForm = () => {
                         <button className='block bg-primaryDark dark:bg-primaryLight rounded-b-[17px] text-center py-[20px] px-11 text-[18px] uppercase font-montserrat font-bold text-primaryLight dark:text-primaryDark w-full tracking-[3px]' type='submit'
                         >SEND</button>
                     </form>
-
                 </div>
             </div>
         </section>

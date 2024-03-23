@@ -6,6 +6,8 @@ import { useState } from "react";
 import MainNavigation from "./navigations/MainNavigation";
 import MobNavigation from "./navigations/MobNavigation";
 import ThemeSwitcher from "./themeSwitcher/ThemeSwitcher";
+import Button from "../buttons/Button";
+import OutlineButton from "../buttons/OutlineButton";
 // import { usePathname } from "next/navigation";
 
 const Header = () => {
@@ -21,6 +23,13 @@ const Header = () => {
                 </Link>
 
                 <MainNavigation />
+
+
+                <Link href={`/log-in`} className="hidden lg:block">
+                    <button className={`global_button outline_button !text-[13px] !px-4 !py-[7.5px] before:!w-0 before:!h-0 hover:before:!w-full hover:before:!h-full mx-5`}>
+                        Log In
+                    </button>
+                </Link>
 
                 {/* <div className="search hidden mr-5 relative md:flex items-center ">
                     <input type="text" placeholder="SEARCH" className="transition-[width] duration-500 border-0 rounded-[20px] bg-transparent font-kodchasan text-primaryLight dark:text-primaryLight placeholder:text-primaryLight placeholder:text-[13px] w-0 " />
@@ -57,6 +66,11 @@ const Header = () => {
                     </div> */}
 
                     <MobNavigation onClickHandler={() => { setBurgerActive(false) }} />
+                    <Link href={`/log-in`}>
+                        <button className={`w-full !m-0 global_button outline_button !text-[13px] !px-4 !py-[7.5px] before:!w-0 before:!h-0 hover:before:!w-full hover:before:!h-full mx-5`}>
+                            Log In
+                        </button>
+                    </Link>
                 </div>}
             </div>
         </header>
