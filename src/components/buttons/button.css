@@ -11,7 +11,7 @@
   letter-spacing: 0.72px;
   font-weight: 700;
   border: 2px solid white;
-  @apply font-[16px] sm:font-[18px] px-[16px] sm:px-[24px] py-[12px];
+  @apply text-[16px] sm:text-[18px] px-[16px] sm:px-[24px] py-[10px];
 }
 
 .global_button::before {
@@ -25,6 +25,10 @@
   border-radius: 100px;
   z-index: -1;
   transition: width 1s;
+}
+
+.login-button{
+  @apply text-nowrap me-5 rounded-[100px] bg-transparent border-2 hover:border-accent3 border-primaryLight text-primaryLight dark:hover:border-accent3 text-[13px] sm:px-[16px] py-[6px] uppercase font-montserrat font-semibold relative hover:text-accent3 transition-colors;
 }
 
 .btn_dark {
@@ -55,9 +59,7 @@
 }
 
 .outline_button {
-  padding-right: 60px;
   transition: all 0.5s ease-in-out;
-  background-color: transparent !important;
   @apply bg-transparent border-2 border-primaryDark hover:border-accent3 dark:border-primaryLight  dark:hover:!border-accent3 pe-[16px] sm:pe-[60px];
 }
 

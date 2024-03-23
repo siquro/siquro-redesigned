@@ -65,7 +65,6 @@ const WhatWeDo = () => {
                                     slidesPerView: 1,
                                 },
                             }}
-                            freeMode={false}
                             modules={[Mousewheel, Autoplay, Pagination]}
                             className='we_do--slider h-[300px] md:h-[500px]'
                         >

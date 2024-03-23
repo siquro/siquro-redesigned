@@ -24,19 +24,9 @@ const Header = () => {
 
                 <MainNavigation />
 
-
-                <Link href={`/log-in`} className="hidden lg:block">
-                    <button className={`global_button outline_button !text-[13px] !px-4 !py-[7.5px] before:!w-0 before:!h-0 hover:before:!w-full hover:before:!h-full mx-5`}>
-                        Log In
-                    </button>
+                <Link href={`/log-in`} className="login-button hidden lg:block">
+                    Log in
                 </Link>
-
-                {/* <div className="search hidden mr-5 relative md:flex items-center ">
-                    <input type="text" placeholder="SEARCH" className="transition-[width] duration-500 border-0 rounded-[20px] bg-transparent font-kodchasan text-primaryLight dark:text-primaryLight placeholder:text-primaryLight placeholder:text-[13px] w-0 " />
-                    <button className="relative w-[31px] h-[31px]">
-                        <Image src="/ri-search-2-line.svg" width={31} height={31} alt={"Search"} className="w-[31px] h-auto absolute top-0 right-0" />
-                    </button>
-                </div> */}
 
                 <div className="flex flex-row">
                     <ThemeSwitcher small={false} />
@@ -54,22 +44,16 @@ const Header = () => {
                         <div className="flex flex-row">
                             <ThemeSwitcher small={true} />
 
-                            <Image className="block cursor-pointer w-[23px] h-[23px] ms-[16px]" src="/close.svg" width={16} height={16} alt="cancel" onClick={() => {
+                            <Image className="block cursor-pointer w-[23px] mt-[4px] md:mt-[8px] h-[16px] md:h-[23px] ms-[16px]" src="/close.svg" width={16} height={16} alt="cancel" onClick={() => {
                                 setBurgerActive(false)
                             }} />
                         </div>
                     </div>
 
-                    {/* <div className="w-full relative">
-                        <input type="text" placeholder="SEARCH" className="border-0 rounded-[20px] py-2 ps-4 bg-[#0F0F0F] w-full font-kodchasan text-primaryLight dark:text-primaryLight placeholder:text-primaryLight placeholder:text-[13px] pe-[35px]" />
-                        <Image src="/ri-search-2-line.svg" width={31} height={31} alt={"Search"} className="w-[15px] h-auto absolute top-3 right-3" />
-                    </div> */}
-
                     <MobNavigation onClickHandler={() => { setBurgerActive(false) }} />
-                    <Link href={`/log-in`}>
-                        <button className={`w-full !m-0 global_button outline_button !text-[13px] !px-4 !py-[7.5px] before:!w-0 before:!h-0 hover:before:!w-full hover:before:!h-full mx-5`}>
-                            Log In
-                        </button>
+
+                    <Link href={`/log-in`} className="login-button w-fit ms-[15px] px-5">
+                        Log in
                     </Link>
                 </div>}
             </div>
