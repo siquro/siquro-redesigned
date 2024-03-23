@@ -36,11 +36,11 @@ const WhatWeDo = () => {
 
     const Card = ({ title, description, icon }: { title: string, description: string, icon: string }) => {
         return <div className='bg-primaryLight rounded-[20px] p-[15px] md:pt-[45px] md:pb-[71px] max-w-[480px]'>
-            <div className='mb-6'>
-                <Image className='my-0 mx-auto h-auto w-[45px] md:w-[70px]' src={`/what_we_do-icon/${icon}`} alt={""} width={75} height={75} />
+            <div className='mb-6 w-[45px] md:w-[80px] h-full relative'>
+                <Image className='' src={`/what_we_do-icon/${icon}`} alt={""} fill />
             </div>
             <div>
-                <h4 className='title-h4  !text-primaryLight dark:!text-primaryDark mb-5 text-center'>{title}</h4>
+                <h4 className='title-h4 !text-primaryLight dark:!text-primaryDark mb-5 text-center'>{title}</h4>
                 <p className='text !text-primaryLight dark:!text-primaryDark text-center'>{description}</p>
             </div>
         </div>
@@ -49,40 +49,28 @@ const WhatWeDo = () => {
     return (
         <section className="we__do--section bg-weDoSectionBg dark:bg-primaryDark bg-no-repeat bg-[20% 20%] md:bg-cover">
             <div className='bg-[#d3d3d314] pt-[63px] pb-[40px] md:pb-[90px] '>
-                <div className="container flex flex-col-reverse md:flex-row gap-5 items-center">
+                <div className="container flex flex-col-reverse md:flex-row gap-5 items-center justify-between">
                     <div className="overflow-hidden mt-[40px]">
                         <Swiper
-                            //   scrollbar= '.swiper-scrollbar'
-                            effect='coverflow'
                             direction='vertical'
                             loop={false}
                             slideToClickedSlide={true}
                             grabCursor={true}
                             centeredSlides={true}
-                            slidesPerView='auto'
-                            coverflowEffect={{
-                                rotate: 0,
-                                stretch: 0,
-                                depth: 100,
-                                modifier: 4,
-                                slideShadows: false,
-                                scale: 1,
-                            }}
                             breakpoints={{
                                 320: {
                                     slidesPerView: 1,
                                 },
                                 1024: {
-                                    slidesPerView: 3,
+                                    slidesPerView: 1,
                                 },
-
                             }}
                             freeMode={false}
-                            modules={[EffectCoverflow, Mousewheel, Autoplay, Pagination]}
-                            className='we_do--slider h-[500px]'
+                            modules={[Mousewheel, Autoplay, Pagination]}
+                            className='we_do--slider h-[300px] md:h-[500px]'
                         >
                             {content.map((item, index) =>
-                                <SwiperSlide key={index} className=' dark:bg-primaryLight bg-primaryDark rounded-[20px] px-5 md:px-8 md:pt-[45px] md:pb-[71px]'>
+                                <SwiperSlide key={index} className='dark:bg-primaryLight bg-primaryDark rounded-[20px] px-5 md:px-8 md:pt-[45px] md:pb-[71px]'>
                                     <Card title={item.title} description={item.description} icon={item.icon} />
                                 </SwiperSlide>
                             )}

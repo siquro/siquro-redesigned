@@ -1,81 +1,11 @@
 .we__do--section .bg_element::after {
   content: "";
   background: url("../../../public/Fraud_monitoring2.png") no-repeat;
-
   top: calc(50% - 90px);
-
-  /* z-index: 1; */
-  /* @apply hidden sm:block sm:w-[92px] invert dark:invert-0; */
 }
 
 /* we do section  */
 
-.we__do--swiper.swiper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: visible;
-  padding: 40px 0;
-  width: 100%;
-  height: 100%;
-}
-
-.we__do--swiper .swiper-wrapper {
-  /* height: 380px;
-  width: 489px; */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.we__do--swiper .swiper-slide {
-  opacity: 0;
-  /* height: 380px;
-  width: 489px; */
-  min-height: max-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.we__do--swiper .swiper-slide-prev,
-.we__do--swiper .swiper-slide-active,
-.we__do--swiper .swiper-slide-next {
-  opacity: 1;
-}
-
-.we__do--swiper .swiper-slide-active {
-  /* width: 450px; */
-  /* height: 250px; */
-  width: 489px;
-  @apply dark:shadow-3xl shadow-light;
-}
-
-.we__do--swiper .swiper-slide-prev h4,
-.we__do--swiper .swiper-slide-next h4,
-.we__do--swiper .swiper-slide-next p,
-.we__do--swiper .swiper-slide-prev p {
-  display: none !important;
-}
-
-/* .we__do--swiper .swiper-slide-prev {
-  height: 400px;
-  z-index: 2;
-  transform: translate3d(0px, -48px, -100px) scale(1) !important;
-  transition-duration: 0ms;
-}
-
-.we__do--swiper .swiper-slide-next {
-  transform: translate3d(0px, 48px, -100px) scale(1) !important;
-}
-
-.we__do--swiper {
-  padding-left: 55px !important;
-}
-
-.we__do--swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  height: 70px;
-} */
 
 .we__do--swiper .swiper-pagination {
   position: absolute;
@@ -99,18 +29,22 @@
   height: 70px;
 }
 
-@media only screen and (max-width: 1024px) {
-  .we__do--swiper .swiper-slide-prev,
-  .we__do--swiper .swiper-slide-next {
-    opacity: 0;
-  }
-
-  .we__do--section .swiper-slide {
-    width: 80% !important;
-    padding: 0;
-    margin-left: 40px;
-  }
+.we_do--slider .swiper-container {
+  padding: 40px 0;
+  margin-top: 40px;
 }
+
+.we_do--slider .swiper-slide {
+  background-color: white;
+  background-image: none;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 300px;
+  opacity: 0;
+}
+
 
 /* reporting section */
 
@@ -196,10 +130,10 @@
   }
 } */
 
-.phone {
-  /* transform: rotate(3.859deg); */
-  /* animation: moveRightLeft 5s linear infinite; */
-}
+/* .phone {
+  transform: rotate(3.859deg); 
+   animation: moveRightLeft 5s linear infinite;
+} */
 
 /* @-webkit-keyframes moveRightLeft {
   0%,
@@ -235,49 +169,5 @@
   height: 500px;
 } */
 
-.we_do--slider .swiper-container {
-  /* height: 100%;
-  padding-left: calc(50vw - 150px); */
-  /* display: flex;
-  flex-direction: row;
-  align-items: center; */
-  /* overflow: hidden; */
-  padding: 40px 0;
-  margin-top: 40px;
-}
 
-.we_do--slider .swiper-slide {
-  background-color: white;
-  background-image: none;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-  width: 300px;
-  height: 300px;
-  /* width: 90%;
-  max-width: 480px;
-  height: auto;
-  max-height: 380px; */
-  opacity: 0;
-  /*transition: 1s opacity;*/
-}
 
-.we_do--slider .swiper-slide-active,
-.we_do--slider .swiper-slide-next,
-.we_do--slider .swiper-slide-prev {
-  opacity: 1;
-  /* @apply dark:shadow-3xl shadow-light; */
-}
-
-.we_do--slider .swiper-slide-prev h4,
-.we_do--slider .swiper-slide-next h4,
-.we_do--slider .swiper-slide-next p,
-.we_do--slider .swiper-slide-prev p,
-.we_do--slider .swiper-slide-prev img,
-.we_do--slider .swiper-slide-next img {
-  display: none !important;
-}
-
-/* .we_do--slider .swiper-slide-next {
-  transform: translate3d(0px, -320px, -100px) rotateX(0deg) rotateY(0deg) scale(1) !important;
-} */
