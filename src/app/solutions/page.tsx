@@ -8,7 +8,7 @@ const Solutions = () => {
     return (
         <div>
             <SolutionsHero />
-            {/* <SolutionsList/> */}
+            <SolutionsList/>
             <SolutionsTwoBlocks />
             <SolutionsReporting />
             <CryptoSolutions />

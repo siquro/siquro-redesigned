@@ -37,7 +37,7 @@ const WhatWeDo = () => {
     const Card = ({ title, description, icon }: { title: string, description: string, icon: string }) => {
         return <div className='bg-primaryLight rounded-[20px] p-[15px] md:pt-[45px] md:pb-[71px] max-w-[480px]'>
             <div className='mb-6'>
-                <Image className='my-0 mx-auto h-auto w-[45px] md:w-[70px]' src="/what_we_do-icon/SSL.png" alt={""} width={75} height={75} />
+                <Image className='my-0 mx-auto h-auto w-[45px] md:w-[70px]' src={`/what_we_do-icon/${icon}`} alt={""} width={75} height={75} />
             </div>
             <div>
                 <h4 className='title-h4  !text-primaryLight dark:!text-primaryDark mb-5 text-center'>{title}</h4>
