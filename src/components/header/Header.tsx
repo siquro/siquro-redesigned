@@ -51,10 +51,6 @@ const Header = () => {
                     </div>
 
                     <MobNavigation onClickHandler={() => { setBurgerActive(false) }} />
-
-                    <Link href={`/log-in`} className="login-button w-fit ms-[15px] px-5">
-                        Log in
-                    </Link>
                 </div>}
             </div>
         </header>

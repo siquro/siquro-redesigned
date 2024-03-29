@@ -6,27 +6,30 @@
 
 /* we do section  */
 
-
 .we__do--swiper .swiper-pagination {
   position: absolute;
   top: calc(50% - 85px);
-  left: 0;
+  /* left: 0; */
   display: flex;
   flex-direction: column;
   gap: 10px;
   z-index: 1;
   justify-content: center;
+
+  @apply left-[10px] md:left-0;
 }
 
 .we__do--swiper .swiper-pagination .swiper-pagination-bullet {
-  width: 24px;
-  height: 24px;
+  /* width: 24px;
+  height: 24px; */
   display: block;
   border-radius: 100px;
   @apply dark:bg-primaryLight bg-primaryDark;
 }
 .we__do--swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  height: 70px;
+  /* height: 70px; */
+
+  @apply h-[50px] md:h-[70px];
 }
 
 .we_do--slider .swiper-container {
@@ -40,11 +43,59 @@
   background-position: center;
   background-size: cover;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-  width: 300px;
-  height: 300px;
-  opacity: 0;
+  /* width: 489px;
+  height: 380px; */
+  @apply w-[250px] h-[200px] md:w-[489px] md:h-[380px];
 }
 
+/*.we_do--slider .swiper-slide.swiper-slide-active > div {
+  height: 480px !important;
+  box-shadow: 10px 5px 5px red;
+}*/
+
+.we_do--slider {
+  /* padding: 51px 60px !important; */
+  margin-top: 20px;
+
+  @apply md:!py-[60px] md:!px-[51px];
+}
+
+.we_do--slider .swiper-pagination {
+  position: absolute;
+  left: 0px;
+  top: 141px;
+  z-index: 3;
+
+  @apply top-[50px] md:top-[141px];
+}
+
+.we_do--slider .swiper-pagination-bullet {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #fff;
+  display: block;
+  margin: 12px 0px;
+  cursor: pointer;
+  @apply dark:bg-primaryLight bg-[#DADADA] w-[15px] h-[15px] md:w-[24px] md:h-[24px];
+}
+
+.we_do--slider .swiper-pagination-bullet-active {
+  height: 71px;
+  border-radius: 50px;
+}
+
+.we_do--slider .swiper-slide-activ {
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.25);
+}
+
+.swiper-3d .swiper-slide-shadow {
+  border-radius: 20px;
+}
+
+.we_do--slider .swiper-wrapper{
+  @apply ps-[25px] md:ps-0;
+}
 
 /* reporting section */
 
@@ -168,6 +219,3 @@
 /* .we_do--slider .swiper {
   height: 500px;
 } */
-
-
-
