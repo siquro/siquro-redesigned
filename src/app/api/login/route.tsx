@@ -21,6 +21,8 @@ export async function handler(req: NextApiRequest, res: NextApiResponse) {
     console.log("req method", req.method);
   
     console.log("res", res);
+    console.log(process.env.NODE_ENV);
+
     if (req.method === "POST") {
       const { email, password } = req.body;
   
