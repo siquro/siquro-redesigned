@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 const Login = () => {
-  const [state, setState] = useState<string>();
+  const [state, setState] = useState<string | null>(null);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -14,13 +14,26 @@ const Login = () => {
     const data = { email, password };
     form.reset();
 
-    await fetch('/api/login', {
-      method: 'POST',
-      body: JSON.stringify({ email: data.email, password: data.password }),
-      
-    })
+    try {
+      const response = await fetch('/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email: data.email, password: data.password }),
+      });
 
-    setState('ready')
+      if (!response.ok) {
+        throw new Error('Failed to login');
+      }
+      // Process the successful response
+      setState('ready');
+    } catch (error) {
+      console.error('Login failed:', error);
+      setState('error'); // Set state to indicate error
+    }
+
+
     console.log(data)
   }
 

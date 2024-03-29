@@ -22,7 +22,7 @@ export async function handler(req: NextApiRequest, res: NextApiResponse) {
   
     console.log("res", res);
     if (req.method === "POST") {
-      const { email, password } = await req.body;
+      const { email, password } = req.body;
   
       try {
         const tokenResponse = await fetch("https://pay.siquro.com/auth/login", {
@@ -48,8 +48,7 @@ export async function handler(req: NextApiRequest, res: NextApiResponse) {
             })
           );
   
-          // Redirect the user to the third-party page
-          return res.redirect(302, "https://siquro.com/");
+          return res.status(200).json({ success: true, redirectTo: 'https://siquro.com/' });
         } else {
           // If the request fails, handle the error accordingly
           const errorData = await tokenResponse.json();
