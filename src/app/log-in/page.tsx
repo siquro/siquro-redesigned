@@ -13,23 +13,23 @@ const Login = () => {
     const email = e.target.LoginEmail.value;
     const password = e.target.LoginPassword.value;
 
-    try {
-      // const response = await fetch('https://pay.siquro.com/auth/login', {
-      const response = await fetch('/api/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, password }),
-      });
+
+    // const response = await fetch('https://pay.siquro.com/auth/login', {
+    const response = await fetch('/api/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email, password }),
+    });
 
       const responseData = await response.json();
 
-      if (!response.ok) {
-        console.log('Login failed: ' + (responseData.message || 'An error occurred'));
-        setState('error')
-        return;
-      }
+    //   if (!response.ok) {
+    //     console.log('Login failed: ' + (responseData.message || 'An error occurred'));
+    //     setState('error')
+    //     return;
+    //   }
 
       console.log('Login success:', responseData.token);
       setState('success');
@@ -37,12 +37,7 @@ const Login = () => {
 
 
       window.location.href = responseData.redirectUrl || '/';
-    } catch (error) {
-      console.error(error);
-      setState('error');
-    } finally {
-      form.reset();
-    }
+
   }
 
   return (
