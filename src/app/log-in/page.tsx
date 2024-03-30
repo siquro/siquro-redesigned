@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react";
+import { serialize } from 'cookie';
 
 const Login = () => {
   const [state, setState] = useState<string | null>(null);
@@ -11,30 +12,37 @@ const Login = () => {
     const form = e.currentTarget as HTMLFormElement;
     const email = e.target.LoginEmail.value;
     const password = e.target.LoginPassword.value;
-    const data = { email, password };
-    form.reset();
 
     try {
+      // const response = await fetch('https://pay.siquro.com/auth/login', {
       const response = await fetch('/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email: data.email, password: data.password }),
+        body: JSON.stringify({ email, password }),
       });
 
+      const responseData = await response.json();
+
       if (!response.ok) {
-        throw new Error('Failed to login');
+        console.log('Login failed: ' + (responseData.message || 'An error occurred'));
+        setState('error')
+        return;
       }
-      // Process the successful response
-      setState('ready');
+
+      console.log('Login success:', responseData.token);
+      setState('success');
+
+
+
+      window.location.href = responseData.redirectUrl || '/';
     } catch (error) {
-      console.error('Login failed:', error);
-      setState('error'); // Set state to indicate error
+      console.error(error);
+      setState('error');
+    } finally {
+      form.reset();
     }
-
-
-    console.log(data)
   }
 
   return (
