@@ -25,19 +25,16 @@ const Login = () => {
 
       const responseData = await response.json();
 
-    //   if (!response.ok) {
-    //     console.log('Login failed: ' + (responseData.message || 'An error occurred'));
-    //     setState('error')
-    //     return;
-    //   }
+      if (!response.ok) {
+        console.log('Login failed: ' + (responseData.message || 'An error occurred'));
+        setState('error')
+        return;
+      }
 
-      console.log('Login success:', responseData.token);
-      setState('success');
-
-
-
-      window.location.href = responseData.redirectUrl || '/';
-
+      // console.log('Login success:', responseData.token);
+      // setState('success');
+      // localStorage.setItem('token', responseData.token);
+      window.location.href = responseData.redirectUrl;
   }
 
   return (

@@ -28,7 +28,7 @@ const Header = () => {
                     Log in
                 </Link>
 
-                <div className="flex flex-row">
+                <div className="flex flex-row w-[100px]">
                     <ThemeSwitcher small={false} />
                     <Image className="block lg:hidden cursor-pointer ms-4" src="/burger.svg" width={24} height={21} alt="menu" onClick={() => {
                         setBurgerActive(true)

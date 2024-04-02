@@ -1,0 +1,248 @@
+{
+    "meta": {
+        "tracingId": "f416a2b8dfde47e195783776f0caed8e",
+        "count": 1
+    },
+    "data": [
+        {
+            "id": "modelo-sandbox",
+            "name": "Modelo Sandbox",
+            "fullName": "Modelo Sandbox",
+            "countries": [
+                {
+                    "displayName": "United Kingdom",
+                    "countryCode2": "GB"
+                }
+            ],
+            "environmentType": "SANDBOX",
+            "credentialsType": "OPEN_BANKING_UK_AUTO",
+            "media": [
+                {
+                    "source": "https://images.yapily.com/image/ce2bfdbf-1ae2-4919-ab7b-e8b3d5e93b36",
+                    "type": "icon"
+                },
+                {
+                    "source": "https://images.yapily.com/image/ca502f24-d6df-4785-b4b8-1034b100af77",
+                    "type": "logo"
+                }
+            ],
+            "features": [
+                "ACCOUNT_BALANCES",
+                "ACCOUNT_STATEMENT_FILE",
+                "INITIATE_DOMESTIC_SINGLE_PAYMENT",
+                "ACCOUNT_TRANSACTIONS",
+                "IDENTITY",
+                "ACCOUNTS",
+                "ACCOUNT_REQUEST_DETAILS",
+                "CREATE_DOMESTIC_PERIODIC_PAYMENT",
+                "INITIATE_INTERNATIONAL_SINGLE_PAYMENT",
+                "CREATE_DOMESTIC_SINGLE_PAYMENT",
+                "CREATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT_SWEEPING",
+                "INITIATE_BULK_PAYMENT",
+                "INITIATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT_SWEEPING",
+                "EXISTING_PAYMENTS_DETAILS",
+                "VARIABLE_RECURRING_PAYMENT_FUNDS_CONFIRMATION",
+                "INITIATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT_NONSWEEPING",
+                "ACCOUNT_BENEFICIARIES",
+                "INITIATE_ACCOUNT_REQUEST",
+                "EXISTING_PAYMENT_INITIATION_DETAILS",
+                "ACCOUNT_STATEMENT",
+                "ACCOUNT_PERIODIC_PAYMENTS",
+                "ACCOUNT_SCHEDULED_PAYMENTS",
+                "CREATE_SINGLE_PAYMENT_SORTCODE",
+                "CREATE_BULK_PAYMENT",
+                "ACCOUNT",
+                "ACCOUNT_TRANSACTIONS_WITH_MERCHANT",
+                "PERIODIC_PAYMENT_FREQUENCY_EXTENDED",
+                "CREATE_DOMESTIC_SCHEDULED_PAYMENT",
+                "CREATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT_NONSWEEPING",
+                "ACCOUNT_DIRECT_DEBITS",
+                "CREATE_INTERNATIONAL_SINGLE_PAYMENT",
+                "INITIATE_SINGLE_PAYMENT_SORTCODE",
+                "INITIATE_DOMESTIC_SCHEDULED_PAYMENT",
+                "INITIATE_DOMESTIC_PERIODIC_PAYMENT",
+                "ACCOUNT_STATEMENTS"
+            ]
+        },
+        {
+            "id": "fake-bank",
+            "name": "Fake bank",
+            "fullName": "Fake bank",
+            "countries": [
+                {
+                    "displayName": "United Kingdom",
+                    "countryCode2": "GB"
+                }
+            ],
+            "environmentType": "SANDBOX",
+            "credentialsType": "OPEN_BANKING_UK_AUTO",
+            "media": [
+                {
+                    "source": "https://images.yapily.com/image/29ef6535-b4af-4e10-b649-86ce78f308db",
+                    "type": "icon"
+                },
+                {
+                    "source": "https://images.yapily.com/image/29ef6535-b4af-4e10-b649-86ce78f308db",
+                    "type": "logo"
+                }
+            ],
+            "features": [
+                "ACCOUNT_BALANCES",
+                "ACCOUNT_STATEMENT_FILE",
+                "INITIATE_DOMESTIC_SINGLE_PAYMENT",
+                "ACCOUNT_TRANSACTIONS",
+                "IDENTITY",
+                "ACCOUNTS",
+                "ACCOUNT_REQUEST_DETAILS",
+                "CREATE_DOMESTIC_PERIODIC_PAYMENT",
+                "INITIATE_INTERNATIONAL_SINGLE_PAYMENT",
+                "CREATE_DOMESTIC_SINGLE_PAYMENT",
+                "CREATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT_SWEEPING",
+                "INITIATE_BULK_PAYMENT",
+                "INITIATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT_SWEEPING",
+                "EXISTING_PAYMENTS_DETAILS",
+                "VARIABLE_RECURRING_PAYMENT_FUNDS_CONFIRMATION",
+                "INITIATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT_NONSWEEPING",
+                "ACCOUNT_BENEFICIARIES",
+                "INITIATE_ACCOUNT_REQUEST",
+                "EXISTING_PAYMENT_INITIATION_DETAILS",
+                "ACCOUNT_STATEMENT",
+                "ACCOUNT_PERIODIC_PAYMENTS",
+                "ACCOUNT_SCHEDULED_PAYMENTS",
+                "CREATE_SINGLE_PAYMENT_SORTCODE",
+                "CREATE_BULK_PAYMENT",
+                "ACCOUNT",
+                "ACCOUNT_TRANSACTIONS_WITH_MERCHANT",
+                "PERIODIC_PAYMENT_FREQUENCY_EXTENDED",
+                "CREATE_DOMESTIC_SCHEDULED_PAYMENT",
+                "CREATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT_NONSWEEPING",
+                "ACCOUNT_DIRECT_DEBITS",
+                "CREATE_INTERNATIONAL_SINGLE_PAYMENT",
+                "INITIATE_SINGLE_PAYMENT_SORTCODE",
+                "INITIATE_DOMESTIC_SCHEDULED_PAYMENT",
+                "INITIATE_DOMESTIC_PERIODIC_PAYMENT",
+                "ACCOUNT_STATEMENTS"
+            ]
+        },
+        {
+            "id": "fake-bank-one",
+            "name": "Fake bank one",
+            "fullName": "Fake bank one",
+            "countries": [
+                {
+                    "displayName": "United Kingdom",
+                    "countryCode2": "GB"
+                }
+            ],
+            "environmentType": "SANDBOX",
+            "credentialsType": "OPEN_BANKING_UK_AUTO",
+            "media": [
+                {
+                    "source": "https://images.yapily.com/image/ec9dba2a-d32a-4674-8fcd-5b2dfcf83563",
+                    "type": "icon"
+                },
+                {
+                    "source": "https://images.yapily.com/image/ec9dba2a-d32a-4674-8fcd-5b2dfcf83563",
+                    "type": "logo"
+                }
+            ],
+            "features": [
+                "ACCOUNT_BALANCES",
+                "ACCOUNT_STATEMENT_FILE",
+                "INITIATE_DOMESTIC_SINGLE_PAYMENT",
+                "ACCOUNT_TRANSACTIONS",
+                "IDENTITY",
+                "ACCOUNTS",
+                "ACCOUNT_REQUEST_DETAILS",
+                "CREATE_DOMESTIC_PERIODIC_PAYMENT",
+                "INITIATE_INTERNATIONAL_SINGLE_PAYMENT",
+                "CREATE_DOMESTIC_SINGLE_PAYMENT",
+                "CREATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT_SWEEPING",
+                "INITIATE_BULK_PAYMENT",
+                "INITIATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT_SWEEPING",
+                "EXISTING_PAYMENTS_DETAILS",
+                "VARIABLE_RECURRING_PAYMENT_FUNDS_CONFIRMATION",
+                "INITIATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT_NONSWEEPING",
+                "ACCOUNT_BENEFICIARIES",
+                "INITIATE_ACCOUNT_REQUEST",
+                "EXISTING_PAYMENT_INITIATION_DETAILS",
+                "ACCOUNT_STATEMENT",
+                "ACCOUNT_PERIODIC_PAYMENTS",
+                "ACCOUNT_SCHEDULED_PAYMENTS",
+                "CREATE_SINGLE_PAYMENT_SORTCODE",
+                "CREATE_BULK_PAYMENT",
+                "ACCOUNT",
+                "ACCOUNT_TRANSACTIONS_WITH_MERCHANT",
+                "PERIODIC_PAYMENT_FREQUENCY_EXTENDED",
+                "CREATE_DOMESTIC_SCHEDULED_PAYMENT",
+                "CREATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT_NONSWEEPING",
+                "ACCOUNT_DIRECT_DEBITS",
+                "CREATE_INTERNATIONAL_SINGLE_PAYMENT",
+                "INITIATE_SINGLE_PAYMENT_SORTCODE",
+                "INITIATE_DOMESTIC_SCHEDULED_PAYMENT",
+                "INITIATE_DOMESTIC_PERIODIC_PAYMENT",
+                "ACCOUNT_STATEMENTS"
+            ]
+        },
+        {
+            "id": "fake-bank-two",
+            "name": "Fake bank two",
+            "fullName": "Fake bank two",
+            "countries": [
+                {
+                    "displayName": "United Kingdom",
+                    "countryCode2": "GB"
+                }
+            ],
+            "environmentType": "SANDBOX",
+            "credentialsType": "OPEN_BANKING_UK_AUTO",
+            "media": [
+                {
+                    "source": "https://images.yapily.com/image/13aacdd7-2a55-4ebd-9bd8-f9bfb17fef23",
+                    "type": "icon"
+                },
+                {
+                    "source": "https://images.yapily.com/image/13aacdd7-2a55-4ebd-9bd8-f9bfb17fef23",
+                    "type": "logo"
+                }
+            ],
+            "features": [
+                "ACCOUNT_BALANCES",
+                "ACCOUNT_STATEMENT_FILE",
+                "INITIATE_DOMESTIC_SINGLE_PAYMENT",
+                "ACCOUNT_TRANSACTIONS",
+                "IDENTITY",
+                "ACCOUNTS",
+                "ACCOUNT_REQUEST_DETAILS",
+                "CREATE_DOMESTIC_PERIODIC_PAYMENT",
+                "INITIATE_INTERNATIONAL_SINGLE_PAYMENT",
+                "CREATE_DOMESTIC_SINGLE_PAYMENT",
+                "CREATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT_SWEEPING",
+                "INITIATE_BULK_PAYMENT",
+                "INITIATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT_SWEEPING",
+                "EXISTING_PAYMENTS_DETAILS",
+                "VARIABLE_RECURRING_PAYMENT_FUNDS_CONFIRMATION",
+                "INITIATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT_NONSWEEPING",
+                "ACCOUNT_BENEFICIARIES",
+                "INITIATE_ACCOUNT_REQUEST",
+                "EXISTING_PAYMENT_INITIATION_DETAILS",
+                "ACCOUNT_STATEMENT",
+                "ACCOUNT_PERIODIC_PAYMENTS",
+                "ACCOUNT_SCHEDULED_PAYMENTS",
+                "CREATE_SINGLE_PAYMENT_SORTCODE",
+                "CREATE_BULK_PAYMENT",
+                "ACCOUNT",
+                "ACCOUNT_TRANSACTIONS_WITH_MERCHANT",
+                "PERIODIC_PAYMENT_FREQUENCY_EXTENDED",
+                "CREATE_DOMESTIC_SCHEDULED_PAYMENT",
+                "CREATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT_NONSWEEPING",
+                "ACCOUNT_DIRECT_DEBITS",
+                "CREATE_INTERNATIONAL_SINGLE_PAYMENT",
+                "INITIATE_SINGLE_PAYMENT_SORTCODE",
+                "INITIATE_DOMESTIC_SCHEDULED_PAYMENT",
+                "INITIATE_DOMESTIC_PERIODIC_PAYMENT",
+                "ACCOUNT_STATEMENTS"
+            ]
+        }
+    ]
+}
