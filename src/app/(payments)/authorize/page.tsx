@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Authorize = () => {
+const Authorize = () => {
     return (
         <>
             <section className="container py-24 sm:py-24">
