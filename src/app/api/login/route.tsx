@@ -26,7 +26,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
     name: 'http://pay.siquro.com/',
     value: `${data.token}`,
     httpOnly: true,
-    path: 'http://pay.siquro.com/',
+    path: '/portal/login',
   })
 
   // return NextResponse.json({ success: true, redirectUrl: 'https://pay.siquro.com/portal/login', token: data.token });
