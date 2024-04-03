@@ -25,7 +25,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
   cookies().set({
     name: 'http://pay.siquro.com/',
     value: `${data.token}`,
-    httpOnly: false,
+    httpOnly: true,
     path: '/portal/login',
   })
 
