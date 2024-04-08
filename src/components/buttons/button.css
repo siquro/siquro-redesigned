@@ -1,93 +1,91 @@
-.global_button {
-  display: inline;
-  position: relative;
-  z-index: 1;
+.payment-button,
+.filled-button {
+  outline: none;
   overflow: hidden;
-  transition: all 0.5s ease-in-out;
-  text-wrap: nowrap;
-  border-radius: 100px;
-  font-family: var(--font-montserrat);
-  text-transform: uppercase;
-  letter-spacing: 0.72px;
-  font-weight: 700;
-  border: 2px solid white;
-  @apply text-[16px] sm:text-[18px] px-[16px] sm:px-[24px] py-[10px];
+  transition: border-color 0.5s, color 0.5s;
+  /* background-clip: padding-box; */
+  /* border: 2px solid white; */
 }
 
-.global_button::before {
+.payment-button {
+  @apply dark:border-primaryLight border-primaryDark;
+}
+
+.payment-button .button-text {
+  @apply text-primaryDark dark:text-primaryLight;
+}
+
+.payment-button:hover .button-text {
+  @apply text-primaryLight dark:text-primaryLight;
+}
+
+.filled-button.btn_light {
+  border: none;
+  transition: background-color 0.5s;
+  @apply dark:bg-primaryLight bg-primaryDark;
+}
+
+.filled-button.btn_dark {
+  border: none;
+  transition: background-color 0.5s;
+  @apply bg-primaryLight dark:bg-primaryDark;
+}
+
+.filled-button.btn_light .button-text {
+  @apply text-primaryLight dark:text-primaryDark;
+}
+
+.filled-button.btn_dark .button-text {
+  @apply text-primaryDark dark:text-primaryLight;
+}
+
+.filled-button.btn_light:hover .button-text,
+.filled-button.btn_light .button-text {
+  @apply text-primaryLight;
+}
+
+.filled-button.btn_dark:hover .button-text {
+  @apply text-primaryLight;
+}
+
+.payment-button .icon-circle {
+  transition: background-color 0.5s;
+}
+
+.payment-button::before,
+.filled-button::before {
   content: "";
   position: absolute;
-  background: linear-gradient(180deg, #03a4ff 22.51%, #009ee2 55.83%, #0085d0 100%);
   top: 0;
-  right: -50px;
-  height: 100%;
-  width: 0;
-  border-radius: 100px;
-  z-index: -1;
-  transition: width 1s;
-}
-
-.login-button{
-  @apply text-nowrap me-5 rounded-[100px] bg-transparent border-2 hover:border-accent3 border-primaryLight text-primaryLight dark:hover:border-accent3 text-[13px] sm:px-[16px] py-[6px] uppercase font-montserrat font-semibold relative hover:text-accent3 transition-colors;
-}
-
-.btn_dark {
-  @apply text-primaryDark dark:text-primaryLight bg-primaryLight dark:bg-primaryDark;
-}
-
-.btn_light {
-  @apply text-primaryLight dark:text-primaryDark   bg-primaryDark dark:bg-primaryLight;
-}
-
-.btn_dark:hover {
-  @apply text-primaryLight dark:text-primaryDark border-accent4;
-}
-
-.btn_light:hover {
-  @apply text-primaryDark dark:text-primaryLight border-accent4;
-}
-
-.global_button:hover::before {
-  width: 150%;
-  color: white;
-}
-
-.global_button:active::before {
-  transition: 3s;
-  background: linear-gradient(180deg, #03a4ff 22.51%, #009ee2 55.83%, #0085d0 100%);
-  color: white;
-}
-
-.outline_button {
-  transition: all 0.5s ease-in-out;
-  @apply bg-transparent border-2 border-primaryDark hover:border-accent3 dark:border-primaryLight  dark:hover:!border-accent3 pe-[16px] sm:pe-[60px];
-}
-
-.outline_button::before {
-  background: white;
   right: 0;
-  top: 0;
-  @apply w-[48px] h-[48px];
-}
-.outline_button:hover::before,
-.outline_button:active::before {
-  @apply hover:bg-linear-gradient-hover active:bg-linear-gradient-hover;
-}
-
-.outline_button::before {
-  z-index: -1;
-}
-
-.btn_icon {
-  position: absolute;
-  content: "";
-  top: calc(50% - 20px);
-  right: 2px;
-  width: 40px;
-  height: 40px;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to top, #00a3ff, #0075ff);
   z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s, opacity 0.5s ease-out;
+  border-radius: 25px;
+  border: none;
 }
 
-.outline_button:hover .dark_icon {
-  filter: invert(1);
+.payment-button:hover .icon-circle {
+  background-color: transparent;
+}
+
+.payment-button:hover .icon-img {
+  @apply dark:invert;
+}
+
+.payment-button:hover::before,
+.filled-button:hover::before {
+  transform: scaleX(1);
+  transform-origin: right;
+  opacity: 1;
+}
+
+.payment-button:active::before,
+.filled-button:active::before {
+  opacity: 1;
+  transition: transform 0s;
 }

@@ -38,7 +38,7 @@ const HomeIntegration = () => {
                         <div className="py-4 md:ps-11 md:py-11 text-center md:text-end">
                             <h3 className="title-h3 my-[20px] md:mb-[20px] md:mt-0">Crypto Payment Solutions</h3>
                             <p className="text mb-12">In our crypto checkouts and wallets, all transactions are automatic, guaranteed, support different cryptocurrencies, and there are no chargebacks. Our crypto solutions require only one approval stage, ensuring seamless integration.</p>
-                            <Button title="About us" color={"light"} link={"about"} customClass={"w-full md:w-fit"}/>
+                            <Button title="About us" color={"light"} link={"about"} />
                         </div>
                     </div>
                 </div>

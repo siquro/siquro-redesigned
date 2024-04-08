@@ -34,7 +34,7 @@ const ServicesGoLocal = () => {
             icon: "services_icons/6.svg",
         },
     ]
-
+    
     const Card = ({ title, description, icon }: { title: string, description: string, icon: string }) => {
         return <div className='basis-full sm:basis-[48%] md:basis-[30%] lg:basis-[32%]'>
             <div className='h-full dark:bg-primaryLight bg-primaryDark rounded-[20px] pt-[15px] px-[25px] pb-[25px] md:pt-[45px] md:pb-[71px]'>
@@ -55,8 +55,8 @@ const ServicesGoLocal = () => {
             <p className="badge text-center">payment</p>
             <h2 className="title-h2 mb-8 text-center">Forget trouble<br />with integration</h2>
         </div>
-
-        <div className="flex flex-row flex-wrap h-full gap-5 justify-around">
+     
+        <div className=" flex flex-row flex-wrap h-full gap-5 justify-around">
             {content.map((item, index) => <Card key={index} title={item.title} description={item.description} icon={item.icon} />)}
         </div>
 

@@ -12,7 +12,7 @@ const ServicesHero = () => {
                         Everything is designed to make {`merchants'`} lives easier, from integration to pricing, reporting, and payouts, and everything arrives fast, orderly, and securely.
                     </p>
                     <div className="">
-                        <Button title={'start project'} link={"contacts"} color={"light"} customClass={"w-full md:w-fit"}/>
+                        <Button title={'start project'} link={"contacts"} color={"light"} />
                     </div>
                 </div>
             </div>

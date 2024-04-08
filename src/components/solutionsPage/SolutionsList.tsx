@@ -36,9 +36,11 @@ const SolutionsList = () => {
 
     const Card = ({ title, description, icon, number }: { title: string, description: string, icon: string, number: string }) => {
         return <div className='flex flex-col md:flex-row relative h-[318px] items-center rounded-[20px] p-[20px]'>
-            <div className="absolute left-0 top-0 md:left-[20px] h-1/2 md:h-full w-full md:w-3/4"> <Image className='dark:invert-0 invert' src={`/solutions_icons/${number}`} alt={""} fill/></div>
-            <div className='w-full md:w-1/4 h-[90px] md:h-full relative mb-[20px] md:mb-0'>
-                <Image className='' src={`/solutions_icons/${icon}`} alt={""} fill />
+            <div className="absolute left-0 top-0 md:left-[20px] h-1/2 md:h-full w-full md:w-3/4">
+                <Image className='dark:invert-0 invert' src={`/solutions_icons/${number}`} alt={""} fill />
+            </div>
+            <div className='size-36 md:size-40 relative mb-[20px] md:mb-0'>
+                <Image className='' src={`/solutions_icons/${icon}`} alt={"Icon"} fill />
             </div>
 
             <div className="w-full md:w-3/4 px-0 md:px-[20px]">

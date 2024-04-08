@@ -8,13 +8,13 @@ const HomeHero = () => {
         <section className="home__hero--section bg-homeHeroBg bg-no-repeat mt-[-135px]">
             <div className="container pt-[150px] md:pt-[200px] pb-10 sm:pb-[90px] justify-between items-center flex flex-col-reverse sm:flex-row gap-5 md:gap-10">
                 <div className="flex flex-col w-full sm:w-3/5 py-4 sm:py-5 ">
-                    <h1 className="title-h1 mb-6 md:mb-12">UNIQUE PAYMENT GATEWAY</h1>
+                    <h1 className="title-h1 mb-6 md:mb-12 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-[#FF00E5] hover:from-[40%] hover:via-[#00A3FF] hover:to-[90%] transition duration-3 ease-in-out">UNIQUE PAYMENT GATEWAY</h1>
                     <p className="text mb-6 md:mb-12">
                         Accept payments with us and open up new <br /> markets and opportunities in the online payments <br />industry
                     </p>
-                    <div className="gap-x-3.5 flex flex-col-reverse md:flex-row flex-wrap gap-5">
+                    <div className="gap-x-3.5 flex flex-col md:flex-row flex-wrap gap-5">
                         <OutlineButton title={"start accepting payments"} link={"solutions"} />
-                        <Button title={'contact us'} color={"light"} link={"contacts"} customClass={"w-full md:w-fit"}/>
+                        <Button title={'contact us'} color={"light"} link={"contacts"} />
                     </div>
                 </div>
 

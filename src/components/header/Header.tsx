@@ -1,18 +1,13 @@
 'use client';
+
 import Image from "next/image";
 import Link from "next/link";
-// import { useRouter } from "next/router";
 import { useState } from "react";
 import MainNavigation from "./navigations/MainNavigation";
 import MobNavigation from "./navigations/MobNavigation";
 import ThemeSwitcher from "./themeSwitcher/ThemeSwitcher";
-import Button from "../buttons/Button";
-import OutlineButton from "../buttons/OutlineButton";
-// import { usePathname } from "next/navigation";
 
 const Header = () => {
-    // const router = useRouter();
-    // const pathname = usePathname();
     const [burgerActive, setBurgerActive] = useState(false);
 
     return (
@@ -24,7 +19,7 @@ const Header = () => {
 
                 <MainNavigation />
 
-                <Link href={`/log-in`} className="login-button hidden lg:block">
+                <Link href={`/log-in`} className="hidden lg:block text-nowrap me-5 rounded-[100px] bg-transparent ring-2 hover:ring-accent3 ring-primaryLight text-primaryLight dark:hover:ring-accent3 text-[13px] sm:px-[16px] py-[6px] uppercase font-montserrat font-semibold relative hover:text-accent3 transition-colors">
                     Log in
                 </Link>
 

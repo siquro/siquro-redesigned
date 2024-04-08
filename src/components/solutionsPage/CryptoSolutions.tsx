@@ -11,7 +11,7 @@ const CryptoSolutions = () => {
                 <p className="text mb-5 !text-primaryLight dark:!text-primaryDark">With our crypto solutions, we fix the rate for 30 minutes. Unlike other providers, we only have one approval stage, whereas other providers can have up to six.</p>
                 <p className="title-h4 uppercase mb-5 !leading-[35px] !text-primaryLight dark:!text-primaryDark">Transparent financial<br />information</p>
                 <p className="title-h4 uppercase mb-11 !leading-[35px] !text-primaryLight dark:!text-primaryDark">Stable passive income</p>
-                <Button title={"learn more"} color={"dark"} link={"company"} customClass={"w-full md:w-fit"} />
+                <Button title={"learn more"} color={"dark"} link={"company"}  />
             </div>
 
             <div className="flex items-end md:items-start md:justify-end md:absolute md:right-5 md:bottom-0 h-auto w-[250px] sm:w-1/2 ">

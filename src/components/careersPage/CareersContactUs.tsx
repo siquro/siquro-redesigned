@@ -12,7 +12,7 @@ const CareersContactUs = () => {
                 <h2 className="title-h2 !leading-[78px] mb-8">Contact us</h2>
                 <p className="text mb-8">Please get in touch to get more offers on a broad range of Siquro services from our expert support team.</p>
 
-                <Button title={"contact us"} color={"light"} link={"contacts"} customClass={"w-full md:w-fit"}/>
+                <Button title={"contact us"} color={"light"} link={"contacts"}/>
             </div>
         </div>
     </section>);

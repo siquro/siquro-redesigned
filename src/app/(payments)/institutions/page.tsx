@@ -1,6 +1,6 @@
 'use client'
 
-import { divider } from '@nextui-org/react';
+// import { divider } from '@nextui-org/react';
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image';
 

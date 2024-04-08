@@ -3,25 +3,19 @@ import "./button.css";
 import { FC } from "react";
 import Link from "next/link";
 
-const variants = {
-    hidden: { opacity: 0, x: -200, y: 0 },
-    enter: { opacity: 1, x: 0, y: 0 },
-}
-
 type ButtonProps = {
     title: string;
     color: string;
     onClickHandler?: () => void;
     link: string;
-    customClass?:string;
 }
-const Button: FC<ButtonProps> = ({ title, onClickHandler, color, link,customClass }) => {
+const Button: FC<ButtonProps> = ({ title, onClickHandler, color, link }) => {
     return (
-            <Link href={`/${link}`}>
-                <button className={`${customClass} ${color === "light" ? "btn_light" : "btn_dark"} global_button`} onClick={() => { }}>
-                    {title}
-                </button>
-            </Link>
+        <Link href={`/${link}`}>
+            <button className={`${color === "light" ? "btn_light" : "btn_dark"} filled-button py-[10px] px-[25px] rounded-[100px] hover:bg-!transparent hover:border-transparent relative w-full sm:w-fit`}>
+                <span className="button-text text-[16px] sm:text-[18px] text-center relative uppercase z-[2] font-bold">{title}</span>
+            </button>
+        </Link >
     );
 }
 
