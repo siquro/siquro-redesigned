@@ -18,20 +18,20 @@ const HomeIntegration = () => {
                             <div className="w-full md:w-4/5 lg:w-3/5">
                                 <h2 className="title-h2 mb-7">Fraud monitoring</h2>
                                 <p className="text mb-7">Everything is designed to make {`merchants'`} lives easier, from integration to pricing, reporting, and payouts, and everything arrives fast, orderly, and securely.</p>
-                                <h4 className="title-h4 mb-4">Fraud prevention technology</h4>
-                                <h4 className="title-h4 mb-5">Payouts that are prompt and frequent</h4>
+                                <h4 className="title-h5 mb-4 uppercase">Fraud prevention technology</h4>
+                                <h4 className="title-h5 mb-5 uppercase">Payouts that are prompt and frequent</h4>
                             </div>
                         </div>
                     </div>
 
                     <div className=" z-20 text-end flex flex-col md:flex-row sm:border-t-[4px] border-primaryDark dark:border-primaryLight w-full md:w-[90%]">
-                        <div className=" bg-primaryDark dark:bg-primaryLight rounded-b-[20px]  m-auto md:m-0 w-4/5 h-full">
+                        <div className=" bg-primaryLight rounded-b-[20px] m-auto md:m-0 w-4/5 h-full border-primaryDark border-x-3 dark:border-none">
                             <div className="p-4 md:py-11 md:px-16 text-start">
-                                <h3 className="title-h3 !text-primaryLight dark:!text-primaryDark mb-[20px] text-center md:text-start">Individual approach</h3>
-                                <p className="text !text-primaryLight dark:!text-primaryDark text-center md:text-start">All operational and financial issues can be quickly resolved with a personal manager.</p>
+                                <h3 className="title-h3 !text-primaryDark mb-[20px] text-center md:text-start">Individual approach</h3>
+                                <p className="text !text-primaryDark text-center md:text-start">All operational and financial issues can be quickly resolved with a personal manager.</p>
                             </div>
 
-                            <Link className="bg-[#323232] dark:bg-[#323232] text-primaryLight  rounded-b-[17px] text-center block py-[12px] md:py-[25px] px-11 text-[18px] font-bold uppercase font-montserrat " href={"/contacts"}>get started</Link>
+                            <Link className="bg-[#323232] dark:bg-[#323232] text-primaryLight rounded-b-[17px] text-center block py-[12px] md:py-[25px] px-11 text-[18px] font-bold uppercase font-montserrat " href={"/contacts"}>get started</Link>
                         </div>
 
 

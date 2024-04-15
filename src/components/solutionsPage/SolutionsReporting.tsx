@@ -13,8 +13,8 @@ const SolutionsReporting = () => {
                 <p className="badge">REPORTING</p>
                 <h2 className="title-h2 mb-[20px]">Fraud & Risk Management</h2>
                 <p className="text mb-5">As a result of our extensive experience, we are able to help you build trustworthily relationships with your customers by providing safety measures and keeping up with the latest regulatory changes, ensuring your products are compliant in all markets.</p>
-                <p className="title-h4 uppercase mb-5"> Geographic coverage around the world</p>
-                <p className="title-h4 uppercase mb-5">Cascading payments</p>
+                <p className="title-h5 uppercase mb-5"> Geographic coverage around the world</p>
+                <p className="title-h5 uppercase mb-5">Cascading payments</p>
                 <Button title={"learn more"} color={"light"} link={"services"} />
             </div>
         </div>

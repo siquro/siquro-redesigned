@@ -17,18 +17,50 @@ body {
 }
 ::-webkit-scrollbar-thumb {
   background-color: #6c6c6c;
+  border-radius: 25px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #9befea 0%, #3d6ece 74.01%, rgba(53, 246, 234, 0.35) 100%);
 }
 
 /* gloabl,custom tailwind classes */
+
 .title-h1 {
-  @apply font-kodchasan font-extrabold text-[32px] sm:text-[40px] md:text-[50px] xl:text-[64px] dark:text-primaryLight text-primaryDark leading-[1.2] uppercase;
+  background: linear-gradient(to right, #ff00e5, #4200ff, #9befea);
+  background-size: 200% 200%;
+  animation: rainbow 3s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: color 0.2s ease-in-out;
+
+  @apply font-kodchasan font-extrabold text-[32px] sm:text-[40px] md:text-[50px] xl:text-[64px]  leading-[1.2] uppercase dark:text-primaryLight text-primaryDark;
 }
 
 .title-h2 {
+  background: linear-gradient(to right, #ff00e5, #4200ff, #00FFF0);
+  background-size: 200% 200%;
+  animation: rainbow 3s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: color 0.2s ease-in-out;
   @apply font-kodchasan font-extrabold text-[32px] sm:text-[40px] md:text-[50px] xl:text-[64px] dark:text-primaryLight text-primaryDark uppercase leading-[1.2];
+}
+
+.title-h1:hover,
+.title-h2:hover {
+  color: rgba(0, 0, 0, 0);
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
 }
 
 .title-h3 {
@@ -36,7 +68,11 @@ body {
 }
 
 .title-h4 {
-  @apply font-kodchasan uppercase font-bold text-[16px] sm:text-[17px] md:text-[20px] xl:text-[28px]  dark:text-primaryLight text-primaryDark;
+  @apply font-kodchasan uppercase font-bold text-[16px] sm:text-[17px] md:text-[20px] xl:text-[28px]  dark:text-primaryLight text-primaryDark ;
+}
+
+.title-h5 {
+  @apply font-montserrat font-bold  text-[16px] lg:text-[17px] xl:text-[20px] dark:text-primaryLight text-primaryDark;
 }
 
 .text {

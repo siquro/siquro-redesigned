@@ -36,14 +36,14 @@ const ServicesGoLocal = () => {
     ]
     
     const Card = ({ title, description, icon }: { title: string, description: string, icon: string }) => {
-        return <div className='basis-full sm:basis-[48%] md:basis-[30%] lg:basis-[32%]'>
-            <div className='h-full dark:bg-primaryLight bg-primaryDark rounded-[20px] pt-[15px] px-[25px] pb-[25px] md:pt-[45px] md:pb-[71px]'>
-                <div className='mb-6 border-b-[3px] border-primaryLight dark:border-primaryDark'>
-                    <Image className='my-0 mb-6 h-auto w-[45px] md:w-[70px] dark:invert-0 invert' src={icon} alt={""} width={75} height={75} />
+        return <div className='basis-full sm:basis-[48%] md:basis-[30%] lg:basis-[32%] shadow-3xl rounded-[20px]'>
+            <div className='h-full bg-primaryLight rounded-[20px] pt-[15px] px-[25px] pb-[25px] md:pt-[45px] md:pb-[71px]'>
+                <div className='mb-6 border-b-[3px] border-primaryDark '>
+                    <Image className='my-0 mb-6 h-auto w-[45px] md:w-[70px]' src={icon} alt={""} width={75} height={75} />
                 </div>
                 <div>
-                    <h4 className='title-h4  !text-primaryLight dark:!text-primaryDark mb-5 pe-5'>{title}</h4>
-                    <p className='text !text-primaryLight dark:!text-primaryDark'>{description}</p>
+                    <h4 className='title-h4  dark:!text-primaryDark mb-5 pe-5'>{title}</h4>
+                    <p className='text  dark:!text-primaryDark'>{description}</p>
                 </div>
 
             </div>
@@ -59,9 +59,6 @@ const ServicesGoLocal = () => {
         <div className=" flex flex-row flex-wrap h-full gap-5 justify-around">
             {content.map((item, index) => <Card key={index} title={item.title} description={item.description} icon={item.icon} />)}
         </div>
-
-
-
     </section >);
 }
 

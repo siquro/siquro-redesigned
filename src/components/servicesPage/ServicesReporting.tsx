@@ -12,8 +12,8 @@ const ServicesReporting = () => {
                 <p className="badge">REPORTING</p>
                 <h2 className="title-h2 mb-[20px]">Put your brand on it</h2>
                 <p className="text mb-5 ">Monitor your pay in/payout information in real time through a digital merchant portal without installation and gain a deeper understanding of your customers.</p>
-                <p className="title-h4 uppercase mb-5">Payment service providers, merchants, agents, and IT developers can benefit from Leasing services;</p>
-                <p className="title-h4 uppercase mb-5">Siquro can be integrated with your own accounting system or you can get a complete solution.</p>
+                <p className="title-h5 uppercase mb-5">Payment service providers, merchants, agents, and IT developers can benefit from Leasing services;</p>
+                <p className="title-h5 uppercase mb-5">Siquro can be integrated with your own accounting system or you can get a complete solution.</p>
                 <Button title={"learn more"} color={"light"} link={"solutions"} />
             </div>
         </div>

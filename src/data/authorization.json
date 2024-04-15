@@ -1,0 +1,12 @@
+{
+    "meta": {
+        "tracingId": "f416a2b8dfde47e195783776f0caed8e",
+        "count": 1
+    },
+    "data": [
+        {
+            "QRLink": "/qrcode.jpg",
+            "paymentViaDesktop": "a redirect url for the user to authorize the payment via desktop"
+        }
+    ]
+}

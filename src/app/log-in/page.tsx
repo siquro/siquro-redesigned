@@ -44,7 +44,7 @@ const Login = () => {
       >
 
         <div className="w-full sm:w-4/5 md:w-4/5 lg:w-1/2 flex flex-col mx-auto dark:bg-primaryDark bg-primaryLight border-primaryDark border-2 dark:border-[#FFE8E8] rounded-[20px] pt-10">
-          <h3 className="title-h3 mb-5 text-center">Log in</h3>
+          <h3 className="title-h2 mb-5 text-center">Log in</h3>
 
           <form onSubmit={handleSubmit}>
             <div className='px-4 md:px-10 pb-6'>

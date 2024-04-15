@@ -1,6 +1,6 @@
 'use client'
 
-// import { divider } from '@nextui-org/react';
+import { divider } from '@nextui-org/react';
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image';
 
@@ -22,18 +22,34 @@ const Institutions = ({ data }: any) => {
   }, [])
 
   const chosenBankHandler = async (institutionId: string) => {
+    try {
+      const response = await fetch('/api/authorize-data', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ institutionId, userParams }),
+      });
 
-    const response = await fetch('', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ institutionId, userParams }),
-    })
+      if (!response.ok) {
+        console.error('Server responded with non-200 status:', response.status);
+        return;
+      }
 
-    console.log(institutionId, userParams)
+      const responseData = await response.json();
+      console.log('Response Data:', responseData);  // Check what you receive
 
-    window.location.href = `/authorize?txId=${userParams}`;
+      if (responseData && responseData.paymentMethods) {
+        localStorage.setItem('authorize-data', JSON.stringify(responseData.paymentMethods));
+        setTimeout(() => {
+          window.location.href = responseData.redirectUrl;
+        }, 500);
+      } else {
+        console.error('No data available to store in localStorage');
+      }
+    } catch (error) {
+      console.error('Failed to complete the operation:', error);
+    }
   }
 
   const Card = ({ icon, name, fullName, id }: { id: string; icon: string; name: string; fullName: string }) => {
