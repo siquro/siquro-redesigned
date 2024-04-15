@@ -8,16 +8,14 @@ import { Autoplay, EffectCards, Mousewheel, Pagination } from 'swiper/modules';
 
 import 'swiper/css/scrollbar';
 
-
+export const pagination = {
+    clickable: true,
+    renderBullet: function (index: any, className: string) {
+        return '<span class="' + className + '"></span>';
+    },
+};
 
 const WhatWeDo = () => {
-    const pagination = {
-        clickable: true,
-        renderBullet: function (index: any, className: string) {
-            return '<span class="' + className + '"></span>';
-        },
-    };
-
     const content = [
         {
             title: "ANTIFRAUD SYSTEM",
@@ -42,7 +40,7 @@ const WhatWeDo = () => {
     ]
 
     const Card = ({ title, description, icon }: { title: string, description: string, icon: string }) => {
-        return <div className=' p-[15px] md:pt-[20px] md:pb-[71px] max-w-[480px]'>
+        return <div className='p-[15px] md:pt-[20px] md:pb-[71px] max-w-[480px]'>
             <div className='mb-4 w-[45px] md:w-[60px] h-[45px] md:h-[60px] relative mx-auto'>
                 <Image className='' src={`/what_we_do-icon/${icon}`} alt={""} fill />
             </div>
@@ -81,7 +79,7 @@ const WhatWeDo = () => {
                             className='we_do--slider h-[300px] md:h-[500px]'
                         >
                             {content.map((item, index) =>
-                                <SwiperSlide key={index} className='bg-[#DADADA] dark:bg-primaryLight rounded-[20px] px-5 md:px-8 md:pt-[45px] md:pb-[71px]'>
+                                <SwiperSlide key={index} className='bg-[#DADADA]  dark:bg-primaryLight rounded-[20px] px-5 md:px-8 md:pt-[45px] md:pb-[71px]'>
                                     <Card title={item.title} description={item.description} icon={item.icon} />
                                 </SwiperSlide>
                             )}
@@ -100,14 +98,14 @@ const WhatWeDo = () => {
                             <div className='bg_element relative after:absolute after:left-[-92px] after:h-[290px] after:z-[1]     after:hidden after:sm:block after:sm:w-[92px] after:invert after:dark:invert-0'>
                                 <div className='item rounded-[20px] mt-6 md:mt-12 w-full max-w-[640px] border-primaryDark dark:border-primaryLight border-2'>
                                     <h4 className='title-h4 px-[15px] py-[19px]  text-center'>A software package that is unique</h4>
-                                    <div className='bg-primaryDark dark:bg-primaryLight px-[15px] md:px-[25px] pt-[20px] md:pt-[38px] pb-[30px] md:pb-[47px] rounded-t-[20px] rounded-b-[18px]'>
-                                        <p className='text !text-primaryLight dark:!text-primaryDark text-center'>Monitoring transactions and preventing fraudulent payments.</p>
+                                    <div className='bg-[#DADADA] dark:bg-primaryLight px-[15px] md:px-[25px] pt-[20px] md:pt-[38px] pb-[30px] md:pb-[47px] rounded-t-[20px] rounded-b-[18px] border-2 border-t-primaryDark dark:border-0'>
+                                        <p className='text !text-primaryDark text-center'>Monitoring transactions and preventing fraudulent payments.</p>
                                     </div>
                                 </div>
                                 <div className='item rounded-[20px] mt-6 md:mt-12 w-full max-w-[640px] border-primaryDark dark:border-primaryLight border-2'>
                                     <h4 className='title-h4 px-[15px] py-[19px] text-center'>Processes for intelligent payments</h4>
-                                    <div className='bg-primaryDark dark:bg-primaryLight px-[15px] md:px-[25px] pt-[20px] md:pt-[38px] pb-[30px] md:pb-[47px] rounded-t-[20px] rounded-b-[18px]'>
-                                        <p className='text !text-primaryLight dark:!text-primaryDark text-center '>Will ensure the maximum proportion of successful payments, without giving a chance for fraudster to pass!</p>
+                                    <div className='bg-[#DADADA] dark:bg-primaryLight px-[15px] md:px-[25px] pt-[20px] md:pt-[38px] pb-[30px] md:pb-[47px] rounded-t-[20px] rounded-b-[18px] border-2 border-t-primaryDark dark:border-0'>
+                                        <p className='text !text-primaryDark text-center'>Will ensure the maximum proportion of successful payments, without giving a chance for fraudster to pass!</p>
                                     </div>
                                 </div>
                             </div>
