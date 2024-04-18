@@ -37,7 +37,7 @@ body {
 }
 
 .title-h2 {
-  background: linear-gradient(to right, #ff00e5, #4200ff, #00FFF0);
+  background: linear-gradient(to right, #ff00e5, #4200ff, #00fff0);
   background-size: 200% 200%;
   animation: rainbow 3s ease-in-out infinite;
   background-clip: text;
@@ -48,7 +48,11 @@ body {
 
 .title-h1:hover,
 .title-h2:hover {
-  color: rgba(0, 0, 0, 0);
+  color: #00000000;
+}
+
+.coming-soon {
+  color: #00000000 !important;
 }
 
 @keyframes rainbow {
@@ -68,7 +72,7 @@ body {
 }
 
 .title-h4 {
-  @apply font-kodchasan uppercase font-bold text-[16px] sm:text-[17px] md:text-[20px] xl:text-[28px]  dark:text-primaryLight text-primaryDark ;
+  @apply font-kodchasan uppercase font-bold text-[16px] sm:text-[17px] md:text-[20px] xl:text-[28px]  dark:text-primaryLight text-primaryDark;
 }
 
 .title-h5 {

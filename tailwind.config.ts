@@ -50,7 +50,7 @@ const config: Config = {
       },
       boxShadow: {
         "3xl": "0px 4px 50px 0px rgba(0, 0, 0, 0.25)",
-        "light": "0px 4px 50px 0px rgba(225, 225, 225, 0.25)",
+        light: "0px 4px 50px 0px rgba(225, 225, 225, 0.25)",
       },
       keyframes: {
         orbit: {
@@ -71,6 +71,38 @@ const config: Config = {
           "0%, 100%": { left: "-15%" },
           "50%": { left: "10%" },
         },
+        blob: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+            filter: "blur(2px)",
+          },
+          "33%": {
+            transform: "translate(30px, -50px) scale(1.1)",
+            filter: "blur(0px)",
+          },
+          "66%": {
+            transform: "translate(-20px, 20px) scale(0.9)",
+            filter: "blur(2px)",
+          },
+          "100%": {
+            transform: "tranlate(0px, 0px) scale(1)",
+            filter: "blur(1px)",
+          },
+        },
+        blob2: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+            filter: "blur(2px)",
+          },
+          "50%": {
+            transform: "translate(20px, -20px) scale(1.1)",
+            filter: "blur(0px)",
+          },
+          "100%": {
+            transform: "tranlate(0px, 0px) scale(1)",
+            filter: "blur(1px)",
+          },
+        },
       },
       animation: {
         "spin-slow": "spin 20s linear infinite",
@@ -79,6 +111,8 @@ const config: Config = {
         // "fade-out": "fade-out 0.5s cubic-bezier(0.4, 0, 0.2, 1) both",
         // "spin-faster": "spin 25s ease-in-out infinite",
         orbit: "orbit 8s linear infinite",
+        blob: "blob 7s infinite",
+        blob2: "blob2 10s infinite",
       },
     },
   },
