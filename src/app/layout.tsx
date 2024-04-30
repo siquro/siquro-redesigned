@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children, isComingSoon = true,
+  children, isComingSoon = false,
 }: Readonly<{
   children: React.ReactNode;
   isComingSoon?: boolean;
