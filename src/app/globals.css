@@ -155,3 +155,24 @@ body {
   width: 200px;
   background-color: #0f0f0f;
 }
+
+#animate-left {
+  display: block;
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+#animate-right {
+  display: block;
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+#animate-bottom {
+  transform: translateY(200px);
+  opacity: 0;
+}
+
+#animate-fadein {
+  opacity: 0;
+}

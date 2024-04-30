@@ -88,14 +88,14 @@ const WhatWeDo = () => {
                     </div>
 
                     <div className='w-full lg:w-3/5 flex flex-col items-end'>
-                        <div>
+                        <div id="animate-right">
                             <h4 className="title-h4 text-end ">what we do</h4>
                             <h2 className="title-h2 text-end md:text-nowrap">Fraud monitoring</h2>
                         </div>
 
 
                         <div className='sm:w-[90%] md:w-[70%] lg:w-[80%] xl:w-[90%] flex flex-col items-end'>
-                            <div className='bg_element relative after:absolute after:left-[-92px] after:h-[290px] after:z-[1]     after:hidden after:sm:block after:sm:w-[92px] after:invert after:dark:invert-0'>
+                            <div id="animate-fadein" className='bg_element relative after:absolute after:left-[-92px] after:h-[290px] after:z-[1] after:hidden after:sm:block after:sm:w-[92px] after:invert after:dark:invert-0'>
                                 <div className='item rounded-[20px] mt-6 md:mt-12 w-full max-w-[640px] border-primaryDark dark:border-primaryLight border-2'>
                                     <h4 className='title-h4 px-[15px] py-[19px]  text-center'>A software package that is unique</h4>
                                     <div className='bg-[#DADADA] dark:bg-primaryLight px-[15px] md:px-[25px] pt-[20px] md:pt-[38px] pb-[30px] md:pb-[47px] rounded-t-[20px] rounded-b-[18px] border-2 border-t-primaryDark dark:border-0'>

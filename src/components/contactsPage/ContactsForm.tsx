@@ -1,9 +1,11 @@
 'use client'
 
+import useInViewAnimation from "@/hooks/useInViewAnimation";
 import { useState } from "react";
 
 const ContactsForm = () => {
     const [state, setState] = useState<string>();
+    useInViewAnimation();
 
 
     const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
@@ -32,7 +34,7 @@ const ContactsForm = () => {
     return (
         <section className='container mb-[90px]'>
             <div className='form__wrapper flex flex-col lg:flex-row gap-10 xl:gap-28'>
-                <div className='w-full mx-auto flex flex-col sm:w-4/5 md:w-3/5 lg:w-1/2 lg:text-left justify-between'>
+                <div id="animate-left" className='w-full mx-auto flex flex-col sm:w-4/5 md:w-3/5 lg:w-1/2 lg:text-left justify-between'>
 
                     <div className=''>
                         <h4 className='title-h3 mb-5 text-center lg:text-start'>Send a Message</h4>
@@ -41,7 +43,7 @@ const ContactsForm = () => {
 
                 </div>
 
-                <div className="w-full sm:w-4/5 md:w-4/5 lg:w-1/2 flex flex-col mx-auto dark:bg-primaryDark bg-primaryLight border-primaryDark border-2 dark:border-[#FFE8E8] rounded-[20px] pt-10">
+                <div id="animate-right" className="w-full sm:w-4/5 md:w-4/5 lg:w-1/2 flex flex-col mx-auto dark:bg-primaryDark bg-primaryLight border-primaryDark border-2 dark:border-[#FFE8E8] rounded-[20px] pt-10">
                     <form onSubmit={handleSubmit}>
                         <div className='px-4 md:px-10 pb-6'>
                             <label className="block mb-6" htmlFor="name">

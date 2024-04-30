@@ -37,7 +37,7 @@ const OpenPositions = () => {
     return (
         <section className="container flex flex-col pb-10 sm:pb-[40px] mt-[40px] sm:mt-[350px] md:mt-[-43px] lg:mt-[-55px] xl:mt-[-117px]">
             <div className="title--container md:border-b-[3px] border-primaryDark dark:border-primaryLight">
-                <h3 className="title-h3 text-center md:text-start">Open<br />positions</h3>
+                <h3 id="animate-left" className="title-h3 text-center md:text-start">Open<br />positions</h3>
             </div>
 
             <div className="position__slider--container mb-[40px] md:mb-24 overflow-hidden">

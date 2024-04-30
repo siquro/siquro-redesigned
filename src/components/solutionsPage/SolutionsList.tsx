@@ -1,4 +1,5 @@
 'use client'
+
 import Image from "next/image";
 import 'swiper/css';
 import { Autoplay } from "swiper/modules";
@@ -50,41 +51,40 @@ const SolutionsList = () => {
         </div>
     }
 
-    return (<section className="mt-16 mb-[20px] md:mb-[90px]">
+    return (
+        <section className="mt-16 mb-[20px] md:mb-[90px]">
+            <Swiper
+                loop={true}
+                autoplay={{
+                    delay: 1500,
+                    disableOnInteraction: false,
+                }}
+                navigation
+                pagination={{ clickable: true }}
+                centeredSlides
+                speed={1000}
+                modules={[Autoplay]}
+                breakpoints={{
+                    640: {
+                        slidesPerView: 1,
+                    },
+                    1024: {
+                        slidesPerView: 2,
+                    },
 
-        <Swiper
-            loop={true}
-            autoplay={{
-                delay: 1500,
-                disableOnInteraction: false,
-            }}
-            navigation
-            pagination={{ clickable: true }}
-            centeredSlides
-            speed={1000}
-            modules={[Autoplay]}
-            breakpoints={{
-                640: {
-                    slidesPerView: 1,
-                },
-                1024: {
-                    slidesPerView: 2,
-                },
-
-                1440: {
-                    slidesPerView: 2,
-                },
-            }}
-            className='solutions_slider'
-        >
-            {content.map((item, index) =>
-                <SwiperSlide key={index} className=''>
-                    <Card title={item.title} description={item.description} icon={item.icon} number={item.number} />
-                </SwiperSlide>
-            )}
-        </Swiper>
-
-    </section>);
+                    1440: {
+                        slidesPerView: 2,
+                    },
+                }}
+                className='solutions_slider'
+            >
+                {content.map((item, index) =>
+                    <SwiperSlide key={index} className=''>
+                        <Card title={item.title} description={item.description} icon={item.icon} number={item.number} />
+                    </SwiperSlide>
+                )}
+            </Swiper>
+        </section>);
 }
 
 export default SolutionsList;

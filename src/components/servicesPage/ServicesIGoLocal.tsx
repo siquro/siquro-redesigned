@@ -36,7 +36,7 @@ const ServicesGoLocal = () => {
     ]
     
     const Card = ({ title, description, icon }: { title: string, description: string, icon: string }) => {
-        return <div className='basis-full sm:basis-[48%] md:basis-[30%] lg:basis-[32%] shadow-3xl rounded-[20px]'>
+        return <div id="animate-bottom" className='basis-full sm:basis-[48%] md:basis-[30%] lg:basis-[32%] shadow-3xl rounded-[20px]'>
             <div className='h-full bg-primaryLight rounded-[20px] pt-[15px] px-[25px] pb-[25px] md:pt-[45px] md:pb-[71px]'>
                 <div className='mb-6 border-b-[3px] border-primaryDark '>
                     <Image className='my-0 mb-6 h-auto w-[45px] md:w-[70px]' src={icon} alt={""} width={75} height={75} />

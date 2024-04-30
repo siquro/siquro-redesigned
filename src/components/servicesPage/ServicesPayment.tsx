@@ -7,7 +7,7 @@ const ServicesPayment = () => {
         <section className="payment--section bg-primaryLight dark:bg-primaryDark  container">
             <div className="bg-servicesPaymentBg bg-no-repeat bg-contain">
                 <div className="section_wrapper pt-[40px] md:pt-[110px] pb-[40px] md:pb-[290px] justify-between flex flex-col-reverse md:flex-row gap-14">
-                    <div className="payment--content flex flex-col justify-center basis-3/5">
+                    <div id="animate-left" className="payment--content flex flex-col justify-center basis-3/5">
                         <p className="badge">payment</p>
                         <h2 className="title-h2 mb-[20px]">A PERFECT PAYMENT SOLUTIONS</h2>
                         <p className="text mb-[55px] md:w-4/5">

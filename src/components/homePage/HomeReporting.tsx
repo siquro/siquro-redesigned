@@ -6,7 +6,7 @@ const HomeReporting = () => {
     return (
         <section className="reporting--section bg-primaryLight dark:bg-primaryDark relative overflow-hidden">
             <div className="container pt-[63px] pb-[90px] flex flex-col md:flex-row gap-14 relative z-10 sm:border-s-[4px] border-primaryDark dark:border-primaryLight">
-                <div className="md:w-3/5">
+                <div id="animate-left" className="md:w-3/5">
                     <h4 className="title-h4">REPORTING</h4>
                     <h2 className="title-h2 mb-[33px] w-4/5">Advanced Analytics & Reporting</h2>
                     <p className="text w-full sm:w-4/5 mb-[38px]">Monitor your pay in/payout information in real time through a digital merchant portal without installation and gain a deeper understanding of your customers.</p>
