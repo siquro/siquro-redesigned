@@ -4,7 +4,7 @@ import Button from '../buttons/Button';
 
 const HomeReporting = () => {
     return (
-        <section className="reporting--section bg-primaryLight dark:bg-primaryDark relative overflow-hidden">
+        <section className="reporting--section bg-primaryLight dark:bg-primaryDark relative overflow-x-hidden overflow-y-visible">
             <div className="container pt-[63px] pb-[90px] flex flex-col md:flex-row gap-14 relative z-10 sm:border-s-[4px] border-primaryDark dark:border-primaryLight">
                 <div id="animate-left" className="md:w-3/5">
                     <h4 className="title-h4">REPORTING</h4>

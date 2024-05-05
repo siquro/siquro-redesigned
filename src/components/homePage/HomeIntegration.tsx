@@ -1,14 +1,20 @@
+
+
 import Link from "next/link";
 import Image from "next/image";
 import Button from "../buttons/Button";
 
 const HomeIntegration = () => {
+
     return (
-        <section className="integration--section bg-primaryLight dark:bg-primaryDark relative pb-[90px]">
-            <div className="hidden sm:block absolute top-[-10%] left-[0%] overflow-hidden w-[20%] z-10">
-                <Image src="/grey_ring-2.png" alt="Phone" width={862} height={862} className="w-full h-auto invert dark:invert-0" />
+        <section className="integration--section bg-primaryLight dark:bg-primaryDark relative pb-[90px] ">
+            <div className="hidden sm:block absolute top-[-10%] left-[0%] w-[20%] z-10">
+                         <Image src="/color_ring-2.png" alt="Phone" width={862} height={862} className="w-full h-auto dark:hidden" />
+                         <Image src="/grey_ring-2.png" alt="Phone" width={862} height={862} className="w-full h-auto invert dark:invert-0 hidden dark:block" />
+
+                {/* <Image src="/grey_ring-2.png" alt="Phone" width={862} height={862} className="w-full h-auto invert dark:invert-0" /> */}
             </div>
-            <div className="container">
+            <div className="container overflow-x-hidden">
                 <div className="flex flex-col items-end">
                     <div className="flex flex-col justify-end items-center first-item text-center border-b-[4px] border-primaryLight sm:border-b-0">
                         <div className="border-b-[4px] border-primaryDark dark:border-primaryLight w-full flex justify-end">
