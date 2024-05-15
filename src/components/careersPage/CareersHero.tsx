@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import OutlineButton from '../buttons/OutlineButton';
-import Button from '../buttons/Button';
+import FilledButton from '../buttons/FilledButton';
 
 const CareersHero = () => {
     return (
@@ -26,7 +26,7 @@ const CareersHero = () => {
                         <h2 className="title-h2 mb-5">Become a member of our team</h2>
                         <p className="text dark:text-primaryLight text-primaryDark pb-7 md:pe-7">A broad range of projects are being offered at Siquro, and ambitious self-motivated professionals are welcome to apply their talents. A lot needs to be done in the world’s most promising fintech company, from developing innovative payment systems to helping the company reach new markets.</p>
 
-                        <Button title={'Contact Us'} color={'light'} link={'contacts'} />
+                        <FilledButton title={'Contact Us'} link={'contacts'} />
                     </div>
 
                 </div>

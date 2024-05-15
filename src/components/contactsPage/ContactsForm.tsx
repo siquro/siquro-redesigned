@@ -61,8 +61,8 @@ const ContactsForm = () => {
                             </label>
                         </div>
 
-                        <button className='block bg-primaryDark dark:bg-primaryLight rounded-b-[17px] text-center py-[20px] px-11 text-[18px] uppercase font-montserrat font-bold text-primaryLight dark:text-primaryDark w-full tracking-[3px]' type='submit'
-                        >SEND</button>
+                        <button className='gradient_text-wrapper block bg-primaryDark dark:bg-primaryLight rounded-b-[17px] text-center py-[20px] px-11 text-[18px] uppercase font-montserrat font-bold text-primaryLight dark:text-primaryDark w-full tracking-[3px]' type='submit'
+                        ><span className="gradient-text text-primaryLight dark:text-primaryDark">SEND</span> </button>
                     </form>
                 </div>
             </div>

@@ -19,8 +19,11 @@ const Header = () => {
 
                 <MainNavigation />
 
-                <Link href={`/log-in`} className="hidden lg:block text-nowrap me-5 rounded-[100px] bg-transparent ring-2 hover:ring-accent3 ring-primaryLight text-primaryLight dark:hover:ring-accent3 text-[13px] sm:px-[16px] py-[6px] uppercase font-montserrat font-semibold relative hover:text-accent3 transition-colors">
-                    Log in
+                <Link href={`/log-in`} className="hidden lg:block me-5">
+                    <div className="button-wrapper relative w-full">
+                        <button className=" text-nowrap button py-[6px] px-[16px] dark:text-white text-black cursor-pointer text-[14px] text-center relative uppercase font-medium rounded-full dark:bg-black bg-white border-0" type="button">Log in</button>
+                        <div className="button-bg absolute top-0 left-0 bg-white rounded-full z-[-1]"></div>
+                    </div>
                 </Link>
 
                 <div className="flex flex-row w-[100px]">

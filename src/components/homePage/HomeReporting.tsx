@@ -1,6 +1,6 @@
 
 import Image from 'next/image';
-import Button from '../buttons/Button';
+import FilledButton from '../buttons/FilledButton';
 
 const HomeReporting = () => {
     return (
@@ -27,7 +27,7 @@ const HomeReporting = () => {
                             <h4 className="title-h4">Technical support 24/7</h4>
                         </div>
                     </div>
-                    <Button title={"learn more"} color={"light"} link={"services"} />
+                    <FilledButton title={"learn more"} link={"services"} />
                 </div>
             </div>
 

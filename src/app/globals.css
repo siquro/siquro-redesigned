@@ -36,8 +36,17 @@ body {
   @apply font-kodchasan font-extrabold text-[32px] sm:text-[40px] md:text-[50px] xl:text-[64px]  leading-[1.2] uppercase dark:text-primaryLight text-primaryDark;
 }
 
+.gradient-text {
+  background: linear-gradient(to right, #ff00e5, #229ae5, #47f4e8);
+  background-size: 200% 200%;
+  animation: rainbow 3s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: color 0.2s ease-in-out;
+}
+
 .title-h2 {
-  background: linear-gradient(to right, #ff00e5, #4200ff, #00fff0);
+  background: linear-gradient(to right, #ff00e5, #4200ff, #9befea);
   background-size: 200% 200%;
   animation: rainbow 3s ease-in-out infinite;
   background-clip: text;
@@ -47,7 +56,8 @@ body {
 }
 
 .title-h1:hover,
-.title-h2:hover {
+.title-h2:hover,
+.gradient_text-wrapper:hover .gradient-text {
   color: #00000000;
 }
 
@@ -68,11 +78,11 @@ body {
 }
 
 .title-h3 {
-  @apply font-kodchasan font-bold text-[24px] md:text-[32px] xl:text-[48px] dark:text-primaryLight text-primaryDark uppercase leading-[1.2];
+  @apply font-kodchasan font-medium text-[24px] md:text-[32px] xl:text-[48px] dark:text-primaryLight text-primaryDark uppercase leading-[1.2];
 }
 
 .title-h4 {
-  @apply font-kodchasan uppercase font-bold text-[16px] sm:text-[17px] md:text-[20px] xl:text-[28px]  dark:text-primaryLight text-primaryDark;
+  @apply font-kodchasan uppercase font-medium text-[16px] sm:text-[17px] md:text-[20px] xl:text-[28px]  dark:text-primaryLight text-primaryDark;
 }
 
 .title-h5 {
@@ -84,7 +94,7 @@ body {
 }
 
 .badge {
-  @apply font-kodchasan font-bold text-[16px] md:text-[22px] dark:text-primaryLight text-primaryDark uppercase;
+  @apply font-kodchasan font-medium text-[16px] md:text-[22px] dark:text-primaryLight text-primaryDark uppercase;
 }
 
 .link {

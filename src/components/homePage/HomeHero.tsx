@@ -1,6 +1,7 @@
 import Image from "next/image";
 import OutlineButton from "../buttons/OutlineButton";
-import Button from "../buttons/Button";
+import FilledButton from "../buttons/FilledButton";
+
 
 const HomeHero = () => {
 
@@ -12,9 +13,9 @@ const HomeHero = () => {
                     <p className="text mb-6 md:mb-12">
                         Accept payments with us and open up new <br /> markets and opportunities in the online payments <br />industry
                     </p>
-                    <div className="gap-x-3.5 flex flex-col md:flex-row flex-wrap gap-5">
+                    <div className="gap-x-3.5 flex flex-col md:flex-row flex-wrap gap-6">
                         <OutlineButton title={"start accepting payments"} link={"solutions"} />
-                        <Button title={'contact us'} color={"light"} link={"contacts"} />
+                        <FilledButton title={'contact us'} link={"contacts"} />
                     </div>
                 </div>
 

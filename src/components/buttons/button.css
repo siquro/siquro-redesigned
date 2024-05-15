@@ -1,91 +1,34 @@
-.payment-button,
-.filled-button {
-  outline: none;
-  overflow: hidden;
-  transition: border-color 0.5s, color 0.5s;
-  /* background-clip: padding-box; */
-  /* border: 2px solid white; */
+.button-bg {
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background-size: 600% 600%;
+  animation: AnimateBorder 4s ease infinite;
+  -webkit-animation: AnimateBorder 4s ease infinite;
+  -moz-animation: AnimateBorder 4s ease infinite;
+  transform: translate(-2px, -2px);
+  transition: filter .7s ease-in;
 }
 
-.payment-button {
-  @apply dark:border-primaryLight border-primaryDark;
+.button-wrapper:hover .button-bg {
+  background: linear-gradient(90deg, #ff00e5 0%, #4200ff 30.43%, #00fff0 68.23%, #ff00e5 100%);
+  filter: blur(5px);
+  transition: filter .4s ease-in;
 }
 
-.payment-button .button-text {
-  @apply text-primaryDark dark:text-primaryLight;
+
+@-webkit-keyframes AnimateBorder {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimateBorder {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimateBorder {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
-.payment-button:hover .button-text {
-  @apply text-primaryLight dark:text-primaryLight;
-}
-
-.filled-button.btn_light {
-  border: none;
-  transition: background-color 0.5s;
-  @apply dark:bg-primaryLight bg-primaryDark;
-}
-
-.filled-button.btn_dark {
-  border: none;
-  transition: background-color 0.5s;
-  @apply bg-primaryLight dark:bg-primaryDark;
-}
-
-.filled-button.btn_light .button-text {
-  @apply text-primaryLight dark:text-primaryDark;
-}
-
-.filled-button.btn_dark .button-text {
-  @apply text-primaryDark dark:text-primaryLight;
-}
-
-.filled-button.btn_light:hover .button-text,
-.filled-button.btn_light .button-text {
-  @apply text-primaryLight;
-}
-
-.filled-button.btn_dark:hover .button-text {
-  @apply text-primaryLight;
-}
-
-.payment-button .icon-circle {
-  transition: background-color 0.5s;
-}
-
-.payment-button::before,
-.filled-button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(to top, #00a3ff, #0075ff);
-  z-index: 1;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s, opacity 0.5s ease-out;
-  border-radius: 25px;
-  border: none;
-}
-
-.payment-button:hover .icon-circle {
-  background-color: transparent;
-}
-
-.payment-button:hover .icon-img {
-  @apply dark:invert;
-}
-
-.payment-button:hover::before,
-.filled-button:hover::before {
-  transform: scaleX(1);
-  transform-origin: right;
-  opacity: 1;
-}
-
-.payment-button:active::before,
-.filled-button:active::before {
-  opacity: 1;
-  transition: transform 0s;
-}

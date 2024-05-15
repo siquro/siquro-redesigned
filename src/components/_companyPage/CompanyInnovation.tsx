@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Button from '../buttons/Button';
+import FilledButton from '../buttons/FilledButton';
 
 const CompanyInnovation = () => {
     return (<section className="services__reporting--section container">
@@ -14,14 +14,14 @@ const CompanyInnovation = () => {
                 <p className="text mb-8">Conversion-boosting payment interfaces.
                     We have created intuitive payment interfaces based on our specialists’ experience and analysis of consumer behavior.</p>
                 <p className="text mb-8">You can provide your clients with everything they need and more with us:</p>
-                <p className="text-[20px] lg:text-[24px] font-bold font-montserrat mb-10 uppercase">Geographic coverage<br/>around the world</p>
+                <p className="text-[20px] lg:text-[24px] font-bold font-montserrat mb-10 uppercase">Geographic coverage<br />around the world</p>
                 <p className="text-[20px] lg:text-[24px] font-bold font-montserrat mb-10 uppercase">Cascading payments</p>
                 <p className="text-[20px] lg:text-[24px] font-bold font-montserrat mb-10 uppercase">Banks with a wide range of acquiring capabilities</p>
                 <p className="text-[20px] lg:text-[24px] font-bold font-montserrat mb-10 uppercase">24/7 technical support</p>
                 <p className="text-[20px] lg:text-[24px] font-bold font-montserrat mb-10 uppercase">Fraud prevention technology</p>
                 <p className="text-[20px] lg:text-[24px] font-bold font-montserrat mb-10 uppercase">Payouts that are prompt and frequent</p>
-                <p className="text-[20px] lg:text-[24px] font-bold font-montserrat mb-10 uppercase">Monitoring transactions<br/>and preventing fraudulent<br/> payments</p>
-                <Button title={"learn more"} color={"light"} link={"solutions"} />
+                <p className="text-[20px] lg:text-[24px] font-bold font-montserrat mb-10 uppercase">Monitoring transactions<br />and preventing fraudulent<br /> payments</p>
+                <FilledButton title={"learn more"} color={"light"} link={"solutions"} />
             </div>
         </div>
     </section>);

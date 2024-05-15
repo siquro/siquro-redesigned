@@ -14,9 +14,9 @@ const ServicesPayment = () => {
                             We know our online payment system is scalable, secure and fast because we designed and developed it ourselves.
                             We develop great IT products that actually work by having perfectionist workers who are easy to communicate with. Because we have extensive experience exploiting our technology, we know what it can do. So we love tailoring our solutions to fit even the most specific business needs.
                         </p>
-                        <div className="">
-                            <OutlineButton title={"view plans"} link={"solutions"} />
-                        </div>
+                        
+                        <OutlineButton title={'join us'} link={'contacts'} />
+                    
                     </div>
 
                     <div className="payment__animation--block relative me-0 flex justify-end w-full md:w-2/5 items-center">

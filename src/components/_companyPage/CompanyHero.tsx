@@ -1,4 +1,4 @@
-import Button from "../buttons/Button";
+import FilledButton from "../buttons/FilledButton";
 
  const CompanyHero = () => {
     return (
@@ -16,7 +16,7 @@ import Button from "../buttons/Button";
                     <h3 className="title-h3 mb-5 !capitalize">Our Vision</h3>
                     <p className="text mb-7 darktext-primaryLight text-primaryDark">No matter what your risk level is, we offer credit and debit cards, e-wallets, electronic payment systems, local direct debit systems – you name it!</p>
 
-                    <Button title={'Contact Us'} color={'light'} link={'contacts'} />
+                    <FilledButton title={'Contact Us'} color={'light'} link={'contacts'} />
                 </div>
             </div>
 

@@ -2,15 +2,15 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import Button from "../buttons/Button";
+import FilledButton from "../buttons/FilledButton";
 
 const HomeIntegration = () => {
 
     return (
         <section className="integration--section bg-primaryLight dark:bg-primaryDark relative pb-[90px] ">
             <div className="hidden sm:block absolute top-[-10%] left-[0%] w-[20%] z-10">
-                         <Image src="/color_ring-2.png" alt="Phone" width={862} height={862} className="w-full h-auto dark:hidden" />
-                         <Image src="/grey_ring-2.png" alt="Phone" width={862} height={862} className="w-full h-auto invert dark:invert-0 hidden dark:block" />
+                <Image src="/color_ring-2.png" alt="Phone" width={862} height={862} className="w-full h-auto dark:hidden" />
+                <Image src="/grey_ring-2.png" alt="Phone" width={862} height={862} className="w-full h-auto invert dark:invert-0 hidden dark:block" />
 
                 {/* <Image src="/grey_ring-2.png" alt="Phone" width={862} height={862} className="w-full h-auto invert dark:invert-0" /> */}
             </div>
@@ -32,19 +32,19 @@ const HomeIntegration = () => {
 
                     <div className=" z-20 text-end flex flex-col md:flex-row sm:border-t-[4px] border-primaryDark dark:border-primaryLight w-full md:w-[90%]">
                         <div id="animate-left" className=" bg-primaryLight rounded-b-[20px] m-auto md:m-0 w-4/5 h-full border-primaryDark border-x-3 dark:border-none">
-                            <div  className="p-4 md:py-11 md:px-16 text-start">
+                            <div className="p-4 md:py-11 md:px-16 text-start">
                                 <h3 className="title-h3 !text-primaryDark mb-[20px] text-center md:text-start">Individual approach</h3>
                                 <p className="text !text-primaryDark text-center md:text-start">All operational and financial issues can be quickly resolved with a personal manager.</p>
                             </div>
 
-                            <Link className="bg-[#323232] dark:bg-[#323232] text-primaryLight rounded-b-[17px] text-center block py-[12px] md:py-[25px] px-11 text-[18px] font-bold uppercase font-montserrat " href={"/contacts"}>get started</Link>
+                            <Link className="gradient_text-wrapper bg-[#323232] dark:bg-[#323232] rounded-b-[17px] text-center block py-[12px] md:py-[25px] px-11 text-[18px] font-bold uppercase font-montserrat " href={"/contacts"}><span className="gradient-text text-primaryLight ">get started</span> </Link>
                         </div>
 
 
-                        <div id="animate-right" className="py-4 md:ps-11 md:py-11 text-center md:text-end">
+                        <div id="animate-right" className="py-4 md:ps-11 md:py-11 text-center md:text-end flex flex-col justify-end">
                             <h3 className="title-h3 my-[20px] md:mb-[20px] md:mt-0">Crypto Payment Solutions</h3>
                             <p className="text mb-12">In our crypto checkouts and wallets, all transactions are automatic, guaranteed, support different cryptocurrencies, and there are no chargebacks. Our crypto solutions require only one approval stage, ensuring seamless integration.</p>
-                            <Button title="About us" color={"light"} link={"about"} />
+                            <FilledButton title="About us" link={"about"} />
                         </div>
                     </div>
                 </div>

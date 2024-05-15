@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "../buttons/Button";
+import FilledButton from "../buttons/FilledButton";
 
 const CryptoSolutions = () => {
     return (<section className="services__reporting--section container dark:border-primaryLight border-primaryDark pb-[90px]">
@@ -11,11 +11,11 @@ const CryptoSolutions = () => {
                 <p className="text mb-5 !text-primaryLight dark:!text-primaryDark">With our crypto solutions, we fix the rate for 30 minutes. Unlike other providers, we only have one approval stage, whereas other providers can have up to six.</p>
                 <p className="title-h5 uppercase mb-5 !leading-[35px] !text-primaryLight dark:!text-primaryDark">Transparent financial<br />information</p>
                 <p className="title-h5 uppercase mb-11 !leading-[35px] !text-primaryLight dark:!text-primaryDark">Stable passive income</p>
-                <Button title={"learn more"} color={"dark"} link={"company"}  />
+                <FilledButton title={"learn more"} link={"company"} />
             </div>
 
-            <div  className="flex items-end md:items-start md:justify-end md:absolute md:right-5 md:bottom-0 h-auto w-[250px] sm:w-1/2 ">
-                <Image src={"/crypto.png"} alt={"Reporting services"} width={564} height={726} className="md:w-4/5" placeholder="blur" blurDataURL="/1x1-b6b6647f.png"/>
+            <div className="flex items-end md:items-start md:justify-end md:absolute md:right-5 md:bottom-0 h-auto w-[250px] sm:w-1/2 ">
+                <Image src={"/crypto.png"} alt={"Reporting services"} width={564} height={726} className="md:w-4/5" placeholder="blur" blurDataURL="/1x1-b6b6647f.png" />
             </div>
         </div>
     </section>);
