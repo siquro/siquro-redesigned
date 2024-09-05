@@ -2,25 +2,25 @@ import Image from "next/image";
 import OutlineButton from "../buttons/OutlineButton";
 import FilledButton from "../buttons/FilledButton";
 
-
 const HomeHero = () => {
-
     return (
         <section className="home__hero--section bg-homeHeroBg bg-no-repeat mt-[-135px]  overflow-hidden">
             <div className="container pt-[150px] md:pt-[200px] pb-10 sm:pb-[90px] justify-between items-center flex flex-col-reverse sm:flex-row gap-5 md:gap-10">
                 <div id="animate-left" className="flex flex-col w-full sm:w-3/5 py-4 sm:py-5 ">
                     <h1 className="title-h1 mb-6 md:mb-12 ">UNIQUE PAYMENT GATEWAY</h1>
                     <p className="text mb-6 md:mb-12">
-                        Accept payments with us and open up new <br /> markets and opportunities in the online payments <br />industry
+                        Accept payments with us and open up new <br /> markets and opportunities in the online payments{" "}
+                        <br />
+                        industry
                     </p>
                     <div className="gap-x-3.5 flex flex-col md:flex-row flex-wrap gap-6">
                         <OutlineButton title={"start accepting payments"} link={"solutions"} />
-                        <FilledButton title={'contact us'} link={"contacts"} />
+                        <FilledButton title={"contact us"} link={"contacts"} />
                     </div>
                 </div>
 
-                <div className="hero__animation--block hidden sm:flex w-full sm:w-2/6 relative justify-end">
-                    <div className="max-w-[130px] sm:max-w-[300px]  relative">
+                <div className="hero__animation--block hidden sm:flex w-full sm:w-2/6 relative justify-end h-[500px]">
+                    {/* <div className="max-w-[130px] sm:max-w-[300px]  relative">
                         <Image src="/hero_home_animation/phone2.png" alt="phone" width={316} height={610} className="item_main w-full h-auto z-0 animate-pulse" id="orbit" />
 
 
@@ -47,11 +47,18 @@ const HomeHero = () => {
                         <div className="absolute z-[7] w-[35%] bottom-[10%] right-[15%]">
                             <Image src="/hero_home_animation/money.png" alt="money" width={163} height={119} className="item_six w-full h-auto" id="orbit" />
                         </div>
-                    </div>
+                    </div> */}
+
+                    <iframe
+                        src="https://my.spline.design/weirdbubblecopy-a20c1f43345c97ae6bb6d464a08ae626/"
+                        frameBorder="0"
+                        width="100%"
+                        height="100%"
+                    ></iframe>
                 </div>
             </div>
         </section>
     );
-}
+};
 
 export default HomeHero;
